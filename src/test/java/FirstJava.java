@@ -25,7 +25,5 @@ public class FirstJava {
 //closing the browser
         driver.close();
 
-//sample edit
-
     }
 }
