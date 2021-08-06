@@ -3,7 +3,10 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+
 public class FirstJava {
+
+    Logger log = LoggerFactory.getLogger(ControlBase.class);
 
     public static void main(String[] args) {
 // TODO Auto-generated method stub
@@ -12,7 +15,7 @@ public class FirstJava {
         System.setProperty("webdriver.chrome.driver", "C:\\Automation\\drivers\\chromedriver.exe");
 
 //Initiating your chromedriver
-        WebDriver driver=new ChromeDriver();
+        WebDriver driver = new ChromeDriver();
 
 //Applied wait time
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -26,4 +29,5 @@ public class FirstJava {
         driver.close();
 
     }
+
 }
