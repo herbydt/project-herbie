@@ -1,4 +1,4 @@
-package pages;
+package pages.website1;
 
 import libraries.PageObjectBase;
 import org.openqa.selenium.WebDriver;
@@ -15,6 +15,11 @@ public class BaseWebsite1 extends PageObjectBase {
 
     public PageAccess PageAccess() {
         return new PageAccess(driver);
+    }
+
+
+    public void waitForPageToComplete() {
+        control.waitForPageComplete();
     }
 
 }

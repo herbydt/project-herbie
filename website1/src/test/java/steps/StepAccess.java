@@ -1,5 +1,6 @@
 package steps;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.logging.LogEntries;
 import org.openqa.selenium.logging.LogEntry;
 import org.openqa.selenium.logging.LogType;
@@ -10,29 +11,16 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
 public class StepAccess extends BaseStep {
+
+    BaseStep base;
+
+    public StepAccess(BaseStep base) {
+        this.base = base;
+    }
+
     @Given("^the player is at Ghana desktop site in EN language$")
     public void thePlayerIsAtGhanaDesktopSiteInENLanguage() throws Throwable {
-        workflowDafabetGhanaDesktop.baseDafabetGhanaDesktop.waitForPageToComplete();
-        workflowDafabetGhanaDesktop.baseDafabetGhanaDesktop.closeAnnouncementLightbox();
-//        workflowDafabetGhanaDesktop.launchApplication(getDafabetROWUrl(page) + "/" + (baseLanguageCode = language.toLowerCase()));
-        workflowDafabetGhanaDesktop.launchApplication(getDafabetROWUrl(page) + "/");
-        baseSelectedProduct = page;
-        switch (page) {
-            case "Ghana": {
-                baseCurrentPage = "GHANA";
-                baseState = "Pre-Login";
-                baseLanguage = "English (Ghana)";
-                break;
-            }
-            case "Kenya": {
-                baseCurrentPage = "KENYA";
-                baseState = "Pre-Login";
-                baseLanguage = "Swahili (Kenya)";
-                break;
-            }
-            default:
-                throw new Exception("COUNTRY IN THE SELECTION");
-        }
-        workflowDafabetGhanaDesktop.baseDafabetGhanaDesktop.currentDafabetUrl = base.driver.getCurrentUrl();
+        workflowWebsite1.launchApplication("https://www.google.com");
+        workflowWebsite1.baseWebsite1.waitForPageToComplete();
     }
 }

@@ -1,4 +1,4 @@
-package pages;
+package pages.website1;
 
 import org.openqa.selenium.WebDriver;
 
