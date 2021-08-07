@@ -17,6 +17,10 @@ public class BaseStep extends TestBase{
 
     public static SoftAssert softAssert;
 
+    // Variables
+    public static String baseCurrentPage;
+    public static String baseSearchItem;
+
     public String getDafabetROWCMSUrl(String product) throws IOException {
         return getApplicationProperties(product + "." + getEnvironment() + ".drupal.url");
     }
@@ -41,6 +45,12 @@ public class BaseStep extends TestBase{
             return "Browser Console Error: \n" + error.getMessage();
         }
         return "NO console error. \n";
+    }
+
+    public String getSiteUrl(String site) throws IOException {
+        baseCurrentPage = site.toUpperCase();
+//        return getApplicationProperties(product + "." + getEnvironment() + ".url");
+        return getApplicationProperties(site + ".url");
     }
 
 }

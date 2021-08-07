@@ -18,9 +18,25 @@ public class StepAccess extends BaseStep {
         this.base = base;
     }
 
-    @Given("^the player is at Ghana desktop site in EN language$")
-    public void thePlayerIsAtGhanaDesktopSiteInENLanguage() throws Throwable {
-        workflowWebsite1.launchApplication("https://www.google.com");
+    @Given("^the player is at ([^\"]*) site in EN language$")
+    public void thePlayerIsAtSite(String site) throws Throwable {
+        workflowWebsite1.launchApplication(getSiteUrl(site) + "/");
         workflowWebsite1.baseWebsite1.waitForPageToComplete();
     }
+
+    @When("^the player searches for ([^\"]*)$")
+    public void thePlayerSearches(String item) throws Throwable {
+        System.out.println("Search item: " + item + "\n");
+        baseSearchItem = item;
+        workflowWebsite1.searchItem(item);
+        workflowWebsite1.baseWebsite1.waitForPageToComplete();
+    }
+
+    @Then("^the search results are displayed$")
+    public void theSearchResultsAreDisplayed() throws Throwable {
+//        System.out.println("Search item: " + item + "\n");
+        softAssert.assertTrue(workflowWebsite1.baseWebsite1.PageGoogleSearch().verifySearchResultsPage(baseSearchItem), "FAILED: The Google Search failed to display correct results");
+
+    }
+
 }

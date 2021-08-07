@@ -29,4 +29,9 @@ public class WorkflowWebsite1 extends BaseWorkflow {
         baseWebsite1.waitForPageToComplete();
     }
 
+    public void searchItem(String item) throws Exception {
+        baseWebsite1.PageGoogleSearch().typeSearchItem(item);
+        baseWebsite1.PageGoogleSearch().clickGoogleSearchButton();
+    }
+
 }
