@@ -1,8 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <bytecodeTargetLevel>
-      <module name="projectherby" target="1.5" />
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="core-applications" />
+        <module name="core-framework" />
+        <module name="dafabet" />
+        <module name="website1" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="1.8">
+      <module name="core-applications" target="1.8" />
+      <module name="core-framework" target="1.8" />
+      <module name="dafabet" target="1.8" />
+      <module name="projectherby" target="1.8" />
+      <module name="website1" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
