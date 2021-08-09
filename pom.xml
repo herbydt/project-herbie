@@ -11,6 +11,7 @@
         <module>website1</module>
         <module>core-applications</module>
         <module>core-framework</module>
+        <module>dafabet</module>
     </modules>
 
     <packaging>pom</packaging>

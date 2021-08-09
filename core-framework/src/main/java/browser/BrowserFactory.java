@@ -11,7 +11,7 @@ public class BrowserFactory {
         if (s.equals("chrome")) {
             return new Chrome();
         } else if (s.equals("firefox")) {
-//			return new Firefox();
+			return new Firefox();
         } else if (s.equals(Global.Browser.MOBILE)) {
             return  new Chrome();
 //        } else if (s.equals("ie")) {

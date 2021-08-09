@@ -23,10 +23,10 @@ public class BaseWebsite1 extends PageObjectBase {
         return new PageGoogleSearch(driver);
     }
 
+
+
     public void waitForPageToComplete() {
         control.waitForPageComplete();
     }
-
-
 
 }
