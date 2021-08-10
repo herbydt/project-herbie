@@ -10,6 +10,7 @@ public class PageDafabet extends BaseDafabet {
     }
 
     By iconCashier = By.cssSelector("a.cashier-label");
+    By btnCashier = By.cssSelector("li.cashier-tooltip.tooltip.last");
 
     //==================================================================================================================
     // Validations
@@ -24,9 +25,6 @@ public class PageDafabet extends BaseDafabet {
     }
 
     public boolean isInPostLoginPage() {
-//        String currentURL[] = driver.getCurrentUrl().split("/");
-//        String lastWord = currentURL[currentURL.length - 1];
-
         closeAnnouncementLightbox();
         if (control.isDisplayed(iconCashier)) {
             System.out.println("Post Login current URL is: " + driver.getCurrentUrl() + "\n");
@@ -48,8 +46,20 @@ public class PageDafabet extends BaseDafabet {
         control.type(txtPassword, password);
     }
 
-    public void clickLoginBtn() throws Exception {
-        control.click(btnLogin);
+    public void clickButton(String btn) throws Exception {
+        switch (btn.toUpperCase()) {
+            case "LOGIN": {
+                control.click(btnLogin);
+                break;
+            }
+            case "CASHIER": {
+                control.click(btnCashier);
+                switchToWindow(1);
+                waitForPageToComplete();
+                break;
+            }
+            default:
+                System.out.println("FAILED :" + btn + "button is not included in the list of buttons.");
+        }
     }
-
 }

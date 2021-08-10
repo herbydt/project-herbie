@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
@@ -13,6 +14,12 @@ public class PageObjectBase {
 
     protected WebDriver driver;
     protected ControlBase control;
+
+    public static ArrayList<String> windows;
+    public static String mainWHandle = "0";
+    public static String secondWHandle ="";
+    public static String thirdWHandle = "";
+    public static String fourthWHandle = "";
 
     protected int DEFAULT_WAIT_TIME = 10;
 
@@ -48,6 +55,46 @@ public class PageObjectBase {
             }
 
             System.out.println("DEBUG: Started chrome...\n");
+        }
+    }
+
+    public void switchToWindow(int idx)
+    {
+        if (windows != null) {
+            windows = new ArrayList<String>(driver.getWindowHandles());
+        }
+
+        if (idx == 0) {
+            driver.switchTo().window(mainWHandle);
+
+        } else if (idx == 1) {
+            mainWHandle = driver.getWindowHandle();
+            for (String winHandle : driver.getWindowHandles()) {
+                if (!(winHandle.trim().equals(mainWHandle))) {
+                    secondWHandle = winHandle;
+                    driver.switchTo().window(winHandle);
+
+                    return;
+                }
+            }
+        } else if (idx == 2) {
+            for (String winHandle : driver.getWindowHandles()) {
+                if (!(winHandle.trim().equals(mainWHandle)) && !(winHandle.trim().equals(secondWHandle))) {
+                    thirdWHandle = winHandle;
+                    driver.switchTo().window(winHandle);
+
+                    return;
+                }
+            }
+        } else if (idx == 3) {
+            for (String winHandle : driver.getWindowHandles()) {
+                if (!(winHandle.trim().equals(mainWHandle)) && !(winHandle.trim().equals(secondWHandle)) && !(winHandle.trim().equalsIgnoreCase(thirdWHandle))) {
+                    fourthWHandle = winHandle;
+                    driver.switchTo().window(winHandle);
+
+                    return;
+                }
+            }
         }
     }
 

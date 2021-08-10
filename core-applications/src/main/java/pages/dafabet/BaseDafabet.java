@@ -29,6 +29,9 @@ public class BaseDafabet extends PageObjectBase {
     public PageDafabet PageDafabet() {
         return new PageDafabet(driver);
     }
+    public PageCashier PageCashier() {
+        return new PageCashier(driver);
+    }
 
     //==================================================================================================================
     // Class Methods

@@ -63,6 +63,10 @@ public class WorkflowDafabet extends BaseWorkflow {
         baseDafabet.waitForPageToComplete();
     }
 
+    public void clickButton (String button) throws Exception {
+        baseDafabet.PageDafabet().clickButton(button);
+    }
+
     //==================================================================================================================
     // Dafabet Login
     //==================================================================================================================
@@ -71,7 +75,7 @@ public class WorkflowDafabet extends BaseWorkflow {
 //        baseDafabet.closeAnnouncementLightbox();
         baseDafabet.PageDafabet().typeUsername(username);
         baseDafabet.PageDafabet().typePassword(password);
-        baseDafabet.PageDafabet().clickLoginBtn();
+        baseDafabet.PageDafabet().clickButton("Login");
         waitForPageToComplete();
     }
 
@@ -89,5 +93,11 @@ public class WorkflowDafabet extends BaseWorkflow {
         }
         return false;
     }
+
+    //==================================================================================================================
+    // Dafabet Access Cashier
+    //==================================================================================================================
+
+
 
 }
