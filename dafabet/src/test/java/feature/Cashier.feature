@@ -1,4 +1,4 @@
-Feature: Dafabet Login
+Feature: Dafabet Cashier
 
   Scenario: Access Cashier
     Given the player is at Dafabet site in EN language

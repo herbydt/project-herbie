@@ -2,17 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba623d69-6c2d-4c06-a1da-07adf53e397f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core-applications/src/main/java/pages/dafabet/PageCashier.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dafabet/src/test/java/feature/Cashier.feature" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dafabet/src/test/java/steps/StepCashier.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core-applications/src/main/java/pages/dafabet/PageMakeDeposit.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core-applications/src/main/java/pages/dafabet/PageRegister.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core-framework/src/main/java/utilities/DateTimeUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dafabet/src/test/java/feature/Registration.feature" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dafabet/src/test/java/steps/StepRegister.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-applications/target/classes/pages/dafabet/BaseDafabet.class" afterPath="$PROJECT_DIR$/core-applications/target/classes/pages/dafabet/BaseDafabet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-applications/target/classes/pages/dafabet/PageCashier.class" afterPath="$PROJECT_DIR$/core-applications/target/classes/pages/dafabet/PageCashier.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-applications/target/classes/pages/dafabet/PageDafabet.class" afterPath="$PROJECT_DIR$/core-applications/target/classes/pages/dafabet/PageDafabet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-applications/target/classes/workflow/WorkflowDafabet.class" afterPath="$PROJECT_DIR$/core-applications/target/classes/workflow/WorkflowDafabet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-framework/target/classes/libraries/PageObjectBase.class" afterPath="$PROJECT_DIR$/core-framework/target/classes/libraries/PageObjectBase.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dafabet/target/test-classes/steps/BaseStep.class" afterPath="$PROJECT_DIR$/dafabet/target/test-classes/steps/BaseStep.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dafabet/target/test-classes/steps/StepCashier.class" afterPath="$PROJECT_DIR$/dafabet/target/test-classes/steps/StepCashier.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dafabet/target/test-classes/steps/StepLogin.class" afterPath="$PROJECT_DIR$/dafabet/target/test-classes/steps/StepLogin.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-applications/src/main/java/pages/dafabet/BaseDafabet.java" afterPath="$PROJECT_DIR$/core-applications/src/main/java/pages/dafabet/BaseDafabet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-applications/src/main/java/pages/dafabet/PageCashier.java" afterPath="$PROJECT_DIR$/core-applications/src/main/java/pages/dafabet/PageCashier.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-applications/src/main/java/pages/dafabet/PageDafabet.java" afterPath="$PROJECT_DIR$/core-applications/src/main/java/pages/dafabet/PageDafabet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-applications/src/main/java/workflow/WorkflowDafabet.java" afterPath="$PROJECT_DIR$/core-applications/src/main/java/workflow/WorkflowDafabet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-framework/src/main/java/libraries/PageObjectBase.java" afterPath="$PROJECT_DIR$/core-framework/src/main/java/libraries/PageObjectBase.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dafabet/src/test/java/feature/Cashier.feature" afterPath="$PROJECT_DIR$/dafabet/src/test/java/feature/Cashier.feature" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dafabet/src/test/java/steps/BaseStep.java" afterPath="$PROJECT_DIR$/dafabet/src/test/java/steps/BaseStep.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dafabet/src/test/java/steps/StepCashier.java" afterPath="$PROJECT_DIR$/dafabet/src/test/java/steps/StepCashier.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dafabet/src/test/java/steps/StepLogin.java" afterPath="$PROJECT_DIR$/dafabet/src/test/java/steps/StepLogin.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -29,81 +41,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Cashier.feature" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/dafabet/src/test/java/feature/Cashier.feature">
+      <file leaf-file-name="Registration.feature" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dafabet/src/test/java/feature/Registration.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="35" lean-forward="true" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+            <state relative-caret-position="0">
+              <caret line="0" column="9" lean-forward="false" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StepCashier.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dafabet/src/test/java/steps/StepCashier.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="23" column="85" lean-forward="true" selection-start-line="23" selection-start-column="85" selection-end-line="23" selection-end-column="85" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseDafabet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core-applications/src/main/java/pages/dafabet/BaseDafabet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="31" column="23" lean-forward="false" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
-              <folding>
-                <element signature="e#1368#1369#0" expanded="true" />
-                <element signature="e#1414#1415#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PageCashier.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core-applications/src/main/java/pages/dafabet/PageCashier.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="21" column="21" lean-forward="true" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="String.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/java-se-8u41-ri/src.zip!/java/lang/String.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="1092" column="19" lean-forward="false" selection-start-line="1092" selection-start-column="19" selection-end-line="1092" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ControlBase.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core-framework/src/main/java/control/ControlBase.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="261" column="18" lean-forward="false" selection-start-line="261" selection-start-column="18" selection-end-line="261" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PageDafabet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core-applications/src/main/java/pages/dafabet/PageDafabet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="29" column="91" lean-forward="false" selection-start-line="29" selection-start-column="89" selection-end-line="29" selection-end-column="91" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -137,7 +80,14 @@
       <find>step</find>
       <find>workflowDafabet</find>
       <find>current</find>
+      <find>workflowDafabetGhanaDesktop.baseDafabetROWRegistration.</find>
+      <find>selectDropdown</find>
+      <find>workflow.CentralRegistration.</find>
+      <find>FAILED: The correct username is not reflected in the Cashier Page</find>
     </findStrings>
+    <replaceStrings>
+      <replace>workflowDafabet.baseDafabet.</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -150,11 +100,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/FirstJava.java" />
-        <option value="$PROJECT_DIR$/core-applications/src/main/java/control/ControlBase.java" />
-        <option value="$PROJECT_DIR$/core-framework/core-framework.iml" />
-        <option value="$PROJECT_DIR$/core-applications/src/main/java/pages/BaseWebsite1.java" />
-        <option value="$PROJECT_DIR$/core-applications/src/main/java/pages/PageAccess.java" />
         <option value="$PROJECT_DIR$/core-framework/src/main/java/config/Config.java" />
         <option value="$PROJECT_DIR$/core-applications/pom.xml" />
         <option value="$PROJECT_DIR$/core-framework/src/main/java/workflow/BaseWorkflow.java" />
@@ -185,22 +130,27 @@
         <option value="$PROJECT_DIR$/dafabet/dafabet.iml" />
         <option value="$PROJECT_DIR$/dafabet/pom.xml" />
         <option value="$PROJECT_DIR$/dafabet/src/test/resources/app.properties" />
-        <option value="$PROJECT_DIR$/dafabet/src/test/java/steps/BaseStep.java" />
         <option value="$PROJECT_DIR$/core-applications/src/main/java/pages/website1/BaseWebsite1.java" />
         <option value="$PROJECT_DIR$/dafabet/src/test/java/steps/Hook.java" />
         <option value="$PROJECT_DIR$/core-framework/src/main/java/browser/BrowserFactory.java" />
         <option value="$PROJECT_DIR$/core-framework/src/main/java/browser/Firefox.java" />
-        <option value="$PROJECT_DIR$/dafabet/src/test/resources/config.properties" />
         <option value="$PROJECT_DIR$/website1/src/test/resources/config.properties" />
-        <option value="$PROJECT_DIR$/dafabet/src/test/java/feature/Login.feature" />
-        <option value="$PROJECT_DIR$/dafabet/src/test/java/steps/StepLogin.java" />
-        <option value="$PROJECT_DIR$/core-applications/src/main/java/workflow/WorkflowDafabet.java" />
-        <option value="$PROJECT_DIR$/core-framework/src/main/java/libraries/PageObjectBase.java" />
         <option value="$PROJECT_DIR$/dafabet/src/test/java/feature/Cashier.feature" />
-        <option value="$PROJECT_DIR$/core-applications/src/main/java/pages/dafabet/BaseDafabet.java" />
-        <option value="$PROJECT_DIR$/dafabet/src/test/java/steps/StepCashier.java" />
+        <option value="$PROJECT_DIR$/dafabet/src/test/java/feature/Login.feature" />
         <option value="$PROJECT_DIR$/core-applications/src/main/java/pages/dafabet/PageDafabet.java" />
+        <option value="$PROJECT_DIR$/dafabet/src/test/java/steps/StepCashier.java" />
+        <option value="$PROJECT_DIR$/dafabet/src/test/resources/config.properties" />
+        <option value="$PROJECT_DIR$/core-framework/src/main/java/utilities/DateTimeUtil.java" />
+        <option value="$PROJECT_DIR$/core-framework/src/main/java/libraries/PageObjectBase.java" />
+        <option value="$PROJECT_DIR$/core-applications/src/main/java/pages/dafabet/PageMakeDeposit.java" />
+        <option value="$PROJECT_DIR$/core-applications/src/main/java/pages/dafabet/BaseDafabet.java" />
+        <option value="$PROJECT_DIR$/dafabet/src/test/java/steps/BaseStep.java" />
+        <option value="$PROJECT_DIR$/dafabet/src/test/java/steps/StepLogin.java" />
+        <option value="$PROJECT_DIR$/core-applications/src/main/java/pages/dafabet/PageRegister.java" />
         <option value="$PROJECT_DIR$/core-applications/src/main/java/pages/dafabet/PageCashier.java" />
+        <option value="$PROJECT_DIR$/core-applications/src/main/java/workflow/WorkflowDafabet.java" />
+        <option value="$PROJECT_DIR$/dafabet/src/test/java/steps/StepRegister.java" />
+        <option value="$PROJECT_DIR$/dafabet/src/test/java/feature/Registration.feature" />
       </list>
     </option>
   </component>
@@ -218,9 +168,9 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="y" value="-908" />
     <option name="width" value="1616" />
-    <option name="height" value="876" />
+    <option name="height" value="916" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -240,9 +190,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -307,6 +257,50 @@
             <path>
               <item name="projectherby" type="b2602c69:ProjectViewProjectNode" />
               <item name="projectherby" type="462c0819:PsiDirectoryNode" />
+              <item name="core-framework" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projectherby" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projectherby" type="462c0819:PsiDirectoryNode" />
+              <item name="core-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projectherby" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projectherby" type="462c0819:PsiDirectoryNode" />
+              <item name="core-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projectherby" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projectherby" type="462c0819:PsiDirectoryNode" />
+              <item name="core-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projectherby" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projectherby" type="462c0819:PsiDirectoryNode" />
+              <item name="core-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="libraries" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projectherby" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projectherby" type="462c0819:PsiDirectoryNode" />
+              <item name="core-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="utilities" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projectherby" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projectherby" type="462c0819:PsiDirectoryNode" />
               <item name="dafabet" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -348,11 +342,19 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="steps" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="projectherby" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projectherby" type="462c0819:PsiDirectoryNode" />
+              <item name="dafabet" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -384,19 +386,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Cucumber java.Scenario: Access Cashier">
-    <configuration name="FirstJava" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="FirstJava" />
+  <component name="RunManager" selected="Cucumber java.Feature: Registration">
+    <configuration name="Feature: Registration" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="myFilePath" value="$PROJECT_DIR$/dafabet/src/test/java/feature/Registration.feature" />
+      <option name="GLUE" value="steps" />
+      <option name="myNameFilter" value="" />
+      <option name="myGeneratedName" value="Feature: Registration" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
+      <option name="WORKING_DIRECTORY" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="projectherby" />
+      <module name="dafabet" />
       <envs />
     </configuration>
     <configuration name="Scenario: Access Cashier" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
@@ -422,66 +433,66 @@
       <module name="dafabet" />
       <envs />
     </configuration>
-    <configuration name="Scenario: Ghana - Verify display of Announcement Lightbox" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Registration in Dafabet Casino Page" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="myFilePath" value="$PROJECT_DIR$/website1/src/test/java/feature/Access.feature" />
+      <option name="myFilePath" value="$PROJECT_DIR$/dafabet/src/test/java/feature/Registration.feature" />
       <option name="GLUE" value="steps" />
-      <option name="myNameFilter" value="^Ghana \- Verify display of Announcement Lightbox$" />
-      <option name="myGeneratedName" value="Scenario: Ghana - Verify display of Announcement Lightbox" />
+      <option name="myNameFilter" value="^Registration in Dafabet Casino Page$" />
+      <option name="myGeneratedName" value="Scenario: Registration in Dafabet Casino Page" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^Ghana \- Verify display of Announcement Lightbox$&quot;" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^Registration in Dafabet Casino Page$&quot;" />
       <option name="WORKING_DIRECTORY" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="website1" />
+      <module name="dafabet" />
       <envs />
     </configuration>
-    <configuration name="Scenario: Google - Search for a keyword" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Registration in Dafabet Entry Page" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="myFilePath" value="$PROJECT_DIR$/website1/src/test/java/feature/GoogleSearch.feature" />
+      <option name="myFilePath" value="$PROJECT_DIR$/dafabet/src/test/java/feature/Registration.feature" />
       <option name="GLUE" value="steps" />
-      <option name="myNameFilter" value="^Google \- Search for a keyword$" />
-      <option name="myGeneratedName" value="Scenario: Google - Search for a keyword" />
+      <option name="myNameFilter" value="^Registration in Dafabet Entry Page$" />
+      <option name="myGeneratedName" value="Scenario: Registration in Dafabet Entry Page" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^Google \- Search for a keyword$&quot;" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^Registration in Dafabet Entry Page$&quot;" />
       <option name="WORKING_DIRECTORY" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="website1" />
+      <module name="dafabet" />
       <envs />
     </configuration>
-    <configuration name="Scenario: Login to Dafabet Entry Page" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Registration in Dafabet Live Dealer Page" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="myFilePath" value="$PROJECT_DIR$/dafabet/src/test/java/feature/Login.feature" />
+      <option name="myFilePath" value="$PROJECT_DIR$/dafabet/src/test/java/feature/Registration.feature" />
       <option name="GLUE" value="steps" />
-      <option name="myNameFilter" value="^Login to Dafabet Entry Page$" />
-      <option name="myGeneratedName" value="Scenario: Login to Dafabet Entry Page" />
+      <option name="myNameFilter" value="^Registration in Dafabet Live Dealer Page$" />
+      <option name="myGeneratedName" value="Scenario: Registration in Dafabet Live Dealer Page" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^Login to Dafabet Entry Page$&quot;" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^Registration in Dafabet Live Dealer Page$&quot;" />
       <option name="WORKING_DIRECTORY" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -573,19 +584,19 @@
       <listeners />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.FirstJava" />
-      <item index="1" class="java.lang.String" itemvalue="Cucumber java.Scenario: Ghana - Verify display of Announcement Lightbox" />
-      <item index="2" class="java.lang.String" itemvalue="Cucumber java.Scenario: Google - Search for a keyword" />
-      <item index="3" class="java.lang.String" itemvalue="Cucumber java.Scenario: Login to Dafabet Entry Page" />
-      <item index="4" class="java.lang.String" itemvalue="Cucumber java.Scenario: Access Cashier" />
+      <item index="0" class="java.lang.String" itemvalue="Cucumber java.Scenario: Access Cashier" />
+      <item index="1" class="java.lang.String" itemvalue="Cucumber java.Scenario: Registration in Dafabet Entry Page" />
+      <item index="2" class="java.lang.String" itemvalue="Cucumber java.Scenario: Registration in Dafabet Casino Page" />
+      <item index="3" class="java.lang.String" itemvalue="Cucumber java.Scenario: Registration in Dafabet Live Dealer Page" />
+      <item index="4" class="java.lang.String" itemvalue="Cucumber java.Feature: Registration" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Cucumber java.Scenario: Access Cashier" />
-        <item index="1" class="java.lang.String" itemvalue="Cucumber java.Scenario: Login to Dafabet Entry Page" />
-        <item index="2" class="java.lang.String" itemvalue="Cucumber java.Scenario: Google - Search for a keyword" />
-        <item index="3" class="java.lang.String" itemvalue="Cucumber java.Scenario: Ghana - Verify display of Announcement Lightbox" />
-        <item index="4" class="java.lang.String" itemvalue="Application.FirstJava" />
+        <item index="0" class="java.lang.String" itemvalue="Cucumber java.Feature: Registration" />
+        <item index="1" class="java.lang.String" itemvalue="Cucumber java.Scenario: Registration in Dafabet Live Dealer Page" />
+        <item index="2" class="java.lang.String" itemvalue="Cucumber java.Scenario: Registration in Dafabet Casino Page" />
+        <item index="3" class="java.lang.String" itemvalue="Cucumber java.Scenario: Registration in Dafabet Entry Page" />
+        <item index="4" class="java.lang.String" itemvalue="Cucumber java.Scenario: Access Cashier" />
       </list>
     </recent_temporary>
   </component>
@@ -603,35 +614,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Scenario__Access_Cashier - 2021.08.10 at 09h 33m 53s.xml">
-      <configuration name="Scenario: Access Cashier" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__Registration - 2021.08.12 at 17h 00m 52s.xml">
+      <configuration name="Feature: Registration" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Access_Cashier - 2021.08.10 at 09h 36m 04s.xml">
-      <configuration name="Scenario: Access Cashier" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Registration_in_Dafabet_Casino_Page - 2021.08.12 at 16h 34m 29s.xml">
+      <configuration name="Scenario: Registration in Dafabet Casino Page" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Access_Cashier - 2021.08.10 at 09h 38m 28s.xml">
-      <configuration name="Scenario: Access Cashier" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Registration_in_Dafabet_Casino_Page - 2021.08.12 at 16h 50m 54s.xml">
+      <configuration name="Scenario: Registration in Dafabet Casino Page" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Access_Cashier - 2021.08.10 at 09h 42m 01s.xml">
-      <configuration name="Scenario: Access Cashier" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Registration_in_Dafabet_Casino_Page - 2021.08.12 at 16h 53m 11s.xml">
+      <configuration name="Scenario: Registration in Dafabet Casino Page" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Access_Cashier - 2021.08.10 at 09h 46m 33s.xml">
-      <configuration name="Scenario: Access Cashier" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Registration_in_Dafabet_Entry_Page - 2021.08.12 at 16h 33m 14s.xml">
+      <configuration name="Scenario: Registration in Dafabet Entry Page" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Access_Cashier - 2021.08.10 at 09h 50m 41s.xml">
-      <configuration name="Scenario: Access Cashier" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Registration_in_Dafabet_Entry_Page - 2021.08.12 at 16h 37m 42s.xml">
+      <configuration name="Scenario: Registration in Dafabet Entry Page" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Access_Cashier - 2021.08.10 at 09h 52m 51s.xml">
-      <configuration name="Scenario: Access Cashier" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Registration_in_Dafabet_Entry_Page - 2021.08.12 at 16h 46m 17s.xml">
+      <configuration name="Scenario: Registration in Dafabet Entry Page" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Access_Cashier - 2021.08.10 at 10h 03m 38s.xml">
-      <configuration name="Scenario: Access Cashier" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Registration_in_Dafabet_Entry_Page - 2021.08.12 at 16h 47m 57s.xml">
+      <configuration name="Scenario: Registration in Dafabet Entry Page" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Access_Cashier - 2021.08.10 at 10h 06m 29s.xml">
-      <configuration name="Scenario: Access Cashier" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Registration_in_Dafabet_Entry_Page - 2021.08.12 at 16h 49m 39s.xml">
+      <configuration name="Scenario: Registration in Dafabet Entry Page" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Access_Cashier - 2021.08.10 at 10h 08m 03s.xml">
-      <configuration name="Scenario: Access Cashier" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Registration_in_Dafabet_Live_Dealer_Page - 2021.08.12 at 16h 54m 09s.xml">
+      <configuration name="Scenario: Registration in Dafabet Live Dealer Page" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -644,8 +655,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-908" width="1616" height="916" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928476" sideWeight="0.4974293" order="6" side_tool="false" content_ui="tabs" />
@@ -655,22 +665,22 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33468285" sideWeight="0.50771207" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.48178136" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.7451985" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31241998" sideWeight="0.4974293" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3546735" sideWeight="0.4922879" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33546734" sideWeight="0.4922879" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24228792" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24871466" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5108835" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33546734" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -680,70 +690,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="55" />
+      <option name="time" value="70" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/core-framework/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="43" column="44" lean-forward="false" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core-applications/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-919">
-          <caret line="2" column="21" lean-forward="true" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="182" column="0" lean-forward="false" selection-start-line="182" selection-start-column="0" selection-end-line="182" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core-framework/src/main/java/helper/CucumberHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="5" lean-forward="false" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core-framework/src/main/java/libraries/AppiumBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/website1/website1.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-255">
-          <caret line="15" column="19" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-remote-driver/3.13.0/selenium-remote-driver-3.13.0.jar!/org/openqa/selenium/remote/ErrorHandler.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="162" column="0" lean-forward="false" selection-start-line="162" selection-start-column="0" selection-end-line="162" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3315">
-          <caret line="195" column="10" lean-forward="false" selection-start-line="195" selection-start-column="10" selection-end-line="195" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/website1/target/test-classes/config.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -855,7 +806,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="967" column="18" lean-forward="false" selection-start-line="967" selection-start-column="18" selection-end-line="967" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -873,7 +823,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="17" column="10" lean-forward="false" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -902,13 +851,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dafabet/src/test/resources/config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="15" lean-forward="false" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -947,30 +889,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dafabet/src/test/java/feature/Login.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core-framework/src/main/java/libraries/PageObjectBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1105">
-          <caret line="21" column="44" lean-forward="false" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-remote-driver/3.13.0/selenium-remote-driver-3.13.0.jar!/org/openqa/selenium/remote/RemoteWebDriver.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1779">
           <caret line="296" column="54" lean-forward="true" selection-start-line="296" selection-start-column="54" selection-end-line="296" selection-end-column="54" />
-          <folding>
-            <element signature="e#11052#11053#0" expanded="true" />
-            <element signature="e#11095#11096#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -979,16 +901,6 @@
         <state relative-caret-position="68">
           <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dafabet/src/test/java/steps/BaseStep.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1004,7 +916,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="109">
           <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1012,36 +923,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="93">
           <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dafabet/src/test/java/steps/StepLogin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="50" column="35" lean-forward="false" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core-applications/src/main/java/pages/dafabet/BaseDafabet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="31" column="23" lean-forward="false" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
-          <folding>
-            <element signature="e#1368#1369#0" expanded="true" />
-            <element signature="e#1414#1415#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core-framework/src/main/java/control/ControlBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="261" column="18" lean-forward="false" selection-start-line="261" selection-start-column="18" selection-end-line="261" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1053,50 +934,173 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core-applications/src/main/java/workflow/WorkflowDafabet.java">
+    <entry file="file://$PROJECT_DIR$/dafabet/src/test/java/feature/Login.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="77" column="43" lean-forward="false" selection-start-line="77" selection-start-column="43" selection-end-line="77" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="68">
+          <caret line="4" column="32" lean-forward="false" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core-applications/src/main/java/pages/dafabet/PageDafabet.java">
+    <entry file="file://$PROJECT_DIR$/dafabet/src/test/resources/config.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="29" column="91" lean-forward="false" selection-start-line="29" selection-start-column="89" selection-end-line="29" selection-end-column="91" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dafabet/src/test/java/steps/StepCashier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="23" column="85" lean-forward="true" selection-start-line="23" selection-start-column="85" selection-end-line="23" selection-end-column="85" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core-applications/src/main/java/pages/dafabet/PageCashier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="21" column="21" lean-forward="true" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="85">
+          <caret line="5" column="15" lean-forward="false" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dafabet/src/test/java/feature/Cashier.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="35" lean-forward="true" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+          <caret line="5" column="15" lean-forward="true" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-applications/src/main/java/pages/dafabet/PageDafabet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="47" column="16" lean-forward="false" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-framework/src/main/java/utilities/DateTimeUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-framework/src/main/java/libraries/PageObjectBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="111" column="5" lean-forward="false" selection-start-line="111" selection-start-column="5" selection-end-line="111" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-applications/src/main/java/pages/dafabet/PageMakeDeposit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="56" column="1" lean-forward="true" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.13.0/selenium-api-3.13.0.jar!/org/openqa/selenium/Keys.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="10" column="12" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.10/testng-6.10.jar!/org/testng/Assert.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding>
+            <element signature="e#1192#1193#0" expanded="true" />
+            <element signature="e#1238#1239#0" expanded="true" />
+            <element signature="e#8209#8210#0" expanded="true" />
+            <element signature="e#8255#8256#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-framework/src/main/java/control/ControlBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="261" column="18" lean-forward="false" selection-start-line="261" selection-start-column="18" selection-end-line="261" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-applications/src/main/java/pages/dafabet/BaseDafabet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="17" column="18" lean-forward="false" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dafabet/src/test/java/steps/BaseStep.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="49" column="26" lean-forward="true" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dafabet/src/test/java/steps/StepLogin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-applications/src/main/java/pages/dafabet/PageRegister.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="33" column="26" lean-forward="false" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+          <folding>
+            <element signature="e#2013#2014#0" expanded="true" />
+            <element signature="e#2064#2065#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.10/testng-6.10.jar!/org/testng/asserts/SoftAssert.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-applications/src/main/java/pages/dafabet/PageCashier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dafabet/src/test/java/steps/StepCashier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="23" column="52" lean-forward="true" selection-start-line="23" selection-start-column="52" selection-end-line="23" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-applications/src/main/java/workflow/WorkflowDafabet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="76" column="41" lean-forward="false" selection-start-line="76" selection-start-column="41" selection-end-line="76" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dafabet/src/test/java/steps/StepRegister.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="25" column="36" lean-forward="true" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dafabet/src/test/java/feature/Registration.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="9" lean-forward="false" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
           <folding />
         </state>
       </provider>

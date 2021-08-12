@@ -2,7 +2,11 @@ package libraries;
 
 import config.Config;
 import control.ControlBase;
+import org.openqa.selenium.By;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -95,6 +99,15 @@ public class PageObjectBase {
                     return;
                 }
             }
+        }
+    }
+
+    public void waitLoading(By loader, int waitTime) throws Exception {
+        WebDriverWait wait = new WebDriverWait(driver, waitTime);
+        try {
+            wait.until(ExpectedConditions.invisibilityOfElementLocated(loader));
+        } catch (TimeoutException e) {
+            throw new Exception("ERROR: Timed out while waiting for loading GIFs to complete.");
         }
     }
 

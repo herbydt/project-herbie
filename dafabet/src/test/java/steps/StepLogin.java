@@ -13,10 +13,15 @@ public class StepLogin extends BaseStep {
         this.base = base;
     }
 
-    @Given("^the player is at ([^\"]*) site in ([^\"]*) language$")
-    public void thePlayerIsAtSite(String site, String language) throws Throwable {
-        workflowDafabet.launchApplication(getSiteUrl(site) + "/" + language.toLowerCase());
+    @Given("^the player is at ([^\"]*) - ([^\"]*) site in ([^\"]*) language$")
+    public void thePlayerIsAtSite(String site, String product, String language) throws Throwable {
+        if (product.equalsIgnoreCase("entry")) {
+            product = "";
+        }
+        workflowDafabet.launchApplication(getSiteUrl(site)+ "/" + language.toLowerCase() + "/" + product.toLowerCase());
         workflowDafabet.baseDafabet.waitForPageToComplete();
+        workflowDafabet.baseDafabet.closeAnnouncementLightbox();
+        baseLanguage = language;
     }
 
 
@@ -48,7 +53,6 @@ public class StepLogin extends BaseStep {
         }
         System.out.println("Username: " + baseUsername + "\n");
         System.out.println("Password: " + basePassword + "\n");
-        workflowDafabet.baseDafabet.closeAnnouncementLightbox();
         workflowDafabet.loginPlayer(baseUsername, basePassword);
         CurrentState = "Post-Login";
     }

@@ -19,7 +19,7 @@ public class PageCashier extends BaseDafabet {
             System.out.println("\nCURRENT PAGE: Player Username: " + dispUsername + " is displayed correctly.");
             return true;
         }
-        return false;
+        else return false;
     }
 
 }

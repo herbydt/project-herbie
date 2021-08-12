@@ -9,8 +9,7 @@ public class PageDafabet extends BaseDafabet {
         super(driver);
     }
 
-    By iconCashier = By.cssSelector("a.cashier-label");
-    By btnCashier = By.cssSelector("li.cashier-tooltip.tooltip.last");
+
 
     //==================================================================================================================
     // Validations
@@ -56,6 +55,10 @@ public class PageDafabet extends BaseDafabet {
                 control.click(btnCashier);
                 switchToWindow(1);
                 waitForPageToComplete();
+                break;
+            }
+            case "REGISTRATION": {
+                control.click(btnRegister);
                 break;
             }
             default:

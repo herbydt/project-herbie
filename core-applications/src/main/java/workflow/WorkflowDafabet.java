@@ -68,6 +68,19 @@ public class WorkflowDafabet extends BaseWorkflow {
     }
 
     //==================================================================================================================
+    // Validations
+    //==================================================================================================================
+
+    public boolean validatePage(String page, String username) {
+        if (page.equalsIgnoreCase("cashier")) {
+            return baseDafabet.PageCashier().isUsernameCorrect(username);
+        } else if (page.equalsIgnoreCase("registration")) {
+            return baseDafabet.PageRegister().isRegPageDisplayed();
+        } else
+            return false;
+    }
+
+    //==================================================================================================================
     // Dafabet Login
     //==================================================================================================================
 

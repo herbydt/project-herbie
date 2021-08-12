@@ -20,7 +20,7 @@ public class StepCashier extends BaseStep {
     }
 
     @Then("^the ([^\"]*) page is loaded successfully$")
-    public void theCashierPageIsLoadedSuccessfully(String page) throws Throwable {
-        softAssert.assertTrue(workflowDafabet.baseDafabet.PageCashier().isUsernameCorrect(baseUsername), "FAILED: The correct username is not reflected in the Cashier Page.");
+    public void thePageIsLoadedSuccessfully(String page) throws Throwable {
+        softAssert.assertTrue(workflowDafabet.validatePage(page, baseUsername), "FAILED: The correct username is not reflected in the Cashier Page.");
     }
 }
