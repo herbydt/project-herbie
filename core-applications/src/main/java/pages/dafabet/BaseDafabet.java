@@ -24,6 +24,11 @@ public class BaseDafabet extends PageObjectBase {
     public String RegCountry;
     public String RegLanguage;
 
+    // MY ACCOUNT FIELDS
+    public String RegAddress = "";
+    public String RegCity = "";
+    public String RegPostalCode = "0000";
+
     // PRE LOOGIN
     By txtUsername = By.id("LoginForm_username");
     By txtPassword = By.id("LoginForm_password");
@@ -34,6 +39,10 @@ public class BaseDafabet extends PageObjectBase {
     // POST LOGIN
     By iconCashier = By.cssSelector("a.cashier-label");
     By btnCashier = By.cssSelector("li.cashier-tooltip.tooltip.last");
+    By btnMyAccount = By.cssSelector("li.cashier-tooltip.tooltip.last");
+    By toolTipMyAccountContainer = By.cssSelector("li.myaccount-tooltip.tooltip");
+    By toolTipMyAccountProfile = By.cssSelector("li.myaccount-tooltip.tooltip a[href*='my-profile']");
+
 
     // LIGHTBOX
     By lightboxAnnouncement = By.cssSelector("div.modal.announcement.modal-active");
@@ -58,6 +67,9 @@ public class BaseDafabet extends PageObjectBase {
     }
     public PageMakeDeposit PageMakeDeposit() {
         return new PageMakeDeposit(driver);
+    }
+    public PageMyAccount PageMyAccount() {
+        return new PageMyAccount(driver);
     }
 
     //==================================================================================================================

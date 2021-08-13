@@ -1,9 +1,12 @@
 package workflow;
 
+import cucumber.api.DataTable;
 import org.openqa.selenium.WebDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import pages.dafabet.BaseDafabet;
+
+import java.util.List;
 
 public class WorkflowDafabet extends BaseWorkflow {
 
@@ -76,6 +79,8 @@ public class WorkflowDafabet extends BaseWorkflow {
             return baseDafabet.PageCashier().isUsernameCorrect(username);
         } else if (page.equalsIgnoreCase("registration")) {
             return baseDafabet.PageRegister().isRegPageDisplayed();
+        } else if (page.equalsIgnoreCase("myaccount")) {
+            return baseDafabet.PageMyAccount().isMyAccPageDisplayed();
         } else
             return false;
     }
@@ -112,5 +117,85 @@ public class WorkflowDafabet extends BaseWorkflow {
     //==================================================================================================================
 
 
+    //==================================================================================================================
+    // Dafabet MyAccount
+    //==================================================================================================================
 
+    public boolean validateCorrectMyAccountInfo(String userDetail) throws Exception {
+        String actual = "";
+        String expected = "";
+
+        switch (userDetail.toUpperCase()) {
+            case "USERNAME":
+                actual = baseDafabet.PageMyAccount().getMyAccInfo(userDetail).toUpperCase();
+                expected = baseDafabet.RegUsername.toUpperCase();
+                break;
+            case "CURRENCY":
+                actual = baseDafabet.PageMyAccount().getMyAccInfo(userDetail);
+                String curExp = baseDafabet.RegCurrency;
+                if (curExp.contains("RMB")) {
+                    curExp = "人民币";
+                }
+                expected = curExp;
+                break;
+            case "FIRST NAME":
+                actual = baseDafabet.PageMyAccount().getMyAccInfo(userDetail);
+                expected = baseDafabet.RegFirstName;
+                break;
+            case "LAST NAME":
+                actual = baseDafabet.PageMyAccount().getMyAccInfo(userDetail);
+                expected = baseDafabet.RegLastName;
+                break;
+            case "DATE OF BIRTH":
+                actual = baseDafabet.PageMyAccount().getMyAccInfo(userDetail);
+                expected = baseDafabet.RegDateOfBirth;
+                break;
+            case "COUNTRY":
+                actual = baseDafabet.PageMyAccount().getMyAccInfo(userDetail);
+                expected = baseDafabet.RegCountry;
+                break;
+            case "ADDRESS":
+                actual = baseDafabet.PageMyAccount().getMyAccInfo(userDetail);
+                expected = baseDafabet.RegAddress;
+                break;
+            case "CITY":
+                actual = baseDafabet.PageMyAccount().getMyAccInfo(userDetail);
+                expected = baseDafabet.RegCity;
+                break;
+            case "POSTAL CODE":
+                actual = baseDafabet.PageMyAccount().getMyAccInfo(userDetail);
+                expected = baseDafabet.RegPostalCode;
+                break;
+            default:
+                throw new Exception("\nERROR: No mapping available for the field name '" + userDetail + "' \n");
+        }
+
+        if (actual.equals(expected)) {
+            System.out.println("\nPASSED: '" + actual + "' is displayed in My Account Page. \n");
+            return true;
+        }
+        else {
+            System.out.println("\nFAILED: ACTUAL '" + actual + "' is displayed | EXPECTED '" + expected + "' is displayed.");
+            return false;
+        }
+    }
+
+    public void updateMyAccount (String address, String city, String postalCode) throws Exception {
+        baseDafabet.RegAddress = address;
+        baseDafabet.RegCity = city;
+        baseDafabet.RegPostalCode = postalCode;
+        baseDafabet.PageMyAccount().typeMyAccAddress(address);
+        baseDafabet.PageMyAccount().typeMyAccCity(city);
+        baseDafabet.PageMyAccount().typeMyAccPostalCode(postalCode);
+    }
+
+    public void saveMyAccount () throws Exception {
+        baseDafabet.PageMyAccount().clickMyAccButton("Save Changes");
+        baseDafabet.PageMyAccount().typeMyAccPassword(baseDafabet.RegPassword);
+        baseDafabet.PageMyAccount().clickMyAccButton("Confirm Changes");
+    }
+
+    public boolean validateSuccessMyAccountUpdate() {
+        return baseDafabet.PageMyAccount().isMyAccSavedSuccessfully();
+    }
 }
