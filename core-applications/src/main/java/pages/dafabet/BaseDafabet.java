@@ -28,6 +28,8 @@ public class BaseDafabet extends PageObjectBase {
     public String RegAddress = "";
     public String RegCity = "";
     public String RegPostalCode = "0000";
+    public String MyAccNewPassword;
+    public String MyAccConfNewPassword;
 
     // PRE LOOGIN
     By txtUsername = By.id("LoginForm_username");
@@ -42,6 +44,8 @@ public class BaseDafabet extends PageObjectBase {
     By btnMyAccount = By.cssSelector("li.cashier-tooltip.tooltip.last");
     By toolTipMyAccountContainer = By.cssSelector("li.myaccount-tooltip.tooltip");
     By toolTipMyAccountProfile = By.cssSelector("li.myaccount-tooltip.tooltip a[href*='my-profile']");
+    By toolTipMyAccountChangePass = By.cssSelector("li.myaccount-tooltip.tooltip a[href*='change-password']");
+    By btnLogout =  By.cssSelector("li.myaccount-tooltip.tooltip a[href*='logout']");
 
 
     // LIGHTBOX

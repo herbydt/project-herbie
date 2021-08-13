@@ -64,7 +64,6 @@ public class PageDafabet extends BaseDafabet {
             case "MYACCOUNT": {
                 control.hoverToElement(toolTipMyAccountContainer);
                 control.click(toolTipMyAccountProfile);
-
                 if(driver.getWindowHandles().size() == 3) {
                     switchToWindow(driver.getWindowHandles().size() - 2); //workaround for window navigation; to be updated.
                     switchToWindow(driver.getWindowHandles().size() - 1);
@@ -74,16 +73,31 @@ public class PageDafabet extends BaseDafabet {
                 waitForPageToComplete();
                 break;
             }
-//            case "SAVE CHANGES": {
-//                control.click(btnMyAccSaveChange);
-//                break;
-//            }
-//            case "CONFIRM CHANGES": {
-//                control.click(btnConfSaveChange);
-//                break;
-//            }
+            case "CHANGE PASSWORD": {
+                control.hoverToElement(toolTipMyAccountContainer);
+                control.click(toolTipMyAccountChangePass);
+                if(driver.getWindowHandles().size() == 3) {
+                    switchToWindow(driver.getWindowHandles().size() - 2); //workaround for window navigation; to be updated.
+                    switchToWindow(driver.getWindowHandles().size() - 1);
+                } else if(!driver.getTitle().contains("Change Password")){
+                    switchToWindow(1);
+                }
+                waitForPageToComplete();
+                break;
+            }
+            case "CANT LOGIN": {
+                control.click(btnRegister);
+                break;
+            }
             default:
                 System.out.println("FAILED :" + btn + "button is not included in the list of buttons.");
         }
+    }
+
+    public void logout() throws Exception {
+        control.waitWhileElementIsNotDisplayed(toolTipMyAccountContainer,10,"FAILED: Page was not displayed in POST-LOGIN state");
+        control.hoverToElement(toolTipMyAccountContainer);
+        Thread.sleep(2000);
+        control.click(btnLogout, 10);
     }
 }

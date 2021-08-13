@@ -25,7 +25,7 @@ public class StepLogin extends BaseStep {
     }
 
 
-    @When("^the player logs in using (valid) credentials$")
+    @When("^the player logs in using (valid|new) credentials$")
     public void thePlayerLogsInUsingValidCredentials(String player) throws Throwable {
 
         switch (player.toUpperCase()) {
@@ -34,11 +34,11 @@ public class StepLogin extends BaseStep {
                 basePassword = getApplicationProperties(baseCurrentPage + "." + getEnvironment() + ".password");
                 break;
             }
-//            case "NEW": {
+            case "NEW": {
 //                baseUsername = getApplicationProperties(baseCurrentPage + "." + getEnvironment() + "." + "username");
-//                basePassword = baseNewPassword;
-//                break;
-//            }
+                basePassword = baseNewPassword;
+                break;
+            }
 //            case "NEW PASSWORD": {
 //                baseUsername = NewlyRegisteredPlayer;
 //                basePassword = baseNewPassword;

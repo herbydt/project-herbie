@@ -32,7 +32,7 @@ public class StepRegister extends BaseStep {
             usernamePrefix = "0000";
         }
 
-        NewlyRegisteredPlayer = usernamePrefix + DateTimeUtil.getDateTimeToday("MMddHHmm").substring(1, 8);
+        NewlyRegisteredPlayer = usernamePrefix + DateTimeUtil.getDateTimeToday("yyMMddHHmm").substring(1, 10);
         workflowDafabet.baseDafabet.RegUsername = NewlyRegisteredPlayer;
         workflowDafabet.baseDafabet.RegPassword = data.get(0).get(1);
         workflowDafabet.baseDafabet.RegEmail = NewlyRegisteredPlayer + data.get(1).get(1);
@@ -45,6 +45,7 @@ public class StepRegister extends BaseStep {
         workflowDafabet.baseDafabet.RegCurrency = data.get(7).get(1);
         workflowDafabet.baseDafabet.RegCountry = data.get(8).get(1);
         workflowDafabet.baseDafabet.RegLanguage = baseLanguage;
+        baseUsername = NewlyRegisteredPlayer;
     }
 
     @Then("^a new account is successfully created$")

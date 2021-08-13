@@ -111,6 +111,10 @@ public class PageObjectBase {
         }
     }
 
+    public void refreshPage() throws Exception {
+        driver.navigate().refresh();
+    }
+
 
     //==================================================================================================================
     // Get property methods

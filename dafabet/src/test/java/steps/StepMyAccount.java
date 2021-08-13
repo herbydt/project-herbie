@@ -28,7 +28,6 @@ public class StepMyAccount extends BaseStep {
 
     @When("^the player enters valid values in MyAccount Form$")
     public void thePlayerEntersValidValues(DataTable userDetails) throws Throwable {
-
         List<List<String>> data = userDetails.raw();
         String address = data.get(0).get(1);
         String city = data.get(1).get(1);
@@ -49,5 +48,23 @@ public class StepMyAccount extends BaseStep {
         softAssert.assertTrue(workflowDafabet.validateSuccessMyAccountUpdate(), "FAILED: MyAccount Form is not saved successfully.");
     }
 
+    @When("^the player enters valid values in Change Password Form$")
+    public void thePlayerEntersValidValuesInChangePasswordForm(DataTable userDetails) throws Throwable {
+        List<List<String>> data = userDetails.raw();
+        String newPassword = data.get(0).get(1);
+        baseNewPassword = newPassword;
+        workflowDafabet.baseDafabet.MyAccNewPassword = data.get(0).get(1);
+        workflowDafabet.baseDafabet.MyAccConfNewPassword = newPassword;
+        workflowDafabet.changePassword(newPassword, newPassword);
+    }
 
+    @When("^the player saves the Change Password Form$")
+    public void thePlayerSavesTheChangePasswordForm() throws Throwable {
+        workflowDafabet.saveChangePassword();
+    }
+
+    @Then("^the player changes the password successfully$")
+    public void thePlayerChangesThePasswordSuccessfully() throws Throwable {
+        softAssert.assertTrue(workflowDafabet.validateSuccessChangePassword(), "FAILED: Change Password is NOT successful.");
+    }
 }

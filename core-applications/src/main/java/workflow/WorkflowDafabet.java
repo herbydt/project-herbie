@@ -80,7 +80,9 @@ public class WorkflowDafabet extends BaseWorkflow {
         } else if (page.equalsIgnoreCase("registration")) {
             return baseDafabet.PageRegister().isRegPageDisplayed();
         } else if (page.equalsIgnoreCase("myaccount")) {
-            return baseDafabet.PageMyAccount().isMyAccPageDisplayed();
+            return baseDafabet.PageMyAccount().isMyAccPageDisplayed(username);
+        } else if (page.equalsIgnoreCase("change password")) {
+            return baseDafabet.PageMyAccount().isMyAccChangePasswordDisplayed(username);
         } else
             return false;
     }
@@ -89,8 +91,7 @@ public class WorkflowDafabet extends BaseWorkflow {
     // Dafabet Login
     //==================================================================================================================
 
-    public void loginPlayer (String username, String password) throws Exception {
-//        baseDafabet.closeAnnouncementLightbox();
+    public void loginPlayer(String username, String password) throws Exception {
         baseDafabet.PageDafabet().typeUsername(username);
         baseDafabet.PageDafabet().typePassword(password);
         baseDafabet.PageDafabet().clickButton("Login");
@@ -110,6 +111,16 @@ public class WorkflowDafabet extends BaseWorkflow {
             return baseDafabet.PageDafabet().isInPostLoginPage();
         }
         return false;
+    }
+
+    public void logout() throws Exception {
+        int windowCount = driver.getWindowHandles().size();
+        if (windowCount > 1) {
+            baseDafabet.switchToWindow(0);
+        }
+        baseDafabet.refreshPage();
+        waitForPageToComplete();
+        baseDafabet.PageDafabet().logout();
     }
 
     //==================================================================================================================
@@ -180,16 +191,16 @@ public class WorkflowDafabet extends BaseWorkflow {
         }
     }
 
-    public void updateMyAccount (String address, String city, String postalCode) throws Exception {
-        baseDafabet.RegAddress = address;
-        baseDafabet.RegCity = city;
-        baseDafabet.RegPostalCode = postalCode;
+    public void updateMyAccount(String address, String city, String postalCode) throws Exception {
+//        baseDafabet.RegAddress = address;
+//        baseDafabet.RegCity = city;
+//        baseDafabet.RegPostalCode = postalCode;
         baseDafabet.PageMyAccount().typeMyAccAddress(address);
         baseDafabet.PageMyAccount().typeMyAccCity(city);
         baseDafabet.PageMyAccount().typeMyAccPostalCode(postalCode);
     }
 
-    public void saveMyAccount () throws Exception {
+    public void saveMyAccount() throws Exception {
         baseDafabet.PageMyAccount().clickMyAccButton("Save Changes");
         baseDafabet.PageMyAccount().typeMyAccPassword(baseDafabet.RegPassword);
         baseDafabet.PageMyAccount().clickMyAccButton("Confirm Changes");
@@ -197,5 +208,19 @@ public class WorkflowDafabet extends BaseWorkflow {
 
     public boolean validateSuccessMyAccountUpdate() {
         return baseDafabet.PageMyAccount().isMyAccSavedSuccessfully();
+    }
+
+    public void changePassword(String newPassword, String confNewPassword) throws Exception {
+        baseDafabet.PageMyAccount().typeMyAccOldPassword(baseDafabet.RegPassword);
+        baseDafabet.PageMyAccount().typeMyAccNewPassword(newPassword);
+        baseDafabet.PageMyAccount().typeMyAccConfNewPassword(confNewPassword);
+    }
+
+    public void saveChangePassword() throws Exception {
+        baseDafabet.PageMyAccount().clickMyAccButton("Change Password");
+    }
+
+    public boolean validateSuccessChangePassword() {
+        return baseDafabet.PageMyAccount().isMyAccChangePasswordSuccessful();
     }
 }
