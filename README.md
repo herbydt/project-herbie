@@ -1,1 +1,1 @@
-# new-herb-repo
+# project-herbie
