@@ -1,6 +1,5 @@
 package pages.dafabet;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class PageDafabet extends BaseDafabet {
@@ -8,8 +7,6 @@ public class PageDafabet extends BaseDafabet {
     public PageDafabet(WebDriver driver) {
         super(driver);
     }
-
-
 
     //==================================================================================================================
     // Validations
@@ -86,7 +83,17 @@ public class PageDafabet extends BaseDafabet {
                 break;
             }
             case "CANT LOGIN": {
-                control.click(btnRegister);
+                control.click(linkCantLogin);
+                switchToWindow(1);
+                waitForPageToComplete();
+                break;
+            }
+            case "FORGOT USERNAME": {
+                control.click(tabForgotUsername);
+                break;
+            }
+            case "FORGOT PASSWORD": {
+                control.click(tabForgotPassword);
                 break;
             }
             default:

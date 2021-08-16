@@ -2,6 +2,7 @@ package pages.dafabet;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 public class PageMyAccount extends BaseDafabet {
 
@@ -27,12 +28,30 @@ public class PageMyAccount extends BaseDafabet {
     By msgMyAccSuccessUpdate = By.id("update-profile-success");
 
     // CHANGE PASSWORD
-    By formMyAccChangePass = By.cssSelector("form.change-password-form.pure-form.mt-70.form-vertical");
+    By formMyAccChangePass = By.cssSelector("form.change-password-form");
     By txtMyAccOldPassword = By.id("ChangePassword_current_password");
     By txtMyAccNewPassword = By.id("ChangePassword_new_password");
     By txtMyAccConfNewPassword = By.id("ChangePassword_verify_password");
     By btnChangePassword = By.id("ChangePassword_submit");
     By msgChangePassSuccess = By.cssSelector("div.alert.alert-message.alert-success");
+
+    // FORGOT PASSWORD
+    By tabForgotPass = By.id("forgot-password-content");
+    By formForgotPass = By.cssSelector("form.pure-form.forgot-password-form");
+    By txtForgotPasswordUsername = By.id("ForgotPasswordForm_username");
+    By txtForgotPasswordEmail = By.id("ForgotPasswordForm_email");
+    By btnForgotPasswordSubmit = By.id("ForgotPasswordForm_submit");
+    By txtForgotPWConfMessage = By.cssSelector("div[id='forgot-password-content'] > div.confirmation-message.mt-25 > div > h3 > font");
+
+    //FORGOT USERNAME
+    By tabForgotUsername = By.id("forgot-username-content");
+    By formForgotUsername = By.cssSelector("form.pure-form.forgot-username-form");
+    By txtForgotUsernameEmail = By.id("ForgotUsernameForm_email");
+    By btnForgotUsernameSubmit = By.id("ForgotUsernameForm_submit");
+    By txtForgotUNConfMessage = By.cssSelector("div[id='forgot-username-content'] > div.confirmation-message.mt-25 > div > h3");
+
+    // YOPMAIL
+    By txtForgotUNEmail =  By.xpath("/html/body/main/div/div/div/table[2]/tbody/tr/td/div/div/span/span");
 
     //==================================================================================================================
     // Validations
@@ -73,6 +92,34 @@ public class PageMyAccount extends BaseDafabet {
         else return false;
     }
 
+    public boolean isForgotPasswordPageDisplayed() {
+        if (control.isElementDisplayed(tabForgotPass, 10)) {
+            String classForgotPassword = control.getAttributeValue(tabForgotPass,"class",10);
+            if(!classForgotPassword.contains("hidden")) {
+                System.out.println("\nCURRENT PAGE: Forgot Password Page is displayed successfully.\n");
+                return true;
+            } else {
+                System.out.println("\nFAILED: Can't Login is loaded but incorrect form is loaded.\n");
+                return false;
+            }
+        }
+        else return false;
+    }
+
+    public boolean isForgotUsernamePageDisplayed() {
+        if (control.isElementDisplayed(tabForgotUsername, 10)) {
+            String classForgotUsername = control.getAttributeValue(tabForgotUsername,"class",10);
+            if(!classForgotUsername.contains("hidden")) {
+                System.out.println("\nCURRENT PAGE: Forgot Username Page is displayed successfully.\n");
+                return true;
+            } else {
+                System.out.println("\nFAILED: Can't Login is loaded but incorrect form is loaded.\n");
+                return false;
+            }
+        }
+        else return false;
+    }
+
     public boolean isMyAccSavedSuccessfully() {
         if (control.isElementDisplayed(msgMyAccSuccessUpdate, 10)) {
             System.out.println("\nCURRENT PAGE: MyAccount Page is saved successfully.\n");
@@ -88,6 +135,85 @@ public class PageMyAccount extends BaseDafabet {
         }
         else return false;
     }
+
+    public boolean isSuccessfulCantLoginMessageDisplayed(String item) {
+        switch (item.toUpperCase()) {
+            case "USERNAME" : {
+                String confMessage = control.getText(txtForgotUNConfMessage);
+                System.out.println("\n"+ confMessage);
+                if((confMessage.contains("Retrieve Username"))&&(confMessage.contains("Sent"))) {
+                    System.out.println("\nPASSED: Forgot Username Form is submitted successfully.\n");
+                    return true;
+                } else {
+                    System.out.println("\nFAILED: Forgot Username Form is NOT submitted successfully.\n");
+                    return false;
+                }
+            }
+            case "PASSWORD" : {
+                String confMessage = control.getText(txtForgotPWConfMessage);
+                System.out.println("\n"+ confMessage);
+                if((confMessage.contains("Reset Password"))&&(confMessage.contains("Sent"))) {
+                    System.out.println("\nPASSED: Forgot Password Form is submitted successfully.\n");
+                    return true;
+                } else {
+                    System.out.println("\nFAILED: Forgot Password Form is NOT submitted successfully.\n");
+                    return false;
+                }
+            }
+            default: {
+                System.out.println("\nFAILED: Form Submission is NOT successful.\n");
+                return false;
+            }
+        }
+    }
+
+    public boolean isCorrectCantLoginTabOpened(String item) {
+        switch (item.toUpperCase()) {
+            case "USERNAME" : {
+                String formClassForgotUN = control.getAttributeValue(formForgotUsername,"class",10);
+                String tabClassForgotUN = control.getAttributeValue(tabForgotUsername,"class",10);
+                if((formClassForgotUN.contains("hidden"))&&(!tabClassForgotUN.contains("hidden"))) {
+                    System.out.println("\nPASSED: Forgot Username Form is hidden.\n");
+                    return true;
+                } else {
+                    System.out.println("\nFAILED: Error hiding Forgot Username Form.\n");
+                    return false;
+                }
+            }
+            case "PASSWORD" : {
+                String formClassForgotPW = control.getAttributeValue(formForgotPass,"class",10);
+                String tabClassForgotPW = control.getAttributeValue(tabForgotPass,"class",10);
+                if((formClassForgotPW.contains("hidden"))&&(!tabClassForgotPW.contains("hidden"))) {
+                    System.out.println("\nPASSED: Forgot Username Form is hidden.\n");
+                    return true;
+                } else {
+                    System.out.println("\nFAILED: Error hiding Forgot Username Form.\n");
+                    return false;
+                }
+            }
+            default: {
+                System.out.println("\nFAILED: Form Submission is NOT successful.\n");
+                return false;
+            }
+        }
+    }
+
+    public boolean isCorrectUsernameDisplayedInYopmail(String username) {
+        WebElement iframeMsg = driver.findElement(By.id("ifmail"));
+        driver.switchTo().frame(iframeMsg);
+
+        WebElement body = driver.findElement(txtForgotUNEmail);
+        String dispUsername = body.getText();
+
+        if (dispUsername.equalsIgnoreCase(username)) {
+            System.out.println("\nPASSED: Displayed Username in Email is correct.\n");
+            return true;
+        } else {
+            System.out.println("\nFAILED: Incorrect Username in Email is displayed.\n");
+            return false;
+        }
+    }
+
 
     //==================================================================================================================
     // Control Actions
@@ -170,4 +296,39 @@ public class PageMyAccount extends BaseDafabet {
         control.type(txtMyAccConfNewPassword, confNewPassword);
     }
 
+    // CANT LOGIN - FORGOT USERNAME
+    public void typeForgotUsernameEmail(String email) throws Exception {
+        control.type(txtForgotUsernameEmail, email);
+    }
+
+    public void clickSubmitForgotUsername() throws Exception {
+        control.click(btnForgotUsernameSubmit);
+        control.waitWhileElementIsNotDisplayed(txtForgotUNConfMessage,10);
+    }
+
+    // CANT LOGIN - FORGOT PASSWORD
+    public void typeForgotPasswordUsername(String username) throws Exception {
+        control.type(txtForgotPasswordUsername, username);
+    }
+
+    public void typeForgotPasswordEmail(String email) throws Exception {
+        control.type(txtForgotPasswordEmail, email);
+    }
+
+    public void clickSubmitForgotPassword() throws Exception {
+        control.click(btnForgotPasswordSubmit);
+        control.waitWhileElementIsNotDisplayed(txtForgotPWConfMessage,10);
+    }
+
+    // YOPMAIL
+
+    public void typeYopmailEmail(String email) throws Exception {
+        control.type(txtEmailSearch, email);
+    }
+
+    public void clickYopmailEmailSearch() throws Exception {
+        control.click(btnEmailSearch);
+        control.waitWhileElementIsNotDisplayed(txtSearchResultsHeader,10);
+        control.waitWhileElementIsNotDisplayed(sectionSearchResults,10);
+    }
 }

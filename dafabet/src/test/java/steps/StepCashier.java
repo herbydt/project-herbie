@@ -17,6 +17,9 @@ public class StepCashier extends BaseStep {
 
     @When("^the player clicks the ([^\"]*) button$")
     public void thePlayerIsAtSite(String button) throws Throwable {
+//        NewlyRegisteredPlayer = "qaprodrmbht960";
+//        workflowDafabet.baseDafabet.RegUsername = "qaprodrmbht960";
+//        workflowDafabet.baseDafabet.RegEmail = "qaprodrmbht960@yopmail.com";
         workflowDafabet.clickButton(button);
     }
 

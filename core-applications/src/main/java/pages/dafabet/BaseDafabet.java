@@ -37,6 +37,9 @@ public class BaseDafabet extends PageObjectBase {
     By btnLogin = By.id("LoginForm_submit");
     By btnRegister = By.cssSelector("a.btn.btn-yellow.btn-small.join-now");
     By formRegister = By.cssSelector("form.registration-form.pure-form.form-vertical");
+    By linkCantLogin = By.cssSelector("a.login-issue.btn-links");
+    By tabForgotUsername =  By.cssSelector("ul.tab-menu > li > a[href*='#forgot-username-content']");
+    By tabForgotPassword =  By.cssSelector("ul.tab-menu > li > a[href*='#forgot-password-content']");
 
     // POST LOGIN
     By iconCashier = By.cssSelector("a.cashier-label");
@@ -47,7 +50,6 @@ public class BaseDafabet extends PageObjectBase {
     By toolTipMyAccountChangePass = By.cssSelector("li.myaccount-tooltip.tooltip a[href*='change-password']");
     By btnLogout =  By.cssSelector("li.myaccount-tooltip.tooltip a[href*='logout']");
 
-
     // LIGHTBOX
     By lightboxAnnouncement = By.cssSelector("div.modal.announcement.modal-active");
 //    By announcementLightboxCloseButton = By.cssSelector("#announcement-lightbox > div.modal-content > span.modal-close.modal-close-button.lazy-load.lazy-loaded");
@@ -55,6 +57,11 @@ public class BaseDafabet extends PageObjectBase {
     By announcementRegLightboxCloseButton = By.cssSelector("#announcementLightbox > div.modal-content > span.modal-close.modal-close-button");
     By icnMinimzeChat = By.cssSelector("section.livechat > h1 > span");
 
+    // YOPMAIL
+    By txtEmailSearch = By.id("login");
+    By btnEmailSearch = By.id("refreshbut");
+    By txtSearchResultsHeader = By.cssSelector("div.ycptalias");
+    By sectionSearchResults = By.id("wminboxmain");
 
     //==================================================================================================================
     // Page Navigation

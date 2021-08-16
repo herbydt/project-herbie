@@ -19,5 +19,4 @@ public class BaseWorkflow {
             return getConfigProperties("environment");
         }
     }
-
 }

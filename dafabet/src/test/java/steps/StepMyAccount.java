@@ -67,4 +67,32 @@ public class StepMyAccount extends BaseStep {
     public void thePlayerChangesThePasswordSuccessfully() throws Throwable {
         softAssert.assertTrue(workflowDafabet.validateSuccessChangePassword(), "FAILED: Change Password is NOT successful.");
     }
+
+    @When("^the player submits valid values in Forgot (Username|Password) Form$")
+    public void thePlayerEntersValidValuesInCantLoginForm(String item) throws Throwable {
+        workflowDafabet.inputCantLoginValues(item, workflowDafabet.baseDafabet.RegUsername, workflowDafabet.baseDafabet.RegEmail);
+        workflowDafabet.submitCantLoginForm(item);
+    }
+
+    @Then("^the Forgot (Username|Password) Form is submitted successfully$")
+    public void theCantLoginFormIsSubmittedSuccessfully(String item) throws Throwable {
+        softAssert.assertTrue(workflowDafabet.validateCorrectCantLoginTab(item), "FAILED: Can't Login - Forgot" + item + " Form display has error.");
+        softAssert.assertTrue(workflowDafabet.validateSuccessCantLoginMessage(item), "FAILED: Can't Login - Forgot" + item + " Form is NOT submitted successfully.");
+    }
+
+    @When("^the player closes the ([^\"]*) window$")
+    public void thePlayerClosesTheWindow(String window) throws Throwable {
+        workflowDafabet.closeCurrentWindow();
+    }
+
+    @When("^the player search for the email address$")
+    public void thePlayerSearchForTheEmailAddress() throws Throwable {
+        workflowDafabet.searchYopmailEmail(workflowDafabet.baseDafabet.RegEmail);
+    }
+
+    @Then("^the correct username is displayed in email$")
+    public void theCorrectUsernameIsDisplayedInEmail() throws Throwable {
+        softAssert.assertTrue(workflowDafabet.validateCorrectUsernameInYopmail(workflowDafabet.baseDafabet.RegUsername), "FAILED: Incorrect Email is displayed.");
+
+    }
 }

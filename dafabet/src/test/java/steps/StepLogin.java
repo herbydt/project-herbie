@@ -24,6 +24,11 @@ public class StepLogin extends BaseStep {
         baseLanguage = language;
     }
 
+    @When("^the player opens ([^\"]*) site$")
+    public void thePlayerOpensASite(String site) throws Throwable {
+        workflowDafabet.launchApplication(getSiteUrl(site)+ "/");
+        workflowDafabet.baseDafabet.waitForPageToComplete();
+    }
 
     @When("^the player logs in using (valid|new) credentials$")
     public void thePlayerLogsInUsingValidCredentials(String player) throws Throwable {
@@ -35,17 +40,10 @@ public class StepLogin extends BaseStep {
                 break;
             }
             case "NEW": {
-//                baseUsername = getApplicationProperties(baseCurrentPage + "." + getEnvironment() + "." + "username");
                 basePassword = baseNewPassword;
                 break;
             }
-//            case "NEW PASSWORD": {
-//                baseUsername = NewlyRegisteredPlayer;
-//                basePassword = baseNewPassword;
-//                break;
-//            }
             default:
-//                if(!baseIsNewPasswordSet)
                 {
                     baseUsername = getApplicationProperties(baseCurrentPage + "." + getEnvironment() + ".username");
                     basePassword = getApplicationProperties(baseCurrentPage + "." + getEnvironment() + ".password");

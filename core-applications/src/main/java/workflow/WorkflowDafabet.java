@@ -70,6 +70,11 @@ public class WorkflowDafabet extends BaseWorkflow {
         baseDafabet.PageDafabet().clickButton(button);
     }
 
+    public void closeCurrentWindow() {
+        driver.close();
+        driver.switchTo().window(parentHandle);
+    }
+
     //==================================================================================================================
     // Validations
     //==================================================================================================================
@@ -83,6 +88,10 @@ public class WorkflowDafabet extends BaseWorkflow {
             return baseDafabet.PageMyAccount().isMyAccPageDisplayed(username);
         } else if (page.equalsIgnoreCase("change password")) {
             return baseDafabet.PageMyAccount().isMyAccChangePasswordDisplayed(username);
+        } else if (page.equalsIgnoreCase("forgot password")) {
+            return baseDafabet.PageMyAccount().isForgotPasswordPageDisplayed();
+        } else if (page.equalsIgnoreCase("forgot username")) {
+            return baseDafabet.PageMyAccount().isForgotUsernamePageDisplayed();
         } else
             return false;
     }
@@ -192,9 +201,6 @@ public class WorkflowDafabet extends BaseWorkflow {
     }
 
     public void updateMyAccount(String address, String city, String postalCode) throws Exception {
-//        baseDafabet.RegAddress = address;
-//        baseDafabet.RegCity = city;
-//        baseDafabet.RegPostalCode = postalCode;
         baseDafabet.PageMyAccount().typeMyAccAddress(address);
         baseDafabet.PageMyAccount().typeMyAccCity(city);
         baseDafabet.PageMyAccount().typeMyAccPostalCode(postalCode);
@@ -222,5 +228,44 @@ public class WorkflowDafabet extends BaseWorkflow {
 
     public boolean validateSuccessChangePassword() {
         return baseDafabet.PageMyAccount().isMyAccChangePasswordSuccessful();
+    }
+
+    public void inputCantLoginValues(String item, String username, String email) throws Exception {
+        if(item.equalsIgnoreCase("username")) {
+            System.out.print("\nUsername: " + username + "\n");
+            baseDafabet.PageMyAccount().typeForgotUsernameEmail(email);
+        }
+        if(item.equalsIgnoreCase("password")) {
+            System.out.print("\nUsername: " + username);
+            System.out.print("\nEmail: " + email + "\n");
+            baseDafabet.PageMyAccount().typeForgotPasswordUsername(username);
+            baseDafabet.PageMyAccount().typeForgotPasswordEmail(email);
+        }
+    }
+
+    public void submitCantLoginForm(String item) throws Exception {
+        if(item.equalsIgnoreCase("username")) {
+            baseDafabet.PageMyAccount().clickSubmitForgotUsername();
+        }
+        if(item.equalsIgnoreCase("password")) {
+            baseDafabet.PageMyAccount().clickSubmitForgotPassword();
+        }
+    }
+
+    public boolean validateCorrectCantLoginTab(String item) {
+        return baseDafabet.PageMyAccount().isCorrectCantLoginTabOpened(item);
+    }
+
+    public boolean validateSuccessCantLoginMessage(String item) {
+        return baseDafabet.PageMyAccount().isSuccessfulCantLoginMessageDisplayed(item);
+    }
+
+    public void searchYopmailEmail(String email) throws Exception {
+        baseDafabet.PageMyAccount().typeYopmailEmail(email);
+        baseDafabet.PageMyAccount().clickYopmailEmailSearch();
+    }
+
+    public boolean validateCorrectUsernameInYopmail(String username) {
+        return baseDafabet.PageMyAccount().isCorrectUsernameDisplayedInYopmail(username);
     }
 }

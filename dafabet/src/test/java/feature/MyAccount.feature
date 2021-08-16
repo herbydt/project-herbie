@@ -69,7 +69,7 @@ Feature: Dafabet MyAccount
     And the player is logged in successfully
 
   Scenario: Cant Login - Forgot Username
-    Given the player is at Dafabet - Entry site in EN language
+    Given the player is at Dafabet - Virtual-Sports site in EN language
     And the player clicks the Registration button
     And the Registration page is loaded successfully
     When the player enters valid values with Username in lowercase
@@ -85,3 +85,47 @@ Feature: Dafabet MyAccount
     And a new account is successfully created
     And the player logs out in Dafabet page
     When the player clicks the Cant Login button
+    Then the Forgot Password page is loaded successfully
+
+    # Open Forgot Username tab
+    When the player clicks the Forgot Username button
+    Then the Forgot Username page is loaded successfully
+
+    # Submit Forgot Username
+    When the player submits valid values in Forgot Username Form
+    Then the Forgot Username Form is submitted successfully
+
+    # Validate Email
+    When the player closes the Cant Login window
+    And the player opens Yopmail site
+    And the player search for the email address
+    Then the correct username is displayed in email
+
+  Scenario: Cant Login - Forgot Password
+    Given the player is at Dafabet - Virtual-Sports site in EN language
+    And the player clicks the Registration button
+    And the Registration page is loaded successfully
+    When the player enters valid values with Username in lowercase
+      | Password      | Qat456123     |
+      | Email Domain  | @yopmail.com  |
+      | Area Code     | China         |
+      | Mobile Number | 11223344556   |
+      | First Name    | Qatest        |
+      | Last Name     | Test          |
+      | Date of Birth | 01/01/1990    |
+      | Currency      | RMB/CNY       |
+      | Country       | China         |
+    And a new account is successfully created
+    And the player logs out in Dafabet page
+    When the player clicks the Cant Login button
+    Then the Forgot Password page is loaded successfully
+
+    # Submit Forgot Password
+    When the player submits valid values in Forgot Password Form
+    Then the Forgot Password Form is submitted successfully
+
+    # Validate Email
+    When the player closes the Cant Login window
+    And the player opens Yopmail site
+    And the player search for the email address
+#    Then the correct username is displayed in email
