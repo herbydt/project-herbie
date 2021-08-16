@@ -66,7 +66,7 @@ Feature: Dafabet MyAccount
 
     When the player logs out in Dafabet page
     And the player logs in using new credentials
-    And the player is logged in successfully
+    Then the player is logged in successfully
 
   Scenario: Cant Login - Forgot Username
     Given the player is at Dafabet - Virtual-Sports site in EN language
@@ -124,8 +124,18 @@ Feature: Dafabet MyAccount
     When the player submits valid values in Forgot Password Form
     Then the Forgot Password Form is submitted successfully
 
-    # Validate Email
+    # Validate Email Receieved
     When the player closes the Cant Login window
     And the player opens Yopmail site
     And the player search for the email address
-#    Then the correct username is displayed in email
+    Then the player received the Password Reset email
+
+    # Reset Password
+    When the player opens Reset Password link
+    And the player submits valid values in Reset Password Form
+    Then the Reset Password Form is submitted successfully
+
+    # Login using NEW Credentials
+    When the player is at Dafabet - Virtual-Sports site in EN language
+    And the player logs in using new credentials
+    Then the player is logged in successfully

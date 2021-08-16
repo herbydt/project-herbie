@@ -2,26 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba623d69-6c2d-4c06-a1da-07adf53e397f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-applications/target/classes/pages/dafabet/BaseDafabet.class" afterPath="$PROJECT_DIR$/core-applications/target/classes/pages/dafabet/BaseDafabet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-applications/target/classes/pages/dafabet/PageDafabet.class" afterPath="$PROJECT_DIR$/core-applications/target/classes/pages/dafabet/PageDafabet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-applications/target/classes/pages/dafabet/PageMyAccount.class" afterPath="$PROJECT_DIR$/core-applications/target/classes/pages/dafabet/PageMyAccount.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-applications/target/classes/workflow/WorkflowDafabet.class" afterPath="$PROJECT_DIR$/core-applications/target/classes/workflow/WorkflowDafabet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dafabet/target/test-classes/steps/StepCashier.class" afterPath="$PROJECT_DIR$/dafabet/target/test-classes/steps/StepCashier.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dafabet/target/test-classes/steps/StepLogin.class" afterPath="$PROJECT_DIR$/dafabet/target/test-classes/steps/StepLogin.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dafabet/target/test-classes/steps/StepMyAccount.class" afterPath="$PROJECT_DIR$/dafabet/target/test-classes/steps/StepMyAccount.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-applications/src/main/java/pages/dafabet/BaseDafabet.java" afterPath="$PROJECT_DIR$/core-applications/src/main/java/pages/dafabet/BaseDafabet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-applications/src/main/java/pages/dafabet/PageDafabet.java" afterPath="$PROJECT_DIR$/core-applications/src/main/java/pages/dafabet/PageDafabet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-applications/src/main/java/pages/dafabet/PageMyAccount.java" afterPath="$PROJECT_DIR$/core-applications/src/main/java/pages/dafabet/PageMyAccount.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-applications/src/main/java/workflow/BaseWorkflow.java" afterPath="$PROJECT_DIR$/core-applications/src/main/java/workflow/BaseWorkflow.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-applications/src/main/java/workflow/WorkflowDafabet.java" afterPath="$PROJECT_DIR$/core-applications/src/main/java/workflow/WorkflowDafabet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dafabet/src/test/java/feature/MyAccount.feature" afterPath="$PROJECT_DIR$/dafabet/src/test/java/feature/MyAccount.feature" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dafabet/src/test/java/steps/StepCashier.java" afterPath="$PROJECT_DIR$/dafabet/src/test/java/steps/StepCashier.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dafabet/src/test/java/steps/StepLogin.java" afterPath="$PROJECT_DIR$/dafabet/src/test/java/steps/StepLogin.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dafabet/src/test/java/steps/StepMyAccount.java" afterPath="$PROJECT_DIR$/dafabet/src/test/java/steps/StepMyAccount.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dafabet/src/test/resources/app.properties" afterPath="$PROJECT_DIR$/dafabet/src/test/resources/app.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dafabet/target/test-classes/app.properties" afterPath="$PROJECT_DIR$/dafabet/target/test-classes/app.properties" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -41,78 +31,11 @@
       <file leaf-file-name="MyAccount.feature" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dafabet/src/test/java/feature/MyAccount.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="130" column="52" lean-forward="true" selection-start-line="130" selection-start-column="52" selection-end-line="130" selection-end-column="52" />
+            <state relative-caret-position="246">
+              <caret line="85" column="22" lean-forward="true" selection-start-line="85" selection-start-column="22" selection-end-line="85" selection-end-column="22" />
               <folding>
                 <element signature="e#30#1478#0" expanded="false" />
-                <element signature="e#1482#2640#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2074">
-              <caret line="122" column="26" lean-forward="false" selection-start-line="122" selection-start-column="26" selection-end-line="122" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dafabet/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PageMyAccount.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core-applications/src/main/java/pages/dafabet/PageMyAccount.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2261">
-              <caret line="328" column="16" lean-forward="false" selection-start-line="328" selection-start-column="16" selection-end-line="328" selection-end-column="16" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#isUsernameCorrect#0;class#PageMyAccount#0" expanded="false" />
-                <element signature="method#isMyAccPageDisplayed#0;class#PageMyAccount#0" expanded="false" />
-                <element signature="method#isMyAccChangePasswordDisplayed#0;class#PageMyAccount#0" expanded="false" />
-                <element signature="method#isForgotPasswordPageDisplayed#0;class#PageMyAccount#0" expanded="false" />
-                <element signature="method#isForgotUsernamePageDisplayed#0;class#PageMyAccount#0" expanded="false" />
-                <element signature="method#isMyAccSavedSuccessfully#0;class#PageMyAccount#0" expanded="false" />
-                <element signature="method#isMyAccChangePasswordSuccessful#0;class#PageMyAccount#0" expanded="false" />
-                <element signature="method#isSuccessfulCantLoginMessageDisplayed#0;class#PageMyAccount#0" expanded="false" />
-                <element signature="method#isCorrectCantLoginTabOpened#0;class#PageMyAccount#0" expanded="false" />
-                <element signature="method#typeMyAccAddress#0;class#PageMyAccount#0" expanded="false" />
-                <element signature="method#typeMyAccCity#0;class#PageMyAccount#0" expanded="false" />
-                <element signature="method#typeMyAccPostalCode#0;class#PageMyAccount#0" expanded="false" />
-                <element signature="method#typeMyAccPassword#0;class#PageMyAccount#0" expanded="false" />
-                <element signature="method#clickMyAccButton#0;class#PageMyAccount#0" expanded="false" />
-                <element signature="method#getMyAccInfo#0;class#PageMyAccount#0" expanded="false" />
-                <element signature="method#typeMyAccOldPassword#0;class#PageMyAccount#0" expanded="false" />
-                <element signature="method#typeMyAccNewPassword#0;class#PageMyAccount#0" expanded="false" />
-                <element signature="method#typeMyAccConfNewPassword#0;class#PageMyAccount#0" expanded="false" />
-                <element signature="method#typeForgotUsernameEmail#0;class#PageMyAccount#0" expanded="false" />
-                <element signature="method#clickSubmitForgotUsername#0;class#PageMyAccount#0" expanded="false" />
-                <element signature="method#typeForgotPasswordUsername#0;class#PageMyAccount#0" expanded="false" />
-                <element signature="method#typeForgotPasswordEmail#0;class#PageMyAccount#0" expanded="false" />
-                <element signature="method#clickSubmitForgotPassword#0;class#PageMyAccount#0" expanded="false" />
-                <element signature="method#typeYopmailEmail#0;class#PageMyAccount#0" expanded="false" />
-                <element signature="method#clickYopmailEmailSearch#0;class#PageMyAccount#0" expanded="false" />
+                <element signature="e#3992#5595#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -121,8 +44,8 @@
       <file leaf-file-name="StepCashier.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dafabet/src/test/java/steps/StepCashier.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="2" selection-end-line="21" selection-end-column="78" />
+            <state relative-caret-position="137">
+              <caret line="32" column="28" lean-forward="false" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -131,8 +54,8 @@
       <file leaf-file-name="WorkflowDafabet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core-applications/src/main/java/workflow/WorkflowDafabet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2635">
-              <caret line="264" column="48" lean-forward="false" selection-start-line="264" selection-start-column="48" selection-end-line="264" selection-end-column="48" />
+            <state relative-caret-position="102">
+              <caret line="124" column="16" lean-forward="false" selection-start-line="124" selection-start-column="16" selection-end-line="124" selection-end-column="16" />
               <folding>
                 <element signature="method#validateCorrectMyAccountInfo#0;class#WorkflowDafabet#0" expanded="false" />
                 <element signature="method#updateMyAccount#0;class#WorkflowDafabet#0" expanded="false" />
@@ -140,21 +63,22 @@
                 <element signature="method#changePassword#0;class#WorkflowDafabet#0" expanded="false" />
                 <element signature="method#saveChangePassword#0;class#WorkflowDafabet#0" expanded="false" />
                 <element signature="method#validateSuccessChangePassword#0;class#WorkflowDafabet#0" expanded="false" />
-                <element signature="method#inputCantLoginValues#0;class#WorkflowDafabet#0" expanded="false" />
-                <element signature="method#submitCantLoginForm#0;class#WorkflowDafabet#0" expanded="false" />
-                <element signature="method#validateCorrectCantLoginTab#0;class#WorkflowDafabet#0" expanded="false" />
-                <element signature="method#validateSuccessCantLoginMessage#0;class#WorkflowDafabet#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PageRegister.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core-applications/src/main/java/pages/dafabet/PageRegister.java">
+      <file leaf-file-name="PageDafabet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core-applications/src/main/java/pages/dafabet/PageDafabet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="38" />
-              <folding />
+            <state relative-caret-position="73">
+              <caret line="104" column="31" lean-forward="false" selection-start-line="104" selection-start-column="31" selection-end-line="104" selection-end-column="31" />
+              <folding>
+                <element signature="method#isInPreLoginPage#0;class#PageDafabet#0" expanded="false" />
+                <element signature="method#isInPostLoginPage#0;class#PageDafabet#0" expanded="false" />
+                <element signature="method#typeUsername#0;class#PageDafabet#0" expanded="false" />
+                <element signature="method#typePassword#0;class#PageDafabet#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -198,6 +122,7 @@
       <find>waitf</find>
       <find>WebElement</find>
       <find>com.</find>
+      <find>isSuccessfulCantLoginMessageDisplayed</find>
     </findStrings>
     <replaceStrings>
       <replace>workflowDafabet.baseDafabet.</replace>
@@ -257,14 +182,14 @@
         <option value="$PROJECT_DIR$/dafabet/src/test/java/steps/StepRegister.java" />
         <option value="$PROJECT_DIR$/core-applications/src/main/java/workflow/BaseWorkflow.java" />
         <option value="$PROJECT_DIR$/dafabet/src/test/resources/app.properties" />
-        <option value="$PROJECT_DIR$/core-applications/src/main/java/workflow/WorkflowDafabet.java" />
-        <option value="$PROJECT_DIR$/dafabet/src/test/java/steps/StepLogin.java" />
-        <option value="$PROJECT_DIR$/dafabet/src/test/java/steps/StepMyAccount.java" />
         <option value="$PROJECT_DIR$/core-applications/src/main/java/pages/dafabet/BaseDafabet.java" />
+        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/core-applications/src/main/java/pages/dafabet/PageMyAccount.java" />
         <option value="$PROJECT_DIR$/dafabet/src/test/java/steps/StepCashier.java" />
-        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/dafabet/src/test/java/steps/StepMyAccount.java" />
+        <option value="$PROJECT_DIR$/dafabet/src/test/java/steps/StepLogin.java" />
         <option value="$PROJECT_DIR$/dafabet/src/test/java/feature/MyAccount.feature" />
+        <option value="$PROJECT_DIR$/core-applications/src/main/java/workflow/WorkflowDafabet.java" />
       </list>
     </option>
   </component>
@@ -281,10 +206,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-908" />
+    <option name="x" value="373" />
+    <option name="y" value="-919" />
     <option name="width" value="1616" />
-    <option name="height" value="916" />
+    <option name="height" value="1051" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -356,18 +281,18 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Cucumber java.Scenario: Cant Login - Forgot Username">
-    <configuration name="Feature: Registration" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber java.Feature: MyAccount">
+    <configuration name="Feature: MyAccount" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="myFilePath" value="$PROJECT_DIR$/dafabet/src/test/java/feature/Registration.feature" />
+      <option name="myFilePath" value="$PROJECT_DIR$/dafabet/src/test/java/feature/MyAccount.feature" />
       <option name="GLUE" value="steps" />
       <option name="myNameFilter" value="" />
-      <option name="myGeneratedName" value="Feature: Registration" />
+      <option name="myGeneratedName" value="Feature: MyAccount" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
@@ -554,19 +479,19 @@
       <listeners />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Cucumber java.Feature: Registration" />
-      <item index="1" class="java.lang.String" itemvalue="Cucumber java.Scenario: Access MyAccount" />
-      <item index="2" class="java.lang.String" itemvalue="Cucumber java.Scenario: Access MyAccount - Change Password" />
-      <item index="3" class="java.lang.String" itemvalue="Cucumber java.Scenario: Cant Login - Forgot Username" />
-      <item index="4" class="java.lang.String" itemvalue="Cucumber java.Scenario: Cant Login - Forgot Password" />
+      <item index="0" class="java.lang.String" itemvalue="Cucumber java.Scenario: Access MyAccount" />
+      <item index="1" class="java.lang.String" itemvalue="Cucumber java.Scenario: Access MyAccount - Change Password" />
+      <item index="2" class="java.lang.String" itemvalue="Cucumber java.Scenario: Cant Login - Forgot Username" />
+      <item index="3" class="java.lang.String" itemvalue="Cucumber java.Scenario: Cant Login - Forgot Password" />
+      <item index="4" class="java.lang.String" itemvalue="Cucumber java.Feature: MyAccount" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Cucumber java.Scenario: Cant Login - Forgot Username" />
+        <item index="0" class="java.lang.String" itemvalue="Cucumber java.Feature: MyAccount" />
         <item index="1" class="java.lang.String" itemvalue="Cucumber java.Scenario: Cant Login - Forgot Password" />
-        <item index="2" class="java.lang.String" itemvalue="Cucumber java.Scenario: Access MyAccount - Change Password" />
-        <item index="3" class="java.lang.String" itemvalue="Cucumber java.Scenario: Access MyAccount" />
-        <item index="4" class="java.lang.String" itemvalue="Cucumber java.Feature: Registration" />
+        <item index="2" class="java.lang.String" itemvalue="Cucumber java.Scenario: Cant Login - Forgot Username" />
+        <item index="3" class="java.lang.String" itemvalue="Cucumber java.Scenario: Access MyAccount - Change Password" />
+        <item index="4" class="java.lang.String" itemvalue="Cucumber java.Scenario: Access MyAccount" />
       </list>
     </recent_temporary>
   </component>
@@ -584,32 +509,32 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Scenario__Cant_Login_-_Forgot_Username - 2021.08.15 at 12h 04m 03s.xml">
-      <configuration name="Scenario: Cant Login - Forgot Username" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__MyAccount - 2021.08.16 at 17h 35m 36s.xml">
+      <configuration name="Feature: MyAccount" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Cant_Login_-_Forgot_Username - 2021.08.15 at 12h 08m 56s.xml">
-      <configuration name="Scenario: Cant Login - Forgot Username" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Cant_Login_-_Forgot_Password - 2021.08.16 at 16h 38m 02s.xml">
+      <configuration name="Scenario: Cant Login - Forgot Password" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Cant_Login_-_Forgot_Username - 2021.08.15 at 12h 11m 53s.xml">
-      <configuration name="Scenario: Cant Login - Forgot Username" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Cant_Login_-_Forgot_Password - 2021.08.16 at 16h 40m 18s.xml">
+      <configuration name="Scenario: Cant Login - Forgot Password" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Cant_Login_-_Forgot_Username - 2021.08.16 at 09h 14m 07s.xml">
-      <configuration name="Scenario: Cant Login - Forgot Username" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Cant_Login_-_Forgot_Password - 2021.08.16 at 16h 44m 03s.xml">
+      <configuration name="Scenario: Cant Login - Forgot Password" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Cant_Login_-_Forgot_Username - 2021.08.16 at 09h 28m 49s.xml">
-      <configuration name="Scenario: Cant Login - Forgot Username" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Cant_Login_-_Forgot_Password - 2021.08.16 at 16h 47m 15s.xml">
+      <configuration name="Scenario: Cant Login - Forgot Password" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Cant_Login_-_Forgot_Username - 2021.08.16 at 09h 48m 39s.xml">
-      <configuration name="Scenario: Cant Login - Forgot Username" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Cant_Login_-_Forgot_Password - 2021.08.16 at 16h 49m 58s.xml">
+      <configuration name="Scenario: Cant Login - Forgot Password" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Cant_Login_-_Forgot_Username - 2021.08.16 at 09h 50m 13s.xml">
-      <configuration name="Scenario: Cant Login - Forgot Username" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Cant_Login_-_Forgot_Password - 2021.08.16 at 16h 52m 22s.xml">
+      <configuration name="Scenario: Cant Login - Forgot Password" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Cant_Login_-_Forgot_Username - 2021.08.16 at 09h 52m 48s.xml">
-      <configuration name="Scenario: Cant Login - Forgot Username" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Cant_Login_-_Forgot_Password - 2021.08.16 at 17h 18m 42s.xml">
+      <configuration name="Scenario: Cant Login - Forgot Password" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Cant_Login_-_Forgot_Username - 2021.08.16 at 09h 55m 32s.xml">
-      <configuration name="Scenario: Cant Login - Forgot Username" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Cant_Login_-_Forgot_Password - 2021.08.16 at 17h 25m 49s.xml">
+      <configuration name="Scenario: Cant Login - Forgot Password" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
     <history-entry file="Scenario__Cant_Login_-_Forgot_Username - 2021.08.16 at 09h 57m 38s.xml">
       <configuration name="Scenario: Cant Login - Forgot Username" configurationId="CucumberJavaRunConfigurationType" />
@@ -629,14 +554,15 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928476" sideWeight="0.4974293" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20614597" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33468285" sideWeight="0.50771207" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2599232" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.79641485" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31241998" sideWeight="0.4974293" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4225352" sideWeight="0.4922879" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33034572" sideWeight="0.4922879" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20501286" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -644,13 +570,12 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14724712" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.117797695" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20614597" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -660,7 +585,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="157" />
+      <option name="time" value="176" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -767,6 +692,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -795,6 +721,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="486">
           <caret line="56" column="1" lean-forward="true" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -823,6 +752,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -837,6 +767,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="114" column="29" lean-forward="true" selection-start-line="114" selection-start-column="29" selection-end-line="114" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -855,17 +786,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core-applications/src/main/java/pages/dafabet/PageDafabet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1139">
-          <caret line="87" column="0" lean-forward="false" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core-applications/src/main/java/workflow/BaseWorkflow.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -890,32 +815,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dafabet/src/test/java/steps/BaseStep.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="50" column="18" lean-forward="false" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dafabet/src/test/resources/app.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dafabet/src/test/java/steps/StepLogin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="28" column="38" lean-forward="false" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core-applications/src/main/java/pages/dafabet/BaseDafabet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="61" column="44" lean-forward="true" selection-start-line="61" selection-start-column="44" selection-end-line="61" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -927,18 +830,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dafabet/src/test/java/steps/StepMyAccount.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1445">
-          <caret line="94" column="68" lean-forward="false" selection-start-line="94" selection-start-column="68" selection-end-line="94" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/java-se-8u41-ri/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="423">
           <caret line="1225" column="15" lean-forward="false" selection-start-line="1225" selection-start-column="15" selection-end-line="1225" selection-end-column="15" />
+          <folding>
+            <element signature="e#48199#48200#0" expanded="false" />
+            <element signature="e#48263#48264#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -956,95 +855,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core-framework/src/main/java/control/ControlBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="861" column="20" lean-forward="false" selection-start-line="861" selection-start-column="20" selection-end-line="861" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core-applications/src/main/java/pages/dafabet/PageRegister.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core-applications/src/main/java/workflow/WorkflowDafabet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2635">
-          <caret line="264" column="48" lean-forward="false" selection-start-line="264" selection-start-column="48" selection-end-line="264" selection-end-column="48" />
-          <folding>
-            <element signature="method#validateCorrectMyAccountInfo#0;class#WorkflowDafabet#0" expanded="false" />
-            <element signature="method#updateMyAccount#0;class#WorkflowDafabet#0" expanded="false" />
-            <element signature="method#saveMyAccount#0;class#WorkflowDafabet#0" expanded="false" />
-            <element signature="method#changePassword#0;class#WorkflowDafabet#0" expanded="false" />
-            <element signature="method#saveChangePassword#0;class#WorkflowDafabet#0" expanded="false" />
-            <element signature="method#validateSuccessChangePassword#0;class#WorkflowDafabet#0" expanded="false" />
-            <element signature="method#inputCantLoginValues#0;class#WorkflowDafabet#0" expanded="false" />
-            <element signature="method#submitCantLoginForm#0;class#WorkflowDafabet#0" expanded="false" />
-            <element signature="method#validateCorrectCantLoginTab#0;class#WorkflowDafabet#0" expanded="false" />
-            <element signature="method#validateSuccessCantLoginMessage#0;class#WorkflowDafabet#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core-applications/src/main/java/pages/dafabet/PageMyAccount.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2261">
-          <caret line="328" column="16" lean-forward="false" selection-start-line="328" selection-start-column="16" selection-end-line="328" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#isUsernameCorrect#0;class#PageMyAccount#0" expanded="false" />
-            <element signature="method#isMyAccPageDisplayed#0;class#PageMyAccount#0" expanded="false" />
-            <element signature="method#isMyAccChangePasswordDisplayed#0;class#PageMyAccount#0" expanded="false" />
-            <element signature="method#isForgotPasswordPageDisplayed#0;class#PageMyAccount#0" expanded="false" />
-            <element signature="method#isForgotUsernamePageDisplayed#0;class#PageMyAccount#0" expanded="false" />
-            <element signature="method#isMyAccSavedSuccessfully#0;class#PageMyAccount#0" expanded="false" />
-            <element signature="method#isMyAccChangePasswordSuccessful#0;class#PageMyAccount#0" expanded="false" />
-            <element signature="method#isSuccessfulCantLoginMessageDisplayed#0;class#PageMyAccount#0" expanded="false" />
-            <element signature="method#isCorrectCantLoginTabOpened#0;class#PageMyAccount#0" expanded="false" />
-            <element signature="method#typeMyAccAddress#0;class#PageMyAccount#0" expanded="false" />
-            <element signature="method#typeMyAccCity#0;class#PageMyAccount#0" expanded="false" />
-            <element signature="method#typeMyAccPostalCode#0;class#PageMyAccount#0" expanded="false" />
-            <element signature="method#typeMyAccPassword#0;class#PageMyAccount#0" expanded="false" />
-            <element signature="method#clickMyAccButton#0;class#PageMyAccount#0" expanded="false" />
-            <element signature="method#getMyAccInfo#0;class#PageMyAccount#0" expanded="false" />
-            <element signature="method#typeMyAccOldPassword#0;class#PageMyAccount#0" expanded="false" />
-            <element signature="method#typeMyAccNewPassword#0;class#PageMyAccount#0" expanded="false" />
-            <element signature="method#typeMyAccConfNewPassword#0;class#PageMyAccount#0" expanded="false" />
-            <element signature="method#typeForgotUsernameEmail#0;class#PageMyAccount#0" expanded="false" />
-            <element signature="method#clickSubmitForgotUsername#0;class#PageMyAccount#0" expanded="false" />
-            <element signature="method#typeForgotPasswordUsername#0;class#PageMyAccount#0" expanded="false" />
-            <element signature="method#typeForgotPasswordEmail#0;class#PageMyAccount#0" expanded="false" />
-            <element signature="method#clickSubmitForgotPassword#0;class#PageMyAccount#0" expanded="false" />
-            <element signature="method#typeYopmailEmail#0;class#PageMyAccount#0" expanded="false" />
-            <element signature="method#clickYopmailEmailSearch#0;class#PageMyAccount#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dafabet/src/test/java/steps/StepCashier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="2" selection-end-line="21" selection-end-column="78" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2074">
-          <caret line="122" column="26" lean-forward="false" selection-start-line="122" selection-start-column="26" selection-end-line="122" selection-end-column="26" />
           <folding />
         </state>
       </provider>
@@ -1057,13 +871,139 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/core-framework/src/main/java/control/ControlBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="1235" column="16" lean-forward="false" selection-start-line="1235" selection-start-column="16" selection-end-line="1235" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="122" column="26" lean-forward="false" selection-start-line="122" selection-start-column="26" selection-end-line="122" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-applications/src/main/java/pages/dafabet/BaseDafabet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="30" column="34" lean-forward="false" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-applications/src/main/java/pages/dafabet/PageMyAccount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-390">
+          <caret line="146" column="19" lean-forward="false" selection-start-line="146" selection-start-column="19" selection-end-line="146" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#isUsernameCorrect#0;class#PageMyAccount#0" expanded="false" />
+            <element signature="method#isMyAccPageDisplayed#0;class#PageMyAccount#0" expanded="false" />
+            <element signature="method#isMyAccChangePasswordDisplayed#0;class#PageMyAccount#0" expanded="false" />
+            <element signature="method#isForgotPasswordPageDisplayed#0;class#PageMyAccount#0" expanded="false" />
+            <element signature="method#isForgotUsernamePageDisplayed#0;class#PageMyAccount#0" expanded="false" />
+            <element signature="method#isMyAccSavedSuccessfully#0;class#PageMyAccount#0" expanded="false" />
+            <element signature="method#isMyAccChangePasswordSuccessful#0;class#PageMyAccount#0" expanded="false" />
+            <element signature="method#isCorrectCantLoginTabOpened#0;class#PageMyAccount#0" expanded="false" />
+            <element signature="method#typeMyAccAddress#0;class#PageMyAccount#0" expanded="false" />
+            <element signature="method#typeMyAccCity#0;class#PageMyAccount#0" expanded="false" />
+            <element signature="method#typeMyAccPostalCode#0;class#PageMyAccount#0" expanded="false" />
+            <element signature="method#typeMyAccPassword#0;class#PageMyAccount#0" expanded="false" />
+            <element signature="method#clickMyAccButton#0;class#PageMyAccount#0" expanded="false" />
+            <element signature="method#getMyAccInfo#0;class#PageMyAccount#0" expanded="false" />
+            <element signature="method#typeMyAccOldPassword#0;class#PageMyAccount#0" expanded="false" />
+            <element signature="method#typeMyAccNewPassword#0;class#PageMyAccount#0" expanded="false" />
+            <element signature="method#typeMyAccConfNewPassword#0;class#PageMyAccount#0" expanded="false" />
+            <element signature="method#typeForgotUsernameEmail#0;class#PageMyAccount#0" expanded="false" />
+            <element signature="method#typeForgotPasswordUsername#0;class#PageMyAccount#0" expanded="false" />
+            <element signature="method#typeForgotPasswordEmail#0;class#PageMyAccount#0" expanded="false" />
+            <element signature="method#typeResetPasswordNewPassword#0;class#PageMyAccount#0" expanded="false" />
+            <element signature="method#typeResetPasswordConfNewPassword#0;class#PageMyAccount#0" expanded="false" />
+            <element signature="method#typeYopmailEmail#0;class#PageMyAccount#0" expanded="false" />
+            <element signature="method#clickYopmailEmailSearch#0;class#PageMyAccount#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dafabet/src/test/java/steps/BaseStep.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="23" column="40" lean-forward="false" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dafabet/src/test/java/steps/StepMyAccount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="113" column="30" lean-forward="false" selection-start-line="113" selection-start-column="30" selection-end-line="113" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dafabet/src/test/java/steps/StepLogin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-applications/src/main/java/pages/dafabet/PageDafabet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="104" column="31" lean-forward="false" selection-start-line="104" selection-start-column="31" selection-end-line="104" selection-end-column="31" />
+          <folding>
+            <element signature="method#isInPreLoginPage#0;class#PageDafabet#0" expanded="false" />
+            <element signature="method#isInPostLoginPage#0;class#PageDafabet#0" expanded="false" />
+            <element signature="method#typeUsername#0;class#PageDafabet#0" expanded="false" />
+            <element signature="method#typePassword#0;class#PageDafabet#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dafabet/src/test/java/steps/StepCashier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="32" column="28" lean-forward="false" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-applications/src/main/java/workflow/WorkflowDafabet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="124" column="16" lean-forward="false" selection-start-line="124" selection-start-column="16" selection-end-line="124" selection-end-column="16" />
+          <folding>
+            <element signature="method#validateCorrectMyAccountInfo#0;class#WorkflowDafabet#0" expanded="false" />
+            <element signature="method#updateMyAccount#0;class#WorkflowDafabet#0" expanded="false" />
+            <element signature="method#saveMyAccount#0;class#WorkflowDafabet#0" expanded="false" />
+            <element signature="method#changePassword#0;class#WorkflowDafabet#0" expanded="false" />
+            <element signature="method#saveChangePassword#0;class#WorkflowDafabet#0" expanded="false" />
+            <element signature="method#validateSuccessChangePassword#0;class#WorkflowDafabet#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/dafabet/src/test/java/feature/MyAccount.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="130" column="52" lean-forward="true" selection-start-line="130" selection-start-column="52" selection-end-line="130" selection-end-column="52" />
+        <state relative-caret-position="246">
+          <caret line="85" column="22" lean-forward="true" selection-start-line="85" selection-start-column="22" selection-end-line="85" selection-end-column="22" />
           <folding>
             <element signature="e#30#1478#0" expanded="false" />
-            <element signature="e#1482#2640#0" expanded="false" />
+            <element signature="e#3992#5595#0" expanded="false" />
           </folding>
         </state>
       </provider>

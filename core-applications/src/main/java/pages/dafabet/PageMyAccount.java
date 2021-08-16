@@ -50,8 +50,16 @@ public class PageMyAccount extends BaseDafabet {
     By btnForgotUsernameSubmit = By.id("ForgotUsernameForm_submit");
     By txtForgotUNConfMessage = By.cssSelector("div[id='forgot-username-content'] > div.confirmation-message.mt-25 > div > h3");
 
+
+    By txtResetPWNewPassword = By.id("ResetPasswordForm_new_password");
+    By txtResetPWConfNewPassword = By.id("ResetPasswordForm_verify_password");
+    By btnResetPassword = By.id("ResetPasswordForm_submit");
+
     // YOPMAIL
     By txtForgotUNEmail =  By.xpath("/html/body/main/div/div/div/table[2]/tbody/tr/td/div/div/span/span");
+    By txtForgotPWEmailUsername =  By.xpath("/html/body/main/div/div/div/table[2]/tbody/tr/td/span[1]");
+    By btnForgotPWEmailResetPW = By.xpath("/html/body/main/div/div/div/table[2]/tbody/tr/td/div[1]/a");
+    By txtResetPWConfMessage = By.cssSelector("div.confirmation-message.mt-25 > h2.text-center.text-semibold.text-red.text-20");
 
     //==================================================================================================================
     // Validations
@@ -214,6 +222,47 @@ public class PageMyAccount extends BaseDafabet {
         }
     }
 
+    public boolean isCorrectUsernameDisplayedInYopmailForgotPW(String username) {
+        WebElement iframeMsg = driver.findElement(By.id("ifmail"));
+        driver.switchTo().frame(iframeMsg);
+
+        WebElement body = driver.findElement(txtForgotPWEmailUsername);
+        String dispUsername = body.getText();
+
+        if (dispUsername.toLowerCase().contains(username.toLowerCase())) {
+            System.out.println("\nPASSED: Displayed Username in Email is correct.\n");
+            return true;
+        } else {
+            System.out.println("\nFAILED: Incorrect Username in Email is displayed.\n");
+            return false;
+        }
+    }
+
+    public boolean isResetPasswordBtnDisplayedForgotPW() {
+        WebElement content = driver.findElement(btnForgotPWEmailResetPW);
+        String txtResetPWBtn = content.getText();
+        String dispLink = content.getAttribute("href");
+
+        if ((txtResetPWBtn.equalsIgnoreCase("reset password"))&&(!dispLink.equals(""))) {
+            System.out.println("\nPASSED: Reset Password button is displayed.\n");
+            return true;
+        } else {
+            System.out.println("\nFAILED: Reset Password button is missing.\n");
+            return false;
+        }
+    }
+
+    public boolean isSuccessfulResetPasswordMessageDisplayed() {
+        String confMessage = control.getText(txtResetPWConfMessage);
+        System.out.println("\n"+ confMessage);
+        if((confMessage.contains("Reset Password"))&&(confMessage.contains("Success"))) {
+            System.out.println("\nPASSED: Reset Password Form is submitted successfully.\n");
+            return true;
+        } else {
+            System.out.println("\nFAILED: Reset Password Form is NOT submitted successfully.\n");
+            return false;
+        }
+    }
 
     //==================================================================================================================
     // Control Actions
@@ -320,6 +369,20 @@ public class PageMyAccount extends BaseDafabet {
         control.waitWhileElementIsNotDisplayed(txtForgotPWConfMessage,10);
     }
 
+    // CANT LOGIN - RESET PASSWORD
+    public void typeResetPasswordNewPassword(String password) throws Exception {
+        control.type(txtResetPWNewPassword,password);
+    }
+
+    public void typeResetPasswordConfNewPassword(String confPassword) throws Exception {
+        control.type(txtResetPWConfNewPassword,confPassword);
+    }
+
+    public void submitResetPassword() throws Exception {
+        control.click(btnResetPassword);
+        control.waitWhileElementIsNotDisplayed(txtResetPWConfMessage,10);
+    }
+
     // YOPMAIL
 
     public void typeYopmailEmail(String email) throws Exception {
@@ -330,5 +393,10 @@ public class PageMyAccount extends BaseDafabet {
         control.click(btnEmailSearch);
         control.waitWhileElementIsNotDisplayed(txtSearchResultsHeader,10);
         control.waitWhileElementIsNotDisplayed(sectionSearchResults,10);
+    }
+
+    public String getResetPasswordLink() {
+        WebElement btnLink = driver.findElement(btnForgotPWEmailResetPW);
+        return btnLink.getAttribute("href");
     }
 }

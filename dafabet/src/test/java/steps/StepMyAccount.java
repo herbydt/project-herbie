@@ -92,7 +92,31 @@ public class StepMyAccount extends BaseStep {
 
     @Then("^the correct username is displayed in email$")
     public void theCorrectUsernameIsDisplayedInEmail() throws Throwable {
-        softAssert.assertTrue(workflowDafabet.validateCorrectUsernameInYopmail(workflowDafabet.baseDafabet.RegUsername), "FAILED: Incorrect Email is displayed.");
+        softAssert.assertTrue(workflowDafabet.validateCorrectUsernameInYopmail(workflowDafabet.baseDafabet.RegUsername), "FAILED: Incorrect Username is displayed.");
+    }
 
+    @Then("^the player received the Password Reset email$")
+    public void thePlayerReceivedThePasswordResetEmail() throws Throwable {
+        softAssert.assertTrue(workflowDafabet.validatePasswordResetEmail(workflowDafabet.baseDafabet.RegUsername), "FAILED: Incorrect Username is displayed.");
+        softAssert.assertTrue(workflowDafabet.validatePasswordResetContent(), "FAILED: Reset Password button is NOT displayed.");
+    }
+
+    @When("^the player opens Reset Password link$")
+    public void thePlayerOpensResetPasswordLink()throws Throwable {
+        workflowDafabet.launchApplication(workflowDafabet.baseDafabet.PageMyAccount().getResetPasswordLink());
+        workflowDafabet.baseDafabet.waitForPageToComplete();
+    }
+
+    @When("^the player submits valid values in Reset Password Form$")
+    public void thePlayerEntersValidValuesInResetPasswordForm() throws Throwable {
+        workflowDafabet.baseDafabet.MyAccNewPassword = "qa456123";
+        workflowDafabet.baseDafabet.MyAccConfNewPassword = "qa456123";
+        baseNewPassword = workflowDafabet.baseDafabet.MyAccNewPassword;
+        workflowDafabet.submitResetPasswordForm(workflowDafabet.baseDafabet.MyAccNewPassword, workflowDafabet.baseDafabet.MyAccConfNewPassword);
+    }
+
+    @Then("^the Reset Password Form is submitted successfully$")
+    public void theResetPasswordFormIsSubmittedSuccessfully() throws Throwable {
+        softAssert.assertTrue(workflowDafabet.validateSuccessResetPasswordMessage(), "FAILED: Reset Password Form is NOT submitted successfully.");
     }
 }

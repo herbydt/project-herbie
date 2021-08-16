@@ -43,11 +43,10 @@ public class StepLogin extends BaseStep {
                 basePassword = baseNewPassword;
                 break;
             }
-            default:
-                {
-                    baseUsername = getApplicationProperties(baseCurrentPage + "." + getEnvironment() + ".username");
-                    basePassword = getApplicationProperties(baseCurrentPage + "." + getEnvironment() + ".password");
-                }
+            default: {
+                baseUsername = getApplicationProperties(baseCurrentPage + "." + getEnvironment() + ".username");
+                basePassword = getApplicationProperties(baseCurrentPage + "." + getEnvironment() + ".password");
+            }
         }
         System.out.println("Username: " + baseUsername + "\n");
         System.out.println("Password: " + basePassword + "\n");

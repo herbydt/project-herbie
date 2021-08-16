@@ -130,6 +130,7 @@ public class WorkflowDafabet extends BaseWorkflow {
         baseDafabet.refreshPage();
         waitForPageToComplete();
         baseDafabet.PageDafabet().logout();
+        waitForPageToComplete();
     }
 
     //==================================================================================================================
@@ -252,6 +253,13 @@ public class WorkflowDafabet extends BaseWorkflow {
         }
     }
 
+    public void submitResetPasswordForm(String password, String confPassword) throws Exception {
+        System.out.print("\nNew Password: " + password);
+        baseDafabet.PageMyAccount().typeResetPasswordNewPassword(password);
+        baseDafabet.PageMyAccount().typeResetPasswordConfNewPassword(confPassword);
+        baseDafabet.PageMyAccount().submitResetPassword();
+    }
+
     public boolean validateCorrectCantLoginTab(String item) {
         return baseDafabet.PageMyAccount().isCorrectCantLoginTabOpened(item);
     }
@@ -267,5 +275,17 @@ public class WorkflowDafabet extends BaseWorkflow {
 
     public boolean validateCorrectUsernameInYopmail(String username) {
         return baseDafabet.PageMyAccount().isCorrectUsernameDisplayedInYopmail(username);
+    }
+
+    public boolean validatePasswordResetEmail(String username) {
+        return baseDafabet.PageMyAccount().isCorrectUsernameDisplayedInYopmailForgotPW(username);
+    }
+
+    public boolean validatePasswordResetContent() {
+        return baseDafabet.PageMyAccount().isResetPasswordBtnDisplayedForgotPW();
+    }
+
+    public boolean validateSuccessResetPasswordMessage() {
+        return baseDafabet.PageMyAccount().isSuccessfulResetPasswordMessageDisplayed();
     }
 }
