@@ -23,6 +23,7 @@ public class BaseStep extends TestBase{
     public static String basePassword;
     public static String baseNewPassword;
     public static String baseLanguage;
+    public static String baseTransaction;
     public static String CurrentState = "Pre-Login";
     public static String NewlyRegisteredPlayer;
 

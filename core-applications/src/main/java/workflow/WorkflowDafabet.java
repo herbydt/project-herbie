@@ -75,6 +75,10 @@ public class WorkflowDafabet extends BaseWorkflow {
         driver.switchTo().window(parentHandle);
     }
 
+    public void clickMobileButton (String button) throws Exception {
+        baseDafabet.PageMobileDafabet().clickButton(button);
+    }
+
     //==================================================================================================================
     // Validations
     //==================================================================================================================
@@ -96,6 +100,15 @@ public class WorkflowDafabet extends BaseWorkflow {
             return false;
     }
 
+    public boolean validateMobilePage(String page, String username, String transaction) {
+        if (page.equalsIgnoreCase("cashier")) {
+            return baseDafabet.PageCashier().isMobileUsernameCorrect(username);
+        } else if (page.equalsIgnoreCase("payment options")) {
+            return baseDafabet.PageCashier().isPaymentOptionsPageDisplayed(transaction);
+        } else
+            return false;
+    }
+
     //==================================================================================================================
     // Dafabet Login
     //==================================================================================================================
@@ -104,6 +117,14 @@ public class WorkflowDafabet extends BaseWorkflow {
         baseDafabet.PageDafabet().typeUsername(username);
         baseDafabet.PageDafabet().typePassword(password);
         baseDafabet.PageDafabet().clickButton("Login");
+        waitForPageToComplete();
+    }
+
+    public void loginMobilePlayer(String username, String password) throws Exception {
+        baseDafabet.PageMobileDafabet().clickButton("Header Login");
+        baseDafabet.PageMobileDafabet().typeUsername(username);
+        baseDafabet.PageMobileDafabet().typePassword(password);
+        baseDafabet.PageMobileDafabet().clickButton("Login");
         waitForPageToComplete();
     }
 
@@ -118,6 +139,21 @@ public class WorkflowDafabet extends BaseWorkflow {
         } else if (s == WorkflowDafabet.State.POST_LOGIN) {
             System.out.println("\nCURRENT PAGE: Player is in POST-LOGIN" + "\n");
             return baseDafabet.PageDafabet().isInPostLoginPage();
+        }
+        return false;
+    }
+
+    public boolean isInMobilePage(String state) throws Exception {
+        baseDafabet.closeAnnouncementLightbox();
+
+        State s = toState(state);
+
+        if (s == WorkflowDafabet.State.PRE_LOGIN) {
+            System.out.println("\nCURRENT PAGE: Player is in PRE-LOGIN" + "\n");
+            return baseDafabet.PageMobileDafabet().isInMobilePreLoginPage();
+        } else if (s == WorkflowDafabet.State.POST_LOGIN) {
+            System.out.println("\nCURRENT PAGE: Player is in POST-LOGIN" + "\n");
+            return baseDafabet.PageMobileDafabet().isInMobilePostLoginPage();
         }
         return false;
     }

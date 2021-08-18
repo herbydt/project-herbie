@@ -3,7 +3,7 @@ Feature: Dafabet Registration
   Scenario: Registration in Dafabet Entry Page
     Given the player is at Dafabet - Entry site in EN language
     And the player clicks the Registration button
-    And the Registration page is loaded successfully
+    And the desktop Registration page is loaded successfully
     When the player enters valid values with Username in lowercase
       | Password      | Qat456123     |
       | Email Domain  | @yopmail.com  |
@@ -19,7 +19,7 @@ Feature: Dafabet Registration
   Scenario: Registration in Dafabet Casino Page
     Given the player is at Dafabet - Casino site in SC language
     And the player clicks the Registration button
-    And the Registration page is loaded successfully
+    And the desktop Registration page is loaded successfully
     When the player enters valid values with Username in uppercase
       | Password      | Qat456123     |
       | Email Domain  | @yopmail.com  |
@@ -35,7 +35,7 @@ Feature: Dafabet Registration
   Scenario: Registration in Dafabet Sportsbook Page
     Given the player is at Dafabet - Sports site in IN language
     And the player clicks the Registration button
-    And the Registration page is loaded successfully
+    And the desktop Registration page is loaded successfully
     When the player enters valid values with Username in mixed case
       | Password      | Qat456123     |
       | Email Domain  | @yopmail.com  |
@@ -51,7 +51,7 @@ Feature: Dafabet Registration
   Scenario: Registration in Dafabet Live Dealer Page
     Given the player is at Dafabet - Live-Dealer site in EN language
     And the player clicks the Registration button
-    And the Registration page is loaded successfully
+    And the desktop Registration page is loaded successfully
     When the player enters valid values with Username in lowercase
       | Password      | Qat456123     |
       | Email Domain  | @yopmail.com  |

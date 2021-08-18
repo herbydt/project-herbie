@@ -22,7 +22,7 @@ public class PageDafabet extends BaseDafabet {
 
     public boolean isInPostLoginPage() {
         closeAnnouncementLightbox();
-        if (control.isDisplayed(iconCashier)) {
+        if (control.isDisplayed(icnCashier)) {
             System.out.println("Post Login current URL is: " + driver.getCurrentUrl() + "\n");
             System.out.println("CURRENT PAGE: Player is in Post-Login Home Page.");
             return true;

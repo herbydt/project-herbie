@@ -54,8 +54,37 @@ public class StepLogin extends BaseStep {
         CurrentState = "Post-Login";
     }
 
+    @When("^the player logs in using (valid|new) mobile credentials$")
+    public void thePlayerLogsInUsingValidMobileCredentials(String player) throws Throwable {
+        workflowDafabet.baseDafabet.waitForMobilePageToComplete();
+        switch (player.toUpperCase()) {
+            case "VALID": {
+                baseUsername = getApplicationProperties(baseCurrentPage + "." + getEnvironment() + ".username");
+                basePassword = getApplicationProperties(baseCurrentPage + "." + getEnvironment() + ".password");
+                break;
+            }
+            case "NEW": {
+                basePassword = baseNewPassword;
+                break;
+            }
+            default: {
+                baseUsername = getApplicationProperties(baseCurrentPage + "." + getEnvironment() + ".username");
+                basePassword = getApplicationProperties(baseCurrentPage + "." + getEnvironment() + ".password");
+            }
+        }
+        System.out.println("Username: " + baseUsername + "\n");
+        System.out.println("Password: " + basePassword + "\n");
+        workflowDafabet.loginMobilePlayer(baseUsername, basePassword);
+        CurrentState = "Post-Login";
+    }
+
     @Then("^the player is logged in successfully$")
     public void thePlayerIsLoggedInSuccessfully() throws Throwable {
         softAssert.assertTrue(workflowDafabet.isInPage(CurrentState), "FAILED: Page validation failed for " + CurrentState + ". \n");
+    }
+
+    @Then("^the mobile player is logged in successfully$")
+    public void theMobilePlayerIsLoggedInSuccessfully() throws Throwable {
+        softAssert.assertTrue(workflowDafabet.isInMobilePage(CurrentState), "FAILED: Page validation failed for " + CurrentState + ". \n");
     }
 }
