@@ -74,6 +74,7 @@ public class BaseDafabet extends PageObjectBase {
     By btnCashPoints = By.cssSelector("a.dashboard-transaction-type-item.cash-points");
     By btnWithdraw = By.cssSelector("a.dashboard-transaction-type-item.withdraw");
     By btnTrxHistory = By.cssSelector("a.dashboard-transaction-type-item.history");
+    By icnTrxHistoryLoaderTop = By.cssSelector("div.loader-top");
 
     // YOPMAIL
     By txtEmailSearch = By.id("login");
@@ -104,6 +105,9 @@ public class BaseDafabet extends PageObjectBase {
     }
     public PageMobileDafabet PageMobileDafabet() {
         return new PageMobileDafabet(driver);
+    }
+    public PageCashierDeposit PageCashierDeposit() {
+        return new PageCashierDeposit(driver);
     }
 
     //==================================================================================================================

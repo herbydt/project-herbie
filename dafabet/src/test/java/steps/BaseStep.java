@@ -10,6 +10,7 @@ import org.testng.asserts.SoftAssert;
 import workflow.WorkflowDafabet;
 
 import java.io.IOException;
+import java.util.List;
 
 public class BaseStep extends TestBase{
 
@@ -23,9 +24,48 @@ public class BaseStep extends TestBase{
     public static String basePassword;
     public static String baseNewPassword;
     public static String baseLanguage;
-    public static String baseTransaction;
     public static String CurrentState = "Pre-Login";
     public static String NewlyRegisteredPlayer;
+
+    // Cashier Variables
+    public static String baseTransaction;
+//    public static String baseTransactionType;
+    public static List<String> baseAllProductsOldBalance;
+    public static List<String> baseAllProductNewBalance;
+    public static List<String> baseSubAccounts;
+    public static String baseOldCashierRealMoneyBalance;
+    public static String baseNewCashierRealMoneyBalance;
+    public static String baseOldCashierBonusBalance;
+    public static String baseNewCashierBonusBalance;
+    public static String baseDepositStatus;
+    public static String baseWithdrawStatus;
+    public static String baseTransfertype;
+    public static String baseDepositor;
+    public static String baseDepositorAddress;
+    public static String baseBankAccountSelection;
+    public static String baseBankNameBankingDetails;
+    public static String baseBankaccountHolderNameBankingDetails;
+    public static String baseBankAccountNumberBankingDetails;
+    public static float baseHeaderOldBalance = 0;
+    public static float baseHeaderNewBalance = 0;
+    public static String basePaymentMethod;
+    public static String baseDepositToProduct;
+    public static String baseDepositBank;
+    public static String baseDepositAmount;
+    public static List<String> baseProductOldBalance;
+    public static List<String> baseProductNewBalance;
+    public static String baseTransactionDateAndTime;
+    public static String baseTaurusDateAndTime;
+    public static String baseWithdrawFromProduct;
+    public static String baseWithdrawAmount;
+    public static String baseCashierTransactionAmount;
+    public static String baseOldTransferFromProductBalance;
+    public static String baseOldTransferToProductBalance;
+    public static String baseNewTransferFromProductBalance;
+    public static String baseNewTransferToProductBalance;
+    public static String baseTransferFromProduct;
+    public static String baseTransferToProduct;
+    public static String baseTransferStatus;
 
     //==================================================================================================================
     // Test Utility Methods
@@ -52,7 +92,6 @@ public class BaseStep extends TestBase{
     public String getSiteUrl(String site) throws IOException {
         baseCurrentPage = site.toUpperCase();
         return getApplicationProperties(site + "." + getEnvironment() + ".url");
-//        return getApplicationProperties(site + ".url");
     }
 
 }

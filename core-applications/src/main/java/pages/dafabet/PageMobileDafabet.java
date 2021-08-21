@@ -87,6 +87,15 @@ public class PageMobileDafabet extends BaseDafabet {
             case "HISTORY": {
                 control.click(btnTrxHistory);
                 waitForPageToComplete();
+                int attempts = 0;
+                while(attempts < 30) {
+                    if(control.getAttributeValue(icnTrxHistoryLoaderTop,"style",10).contains("block")) {
+                        System.out.println("Loading Transaction History Contents...\n");
+                        attempts++;
+                    } else {
+                        break;
+                    }
+                }
                 break;
             }
             default:

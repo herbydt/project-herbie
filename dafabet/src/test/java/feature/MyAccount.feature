@@ -3,7 +3,7 @@ Feature: Dafabet MyAccount
   Scenario: Access MyAccount - Player Profile
     Given the player is at Dafabet - Entry site in EN language
     And the player clicks the Registration button
-    And the Registration page is loaded successfully
+    And the desktop Registration page is loaded successfully
     When the player enters valid values with Username in lowercase
       | Password      | Qat456123     |
       | Email Domain  | @yopmail.com  |
@@ -16,7 +16,7 @@ Feature: Dafabet MyAccount
       | Country       | China         |
     And a new account is successfully created
     And the player clicks the MyAccount button
-    Then the MyAccount page is loaded successfully
+    Then the desktop MyAccount page is loaded successfully
     And the correct info are displayed
       | Username      |
       | First Name    |
@@ -65,7 +65,7 @@ Feature: Dafabet MyAccount
     Then the player changes the password successfully
 
     When the player logs out in Dafabet page
-    And the player logs in using new credentials
+    And the player logs in using new - RMB credentials
     Then the player is logged in successfully
 
   Scenario: Cant Login - Forgot Username
@@ -104,7 +104,7 @@ Feature: Dafabet MyAccount
   Scenario: Cant Login - Forgot Password
     Given the player is at Dafabet - Virtual-Sports site in EN language
     And the player clicks the Registration button
-    And the Registration page is loaded successfully
+    And the desktop Registration page is loaded successfully
     When the player enters valid values with Username in lowercase
       | Password      | Qat456123     |
       | Email Domain  | @yopmail.com  |
@@ -118,7 +118,7 @@ Feature: Dafabet MyAccount
     And a new account is successfully created
     And the player logs out in Dafabet page
     When the player clicks the Cant Login button
-    Then the Forgot Password page is loaded successfully
+    Then the desktop Forgot Password page is loaded successfully
 
     # Submit Forgot Password
     When the player submits valid values in Forgot Password Form
@@ -137,5 +137,5 @@ Feature: Dafabet MyAccount
 
     # Login using NEW Credentials
     When the player is at Dafabet - Virtual-Sports site in EN language
-    And the player logs in using new credentials
+    And the player logs in using new - RMB credentials
     Then the player is logged in successfully

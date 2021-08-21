@@ -4,6 +4,7 @@ import cucumber.api.DataTable;
 import org.openqa.selenium.WebDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.testng.Assert;
 import pages.dafabet.BaseDafabet;
 
 import java.util.List;
@@ -170,8 +171,31 @@ public class WorkflowDafabet extends BaseWorkflow {
     }
 
     //==================================================================================================================
-    // Dafabet Access Cashier
+    // Dafabet Cashier
     //==================================================================================================================
+
+    public void depositOtherPaymentMethod (String product, String bank, String depositAmount) throws Exception {
+        System.out.println("Product:" + product + "\n");
+        System.out.println("Bank:" + bank + "\n");
+        System.out.println("Deposit Amount:" + depositAmount + "\n");
+        baseDafabet.PageCashierDeposit().selectDepositProduct(product);
+        baseDafabet.PageCashierDeposit().selectDepositBank(bank);
+        baseDafabet.PageCashierDeposit().typeDepositAmount(depositAmount);
+        baseDafabet.PageCashierDeposit().clickDepositSubmit();
+    }
+
+    public void openLatestTransactionDetails() throws Exception {
+        baseDafabet.PageCashierDeposit().clickLatestTrxInHistory();
+    }
+
+    public void validateTransactionDetailsInHistory (String date, String amount, String from, String to) throws Exception {
+        baseDafabet.PageCashierDeposit().getTransactionDetails();
+//        Assert.assertTrue(baseDafabet.PageCashierDeposit().isTransactionDateCorrect(date));
+        Assert.assertTrue(baseDafabet.PageCashierDeposit().isTransactionAmountCorrect(amount));
+        Assert.assertTrue(baseDafabet.PageCashierDeposit().isTransactionFromCorrect(from));
+        Assert.assertTrue(baseDafabet.PageCashierDeposit().isTransactionToCorrect(to));
+        Assert.assertTrue(baseDafabet.PageCashierDeposit().validateSuccessfulTransaction());
+    }
 
 
     //==================================================================================================================

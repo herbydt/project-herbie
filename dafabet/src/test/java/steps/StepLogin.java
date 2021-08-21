@@ -30,13 +30,13 @@ public class StepLogin extends BaseStep {
         workflowDafabet.baseDafabet.waitForPageToComplete();
     }
 
-    @When("^the player logs in using (valid|new) credentials$")
-    public void thePlayerLogsInUsingValidCredentials(String player) throws Throwable {
+    @When("^the player logs in using (valid|new) - ([^\"]*) credentials$")
+    public void thePlayerLogsInUsingValidCredentials(String player, String currency) throws Throwable {
 
         switch (player.toUpperCase()) {
             case "VALID": {
-                baseUsername = getApplicationProperties(baseCurrentPage + "." + getEnvironment() + ".username");
-                basePassword = getApplicationProperties(baseCurrentPage + "." + getEnvironment() + ".password");
+                baseUsername = getApplicationProperties(baseCurrentPage + "." + currency.toUpperCase() + "." + getEnvironment() + ".username");
+                basePassword = getApplicationProperties(baseCurrentPage + "." + currency.toUpperCase() + "." + getEnvironment() + ".password");
                 break;
             }
             case "NEW": {
@@ -54,13 +54,13 @@ public class StepLogin extends BaseStep {
         CurrentState = "Post-Login";
     }
 
-    @When("^the player logs in using (valid|new) mobile credentials$")
-    public void thePlayerLogsInUsingValidMobileCredentials(String player) throws Throwable {
+    @When("^the player logs in using (valid|new) - ([^\"]*) mobile credentials$")
+    public void thePlayerLogsInUsingValidMobileCredentials(String player, String currency) throws Throwable {
         workflowDafabet.baseDafabet.waitForMobilePageToComplete();
         switch (player.toUpperCase()) {
             case "VALID": {
-                baseUsername = getApplicationProperties(baseCurrentPage + "." + getEnvironment() + ".username");
-                basePassword = getApplicationProperties(baseCurrentPage + "." + getEnvironment() + ".password");
+                baseUsername = getApplicationProperties(baseCurrentPage + "." + currency.toUpperCase() +  getEnvironment() + ".username");
+                basePassword = getApplicationProperties(baseCurrentPage + "." + currency.toUpperCase() +  getEnvironment() + ".password");
                 break;
             }
             case "NEW": {

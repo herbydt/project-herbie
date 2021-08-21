@@ -12,6 +12,7 @@ public class PageCashier extends BaseDafabet {
     By txtPaymentOptionsHeader = By.cssSelector("h2.h2.title");
     By tabPaymentOptionsDeposit = By.cssSelector("a.transaction-type-item.deposit");
     By tabPaymentOptionsWithdraw = By.cssSelector("a.transaction-type-item.withdraw");
+    By lblMobileHeaderTotalBalance = By.cssSelector("span.player-total-balance");
 
     public PageCashier(WebDriver driver) {
         super(driver);
@@ -29,6 +30,11 @@ public class PageCashier extends BaseDafabet {
         }
         else return false;
     }
+
+
+    ////////////////
+    //   MOBILE   //
+    ////////////////
 
     public boolean isMobileUsernameCorrect(String username) {
         control.click(icnMobCashierLeftMenu);
@@ -59,4 +65,18 @@ public class PageCashier extends BaseDafabet {
         }
     }
 
+    public String getTotalBalanceInMobileHeader() throws Exception {
+        String total = "";
+        int ctr = 0;
+        total = control.getText(lblMobileHeaderTotalBalance, 10);
+        while (!total.contains(".")) {
+            total = control.getText(lblMobileHeaderTotalBalance, 10);
+            Thread.sleep(1000);
+            if (ctr > 10) {
+                throw new Exception("ERROR: Balance header still not loaded after 10secs. Please try again.");
+            }
+        }
+        System.out.println("Total balance in header: " + total + "\n");
+        return total.replace(",", ""); //this is to remove "," on values that are more than 3 disgits
+    }
 }
