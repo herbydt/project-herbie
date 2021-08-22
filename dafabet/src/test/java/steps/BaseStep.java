@@ -74,6 +74,7 @@ public class BaseStep extends TestBase{
     public static String baseEnrolledBankBranchName;
     public static String baseEnrolledBankAddress;
     public static String baseEnrolledBankAccountNumber;
+    public static String baseEnrolledBankIFSC;
 
 
     //==================================================================================================================

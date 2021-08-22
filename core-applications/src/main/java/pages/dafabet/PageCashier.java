@@ -89,9 +89,14 @@ public class PageCashier extends BaseDafabet {
         } else return false;
     }
 
-
-
-
+    public boolean isWithdrawPageDisplayed() {
+        String enrollmentStatus = control.getAttributeValue(lblWithdrawBankEnrollmentStatus, "class",10);
+        String pageTitle = control.getText(lblInnerPageTitle);
+        if ((pageTitle.contains("Withdraw")) && (enrollmentStatus.contains("player-verification-form-processed"))) {
+            System.out.println("\nCURRENT PAGE: Withdraw Transaction page is displayed correctly.");
+            return true;
+        } else return false;
+    }
 
     public String getTotalBalanceInMobileHeader() throws Exception {
         String total = "";

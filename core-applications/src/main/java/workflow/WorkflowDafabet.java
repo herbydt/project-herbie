@@ -110,6 +110,8 @@ public class WorkflowDafabet extends BaseWorkflow {
             return baseDafabet.PageCashier().isFundTransferPageDisplayed();
         } else if (page.equalsIgnoreCase("bank enrollment")) {
             return baseDafabet.PageCashier().isBankEnrollmentPageDisplayed();
+        } else if (page.equalsIgnoreCase("withdraw")) {
+            return baseDafabet.PageCashier().isWithdrawPageDisplayed();
         } else
             return false;
     }
@@ -202,8 +204,16 @@ public class WorkflowDafabet extends BaseWorkflow {
         Assert.assertTrue(baseDafabet.PageCashierFundTransfer().validateSuccessfulFundTransferTransaction());
     }
 
-    public void enrollWithdrawBankAccount(String paymentMethod, String dispName, String bankName, String branchName, String branchAddress, String acctNumber) throws Exception {
-        Assert.assertTrue(baseDafabet.PageCashierHistory().isTransactionAmountCorrect(paymentMethod));
+    public void enrollWithdrawBankAccount(String paymentMethod, String dispName, String bankName, String branchName, String currency,
+                                          String ifsc, String branchAddress, String acctNumber, String password) throws Exception {
+        Assert.assertTrue(baseDafabet.PageCashierBankEnrollment().isPaymentMethodCorrect(paymentMethod));
+        Assert.assertTrue(baseDafabet.PageCashierBankEnrollment().isDisplayedNameCorrect(dispName));
+        baseDafabet.PageCashierBankEnrollment().selectEnrollmentBank(bankName);
+        baseDafabet.PageCashierBankEnrollment().typeEnrollmentBankBranch(branchName, currency, ifsc);
+        baseDafabet.PageCashierBankEnrollment().typeEnrollmentBankAddress(branchAddress);
+        baseDafabet.PageCashierBankEnrollment().typeEnrollmentBankAcctNumber(acctNumber);
+        baseDafabet.PageCashierBankEnrollment().typeEnrollmentPassword(password);
+        baseDafabet.PageCashierBankEnrollment().clickEnrollmentSubmit();
     }
 
     public void openLatestTransactionDetails() throws Exception {
@@ -219,6 +229,9 @@ public class WorkflowDafabet extends BaseWorkflow {
         Assert.assertTrue(baseDafabet.PageCashierHistory().validateSuccessfulTransaction());
     }
 
+    public void getProductBalanceBreakdown (String product) throws Exception {
+
+    }
 
     //==================================================================================================================
     // Dafabet MyAccount

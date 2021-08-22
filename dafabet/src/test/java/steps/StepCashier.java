@@ -57,6 +57,11 @@ public class StepCashier extends BaseStep {
         workflowDafabet.clickMobileButton("dafabet logo");
     }
 
+    @When("^the player checks the ([^\"]*) balances$")
+    public void thePlayerChecksTheCasinoBalances(String product) throws Throwable {
+        workflowDafabet.getProductBalanceBreakdown(product);
+    }
+
     @When("^the mobile player performs deposit using ([^\"]*)$")
     public void thePlayerPerformsDepositUsingPaymentMethod(String paymentMethod, DataTable details) throws Throwable {
         //Data Table
@@ -111,19 +116,25 @@ public class StepCashier extends BaseStep {
         //Data Table
         List<List<String>> PMDetails = details.raw();
         basePaymentMethod = "Local Bank Transfer";
+        String dispName = "";
         baseEnrolledBankName = PMDetails.get(0).get(1);;
         baseEnrolledBankBranchName = PMDetails.get(1).get(1);;
         baseEnrolledBankAddress = PMDetails.get(2).get(1);;
         baseEnrolledBankAccountNumber = PMDetails.get(3).get(1);;
+        baseEnrolledBankIFSC = PMDetails.get(4).get(1);;
 
         workflowDafabet.baseDafabet.PageCashierDeposit().selectPaymentMethod(basePaymentMethod);
 
-        if (baseCashierPlayerStatus.equalsIgnoreCase("new")) {
+        if ((baseCashierPlayerStatus.equalsIgnoreCase("new"))&&(workflowDafabet.baseDafabet.RegCurrency.equalsIgnoreCase("RMB/CNY"))) {
+            dispName = workflowDafabet.baseDafabet.RegLastName+workflowDafabet.baseDafabet.RegFirstName;
+            softAssert.assertTrue(workflowDafabet.validateMobilePage("Bank Enrollment", baseUsername, baseTransaction), "FAILED: Expected Page didn't load correctly.");
+        } else if ((baseCashierPlayerStatus.equalsIgnoreCase("new"))&&(!workflowDafabet.baseDafabet.RegCurrency.equalsIgnoreCase("RMB/CNY"))) {
+            dispName = workflowDafabet.baseDafabet.RegFirstName + " " + workflowDafabet.baseDafabet.RegLastName;
             softAssert.assertTrue(workflowDafabet.validateMobilePage("Bank Enrollment", baseUsername, baseTransaction), "FAILED: Expected Page didn't load correctly.");
         }
-        workflowDafabet.enrollWithdrawBankAccount("Bank Enrollment", baseUsername, baseTransaction);
 
-
+        workflowDafabet.enrollWithdrawBankAccount(basePaymentMethod, dispName, baseEnrolledBankName, baseEnrolledBankBranchName,
+                workflowDafabet.baseDafabet.RegCurrency, baseEnrolledBankIFSC, baseEnrolledBankAddress, baseEnrolledBankAccountNumber, basePassword);
     }
 
     @Then("^the mobile (Deposit|Withdraw|Fund Transfer) transaction is successful$")
@@ -137,7 +148,7 @@ public class StepCashier extends BaseStep {
             trxFrom = basePaymentMethod;
             trxTo = baseDepositToProduct;
             trxAmount = baseDepositAmount;
-            workflowDafabet.launchApplication(getSiteUrl("MDafabetRMB")+ "/" + language.toLowerCase() + "/");
+            workflowDafabet.launchApplication(getSiteUrl("MDafabet")+ "/" + language.toLowerCase() + "/");
             workflowDafabet.baseDafabet.waitForPageToComplete();
             workflowDafabet.baseDafabet.closeAnnouncementLightbox();
             workflowDafabet.clickMobileButton("cashier");

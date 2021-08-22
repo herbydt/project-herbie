@@ -47,8 +47,8 @@ public class PageCashierFundTransfer extends BaseDafabet {
 
     public void clickSubmitTransfer() throws Exception {
         control.click(btnTransferSubmit);
-//        control.waitWhileElementIsDisplayed(imgCashierLoader, 10, "Loader is not displayed.");
         waitForPageToComplete();
+        control.waitWhileElementIsNotDisplayed(msgSuccessfulTransaction,10);
     }
 
     //==================================================================================================================

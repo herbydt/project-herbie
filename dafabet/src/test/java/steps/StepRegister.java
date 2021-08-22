@@ -46,6 +46,7 @@ public class StepRegister extends BaseStep {
         workflowDafabet.baseDafabet.RegCountry = data.get(8).get(1);
         workflowDafabet.baseDafabet.RegLanguage = baseLanguage;
         baseUsername = NewlyRegisteredPlayer;
+        basePassword = workflowDafabet.baseDafabet.RegPassword;
     }
 
     @Then("^a new account is successfully created$")

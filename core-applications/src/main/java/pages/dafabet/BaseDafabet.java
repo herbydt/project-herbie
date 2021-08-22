@@ -117,7 +117,12 @@ public class BaseDafabet extends PageObjectBase {
     public PageCashierFundTransfer PageCashierFundTransfer() {
         return new PageCashierFundTransfer(driver);
     }
-
+    public PageCashierBankEnrollment PageCashierBankEnrollment() {
+        return new PageCashierBankEnrollment(driver);
+    }
+    public PageCashierWithdraw PageCashierWithdraw() {
+        return new PageCashierWithdraw(driver);
+    }
 
     //==================================================================================================================
     // Class Methods

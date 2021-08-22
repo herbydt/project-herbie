@@ -1,11 +1,11 @@
 Feature: Dafabet Cashier
 
-  Scenario: Access Desktop Cashier
-    Given the player is at Dafabet - Entry site in EN language
-    And the player logs in using valid - RMB desktop credentials
-    And the player is logged in successfully
-    When the player clicks the Cashier button
-    Then the desktop Cashier page is loaded successfully
+#  Scenario: Access Desktop Cashier
+#    Given the player is at Dafabet - Entry site in EN language
+#    And the player logs in using valid - RMB desktop credentials
+#    And the player is logged in successfully
+#    When the player clicks the Cashier button
+#    Then the desktop Cashier page is loaded successfully
 
   Scenario: Access Mobile Cashier - Deposit / RMB
     Given the player is at MDafabet - Entry site in EN language
@@ -143,8 +143,54 @@ Feature: Dafabet Cashier
       | Branch Name          | Branch Test Name    |
       | Branch Address       | Branch Test Address |
       | Bank Accoount Number | 111222333444        |
+    Then the mobile Withdraw page is loaded successfully
 
+  Scenario: Mobile Cashier - Withdraw - Bank Enrolment - INR
+    Given the player is at MDafabet - Entry site in IN language
+    And the player logs in using valid - RMB2 mobile credentials
+    And the mobile player is logged in successfully
+    When the mobile player clicks the Cashier button
+    Then the mobile Cashier page is loaded successfully
+
+    When the player checks the Casino balances
+    And the mobile player clicks the Withdraw button
+    Then the mobile Payment Options page is loaded successfully
+
+    When the mobile player enrolls withdraw bank account
+      | Bank Name            | Andhra Bank         |
+      | Branch Name          | Branch Test Name    |
+      | Branch Address       | Branch Test Address |
+      | Bank Accoount Number | 111222333444        |
+      | IFSC                 | TESTID12345         |
+    Then the mobile Withdraw page is loaded successfully
 
 #    When the mobile player performs withdraw using Local Bank Transfer
 #      | Withdraw From   | Common Wallet |
 #      | Withdraw Amount | 1000.00       |
+
+  Scenario: Access Mobile Cashier - Fund Transfer / RMB
+    Given the player is at MDafabet - Entry site in EN language
+    And the player logs in using valid - RMB mobile credentials
+    And the mobile player is logged in successfully
+    When the mobile player clicks the Cashier button
+    Then the mobile Cashier page is loaded successfully
+
+  # Fund Transfer
+    When the mobile player clicks the Fund Transfer button
+    Then the mobile Fund Transfer page is loaded successfully
+
+    When the mobile player performs fund transfer
+      | Transfer From | Dafa Sports   |
+      | Transfer To   | Common Wallet |
+      | Amount        | 1000.00       |
+    Then the mobile Fund Transfer transaction is successful
+
+    When the player goes back to the Mobile Cashier dashboard
+    And the mobile player clicks the Fund Transfer button
+    Then the mobile Fund Transfer page is loaded successfully
+
+    When the mobile player performs fund transfer
+      | Transfer From | Common Wallet |
+      | Transfer To   | Dafa Sports   |
+      | Amount        | 1000.00       |
+    Then the mobile Fund Transfer transaction is successful
