@@ -59,7 +59,12 @@ public class StepCashier extends BaseStep {
 
     @When("^the player checks the ([^\"]*) balances$")
     public void thePlayerChecksTheCasinoBalances(String product) throws Throwable {
-        workflowDafabet.getProductBalanceBreakdown(product);
+        baseBalance = workflowDafabet.getProductBalance(product);
+        baseBonus = workflowDafabet.getProductBonus(product);
+        baseWageringReq = workflowDafabet.getProductWageringRequirements(product);
+        System.out.print("\n" + product + " Balance: " + baseBalance + "\n");
+        System.out.print(product + " Bonus: " + baseBonus + "\n");
+        System.out.print(product + " Wagering Requirement: " + baseWageringReq + "\n");
     }
 
     @When("^the mobile player performs deposit using ([^\"]*)$")
@@ -103,12 +108,12 @@ public class StepCashier extends BaseStep {
         basePaymentMethod = paymentMethod;
         baseWithdrawFromProduct = PMDetails.get(0).get(1);
         baseWithdrawAmount = PMDetails.get(1).get(1);
-
         workflowDafabet.baseDafabet.PageCashierDeposit().selectPaymentMethod(paymentMethod);
 
-        if (baseCashierPlayerStatus.equalsIgnoreCase("new")) {
-            softAssert.assertTrue(workflowDafabet.validateMobilePage("Bank Enrollment", baseUsername, baseTransaction), "FAILED: Expected Page didn't load correctly.");
-        }
+        softAssert.assertTrue(workflowDafabet.validateMobilePage("Withdraw", baseUsername, baseTransaction), "FAILED: Expected Page didn't load correctly.");
+        softAssert.assertTrue(workflowDafabet.validateWithdrawPaymentOption(paymentMethod), "FAILED: Expected Payment Method is not displayed.");
+
+        workflowDafabet.withdraw(baseWithdrawFromProduct, baseWithdrawAmount, basePassword);
     }
 
     @When("^the mobile player enrolls withdraw bank account$")
@@ -117,11 +122,11 @@ public class StepCashier extends BaseStep {
         List<List<String>> PMDetails = details.raw();
         basePaymentMethod = "Local Bank Transfer";
         String dispName = "";
-        baseEnrolledBankName = PMDetails.get(0).get(1);;
-        baseEnrolledBankBranchName = PMDetails.get(1).get(1);;
-        baseEnrolledBankAddress = PMDetails.get(2).get(1);;
-        baseEnrolledBankAccountNumber = PMDetails.get(3).get(1);;
-        baseEnrolledBankIFSC = PMDetails.get(4).get(1);;
+        baseEnrolledBankName = PMDetails.get(0).get(1);
+        baseEnrolledBankBranchName = PMDetails.get(1).get(1);
+        baseEnrolledBankAddress = PMDetails.get(2).get(1);
+        baseEnrolledBankAccountNumber = PMDetails.get(3).get(1);
+        baseEnrolledBankIFSC = PMDetails.get(4).get(1);
 
         workflowDafabet.baseDafabet.PageCashierDeposit().selectPaymentMethod(basePaymentMethod);
 
@@ -171,6 +176,11 @@ public class StepCashier extends BaseStep {
     @When("^the player goes back to the Mobile Cashier dashboard$")
     public void thePlayerGoesBackToTheMobileCashierDashboard() throws Throwable {
         workflowDafabet.clickMobileButton("dafabet logo");
+    }
+
+    @Then("^the mobile ([^\"]*) transaction is not successful due to ([^\"]*)$")
+    public void theTransactionIsNotSuccessful(String transaction, String reason) throws Throwable {
+        workflowDafabet.validateUnsuccessfulTransactionMessage(transaction, reason.toLowerCase(), baseWageringReq);
     }
 
 }

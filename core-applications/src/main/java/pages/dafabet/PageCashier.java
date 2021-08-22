@@ -12,6 +12,12 @@ public class PageCashier extends BaseDafabet {
     By lblMobileHeaderTotalBalance = By.cssSelector("span.player-total-balance");
     By lblInnerPageTitle = By.cssSelector("h2.h2.title.mb-tablet-40.mb-desktop-40");
 
+    //DASHBOARD
+    By sectionCasinoBlock = By.cssSelector("a.dashboard-balance-item.product.casino");
+    By txtCasinoBalance = By.cssSelector("div.product-balance-collapsible.casino > div.balance-breakdown > div.real-money > span.balance");
+    By txtCasinoBonus = By.cssSelector("div.product-balance-collapsible.casino > div.balance-breakdown > div.bonus > span.balance");
+    By txtCasinoWageringReq = By.cssSelector("div.product-balance-collapsible.casino > div.balance-breakdown > div.wagering-block > div.locked-amount-money > span.balance");
+
     // PAYMENT OPTIONS
     By txtPaymentOptionsHeader = By.cssSelector("h2.h2.title");
     By tabPaymentOptionsDeposit = By.cssSelector("a.transaction-type-item.deposit");
@@ -112,4 +118,33 @@ public class PageCashier extends BaseDafabet {
         System.out.println("Total balance in header: " + total + "\n");
         return total.replace(",", ""); //this is to remove "," on values that are more than 3 disgits
     }
+
+    public String getProductBalance (String product) throws Exception {
+        control.click(sectionCasinoBlock);
+        switch (product.toUpperCase()) {
+            case "CASINO" : {
+                return control.getText(txtCasinoBalance);
+            }
+            default : return "";
+        }
+    }
+
+    public String getProductBonus (String product) throws Exception {
+        switch (product.toUpperCase()) {
+            case "CASINO" : {
+                return control.getText(txtCasinoBonus);
+            }
+            default : return "";
+        }
+    }
+
+    public String getProductWageringRequirements (String product) throws Exception {
+        switch (product.toUpperCase()) {
+            case "CASINO" : {
+                return control.getText(txtCasinoWageringReq);
+            }
+            default : return "";
+        }
+    }
+
 }

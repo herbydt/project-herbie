@@ -200,8 +200,22 @@ public class WorkflowDafabet extends BaseWorkflow {
         baseDafabet.PageCashierFundTransfer().clickSubmitTransfer();
     }
 
+    public void withdraw (String product, String withdrawAmount, String password) throws Exception {
+        System.out.println("\nWithdraw From: " + product + "\n");
+        System.out.println("Withdraw Amount: " + withdrawAmount + "\n");
+        baseDafabet.PageCashierWithdraw().typeWithdrawAmount(withdrawAmount);
+        baseDafabet.PageCashierWithdraw().typeWithdrawPassword(password);
+        baseDafabet.PageCashierWithdraw().selectWithdrawFromProduct(product);
+        baseDafabet.PageCashierWithdraw().clickSubmitWithdraw();
+
+    }
+
     public void validateSuccessfulTransactionMessage () throws Exception {
         Assert.assertTrue(baseDafabet.PageCashierFundTransfer().validateSuccessfulFundTransferTransaction());
+    }
+
+    public void validateUnsuccessfulTransactionMessage (String transaction, String reason, String wageringReqAmt) throws Exception {
+        Assert.assertTrue(baseDafabet.PageCashierWithdraw().validateUnsuccessfulWithdrawTransaction(reason, wageringReqAmt));
     }
 
     public void enrollWithdrawBankAccount(String paymentMethod, String dispName, String bankName, String branchName, String currency,
@@ -229,9 +243,22 @@ public class WorkflowDafabet extends BaseWorkflow {
         Assert.assertTrue(baseDafabet.PageCashierHistory().validateSuccessfulTransaction());
     }
 
-    public void getProductBalanceBreakdown (String product) throws Exception {
-
+    public String getProductBalance (String product) throws Exception {
+        return baseDafabet.PageCashier().getProductBalance(product);
     }
+
+    public String getProductBonus (String product) throws Exception {
+        return baseDafabet.PageCashier().getProductBonus(product);
+    }
+
+    public String getProductWageringRequirements (String product) throws Exception {
+        return baseDafabet.PageCashier().getProductWageringRequirements(product);
+    }
+
+    public boolean validateWithdrawPaymentOption (String paymentMethod) throws Exception {
+        return baseDafabet.PageCashierWithdraw().isPaymentMethodCorrect(paymentMethod);
+    }
+
 
     //==================================================================================================================
     // Dafabet MyAccount

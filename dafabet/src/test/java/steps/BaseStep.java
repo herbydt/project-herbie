@@ -76,6 +76,11 @@ public class BaseStep extends TestBase{
     public static String baseEnrolledBankAccountNumber;
     public static String baseEnrolledBankIFSC;
 
+    // Cashier - Dashboard
+    public static String baseBalance;
+    public static String baseBonus;
+    public static String baseWageringReq;
+
 
     //==================================================================================================================
     // Test Utility Methods
