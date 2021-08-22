@@ -49,6 +49,13 @@ public class PageMobileDafabet extends BaseDafabet {
                 control.waitWhileElementIsNotDisplayed(lightboxLogin, 10);
                 break;
             }
+            case "REGISTRATION": {
+                control.click(btnHeaderLogin);
+                control.waitWhileElementIsNotDisplayed(lightboxLogin, 10);
+                control.click(btnMobileRegister);
+                waitForPageToComplete();
+                break;
+            }
             case "LOGIN": {
                 control.click(btnMobileLogin);
                 break;

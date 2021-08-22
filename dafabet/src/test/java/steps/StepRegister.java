@@ -65,6 +65,7 @@ public class StepRegister extends BaseStep {
                 workflowDafabet.baseDafabet.RegLanguage),"FAILED: Registration is not successfully submitted. \n");
 
         System.out.println("INFO: Newly Registered User = " + NewlyRegisteredPlayer + "\n");
+        baseCashierPlayerStatus = "new";
         CurrentState = "Post-Login";
         softAssert.assertTrue(workflowDafabet.baseDafabet.PageMakeDeposit().isUsernameDisplayedCorrect(NewlyRegisteredPlayer), "FAILED: Deposit page is not displayed. \n");
     }

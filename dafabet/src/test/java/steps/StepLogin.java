@@ -30,7 +30,7 @@ public class StepLogin extends BaseStep {
         workflowDafabet.baseDafabet.waitForPageToComplete();
     }
 
-    @When("^the player logs in using (valid|new) - ([^\"]*) credentials$")
+    @When("^the player logs in using (valid|new) - ([^\"]*) desktop credentials$")
     public void thePlayerLogsInUsingValidCredentials(String player, String currency) throws Throwable {
 
         switch (player.toUpperCase()) {
@@ -51,6 +51,7 @@ public class StepLogin extends BaseStep {
         System.out.println("Username: " + baseUsername + "\n");
         System.out.println("Password: " + basePassword + "\n");
         workflowDafabet.loginPlayer(baseUsername, basePassword);
+        baseCashierPlayerStatus = "old";
         CurrentState = "Post-Login";
     }
 
@@ -59,8 +60,8 @@ public class StepLogin extends BaseStep {
         workflowDafabet.baseDafabet.waitForMobilePageToComplete();
         switch (player.toUpperCase()) {
             case "VALID": {
-                baseUsername = getApplicationProperties(baseCurrentPage + "." + currency.toUpperCase() +  getEnvironment() + ".username");
-                basePassword = getApplicationProperties(baseCurrentPage + "." + currency.toUpperCase() +  getEnvironment() + ".password");
+                baseUsername = getApplicationProperties(baseCurrentPage + "." + currency.toUpperCase() + "." + getEnvironment() + ".username");
+                basePassword = getApplicationProperties(baseCurrentPage + "." + currency.toUpperCase() + "." + getEnvironment() + ".password");
                 break;
             }
             case "NEW": {
@@ -75,6 +76,7 @@ public class StepLogin extends BaseStep {
         System.out.println("Username: " + baseUsername + "\n");
         System.out.println("Password: " + basePassword + "\n");
         workflowDafabet.loginMobilePlayer(baseUsername, basePassword);
+        baseCashierPlayerStatus = "old";
         CurrentState = "Post-Login";
     }
 

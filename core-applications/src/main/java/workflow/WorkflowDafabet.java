@@ -106,6 +106,10 @@ public class WorkflowDafabet extends BaseWorkflow {
             return baseDafabet.PageCashier().isMobileUsernameCorrect(username);
         } else if (page.equalsIgnoreCase("payment options")) {
             return baseDafabet.PageCashier().isPaymentOptionsPageDisplayed(transaction);
+        } else if (page.equalsIgnoreCase("fund transfer")) {
+            return baseDafabet.PageCashier().isFundTransferPageDisplayed();
+        } else if (page.equalsIgnoreCase("bank enrollment")) {
+            return baseDafabet.PageCashier().isBankEnrollmentPageDisplayed();
         } else
             return false;
     }
@@ -184,17 +188,35 @@ public class WorkflowDafabet extends BaseWorkflow {
         baseDafabet.PageCashierDeposit().clickDepositSubmit();
     }
 
+    public void fundTransfer (String productFrom, String productTo, String transferAmount) throws Exception {
+        System.out.println("From Product:" + productFrom + "\n");
+        System.out.println("To Product:" + productTo + "\n");
+        System.out.println("Transfer Amount:" + transferAmount + "\n");
+        baseDafabet.PageCashierFundTransfer().selectTransferFromProduct(productFrom);
+        baseDafabet.PageCashierFundTransfer().selectTransferToProduct(productTo);
+        baseDafabet.PageCashierFundTransfer().typeTransferAmount(transferAmount);
+        baseDafabet.PageCashierFundTransfer().clickSubmitTransfer();
+    }
+
+    public void validateSuccessfulTransactionMessage () throws Exception {
+        Assert.assertTrue(baseDafabet.PageCashierFundTransfer().validateSuccessfulFundTransferTransaction());
+    }
+
+    public void enrollWithdrawBankAccount(String paymentMethod, String dispName, String bankName, String branchName, String branchAddress, String acctNumber) throws Exception {
+        Assert.assertTrue(baseDafabet.PageCashierHistory().isTransactionAmountCorrect(paymentMethod));
+    }
+
     public void openLatestTransactionDetails() throws Exception {
-        baseDafabet.PageCashierDeposit().clickLatestTrxInHistory();
+        baseDafabet.PageCashierHistory().clickLatestTrxInHistory();
     }
 
     public void validateTransactionDetailsInHistory (String date, String amount, String from, String to) throws Exception {
-        baseDafabet.PageCashierDeposit().getTransactionDetails();
+        baseDafabet.PageCashierHistory().getTransactionDetails();
 //        Assert.assertTrue(baseDafabet.PageCashierDeposit().isTransactionDateCorrect(date));
-        Assert.assertTrue(baseDafabet.PageCashierDeposit().isTransactionAmountCorrect(amount));
-        Assert.assertTrue(baseDafabet.PageCashierDeposit().isTransactionFromCorrect(from));
-        Assert.assertTrue(baseDafabet.PageCashierDeposit().isTransactionToCorrect(to));
-        Assert.assertTrue(baseDafabet.PageCashierDeposit().validateSuccessfulTransaction());
+        Assert.assertTrue(baseDafabet.PageCashierHistory().isTransactionAmountCorrect(amount));
+        Assert.assertTrue(baseDafabet.PageCashierHistory().isTransactionFromCorrect(from));
+        Assert.assertTrue(baseDafabet.PageCashierHistory().isTransactionToCorrect(to));
+        Assert.assertTrue(baseDafabet.PageCashierHistory().validateSuccessfulTransaction());
     }
 
 

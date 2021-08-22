@@ -9,10 +9,17 @@ public class PageCashier extends BaseDafabet {
     By icnMobCashierLeftMenu = By.id("menubile-anchor");
     By icnMobCashierLeftMenuClose = By.cssSelector("span.menubile-content-close.close-icon");
     By txtMobileCashierUsername = By.cssSelector("nav.nav.menubile-nav > div.navigation > div.block.block-cashier > div.profile > span.username-container");
+    By lblMobileHeaderTotalBalance = By.cssSelector("span.player-total-balance");
+    By lblInnerPageTitle = By.cssSelector("h2.h2.title.mb-tablet-40.mb-desktop-40");
+
+    // PAYMENT OPTIONS
     By txtPaymentOptionsHeader = By.cssSelector("h2.h2.title");
     By tabPaymentOptionsDeposit = By.cssSelector("a.transaction-type-item.deposit");
     By tabPaymentOptionsWithdraw = By.cssSelector("a.transaction-type-item.withdraw");
-    By lblMobileHeaderTotalBalance = By.cssSelector("span.player-total-balance");
+
+    // WITHDRAW
+    By lblWithdrawBankEnrollmentStatus = By.cssSelector("div.player-verification-form");
+
 
     public PageCashier(WebDriver driver) {
         super(driver);
@@ -64,6 +71,27 @@ public class PageCashier extends BaseDafabet {
             return false;
         }
     }
+
+    public boolean isFundTransferPageDisplayed() {
+//        closeMobCashierAnnouncementLightbox();
+        String pageTitle = control.getText(lblInnerPageTitle);
+        if (pageTitle.contains("Transfer")) {
+            System.out.println("\nCURRENT PAGE: Fund Transfer Transaction page is displayed correctly.");
+            return true;
+        } else return false;
+    }
+
+    public boolean isBankEnrollmentPageDisplayed() {
+        String enrollmentStatus = control.getAttributeValue(lblWithdrawBankEnrollmentStatus, "class",10);
+        if (!enrollmentStatus.contains("player-verification-form-processed")) {
+            System.out.println("\nCURRENT PAGE: Player has not yet enrolled his/her bank account for withdrawal.");
+            return true;
+        } else return false;
+    }
+
+
+
+
 
     public String getTotalBalanceInMobileHeader() throws Exception {
         String total = "";

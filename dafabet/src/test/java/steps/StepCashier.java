@@ -20,9 +20,6 @@ public class StepCashier extends BaseStep {
 
     @When("^the player clicks the ([^\"]*) button$")
     public void thePlayerIsAtSite(String button) throws Throwable {
-//        NewlyRegisteredPlayer = "qaprodrmbht960";
-//        workflowDafabet.baseDafabet.RegUsername = "qaprodrmbht960";
-//        workflowDafabet.baseDafabet.RegEmail = "qaprodrmbht960@yopmail.com";
         workflowDafabet.clickButton(button);
     }
 
@@ -49,7 +46,7 @@ public class StepCashier extends BaseStep {
 
     @Then("^the mobile ([^\"]*) page is loaded successfully$")
     public void theMobilePageIsLoadedSuccessfully(String page) throws Throwable {
-        softAssert.assertTrue(workflowDafabet.validateMobilePage(page, baseUsername, baseTransaction), "FAILED: ");
+        softAssert.assertTrue(workflowDafabet.validateMobilePage(page, baseUsername, baseTransaction), "FAILED: Expected Page didn't load correctly.");
         if (page.equalsIgnoreCase("cashier")) {
             baseHeaderOldBalance = Float.parseFloat(workflowDafabet.baseDafabet.PageCashier().getTotalBalanceInMobileHeader().replace(",", ""));
         }
@@ -61,7 +58,7 @@ public class StepCashier extends BaseStep {
     }
 
     @When("^the mobile player performs deposit using ([^\"]*)$")
-    public void thePlayerPerformsDepositUsingLocalBankTransfer(String paymentMethod, DataTable details) throws Throwable {
+    public void thePlayerPerformsDepositUsingPaymentMethod(String paymentMethod, DataTable details) throws Throwable {
         //Data Table
         List<List<String>> PMDetails = details.raw();
         basePaymentMethod = paymentMethod;
@@ -82,32 +79,87 @@ public class StepCashier extends BaseStep {
         baseDepositStatus = "Successful";
     }
 
+    @When("^the mobile player performs fund transfer$")
+    public void thePlayerPerformsFundTransfer(DataTable details) throws Throwable {
+        //Data Table
+        List<List<String>> FTDetails = details.raw();
+        baseTransferFromProduct = FTDetails.get(0).get(1);
+        baseTransferToProduct = FTDetails.get(1).get(1);
+        baseTransferAmount = FTDetails.get(2).get(1);
+
+        workflowDafabet.fundTransfer(baseTransferFromProduct, baseTransferToProduct, baseTransferAmount);
+        baseDepositStatus = "Successful";
+    }
+
+    @When("^the mobile player performs withdraw using ([^\"]*)$")
+    public void thePlayerPerformsWithdrawUsingLocalBankTransfer(String paymentMethod, DataTable details) throws Throwable {
+        //Data Table
+        List<List<String>> PMDetails = details.raw();
+        basePaymentMethod = paymentMethod;
+        baseWithdrawFromProduct = PMDetails.get(0).get(1);
+        baseWithdrawAmount = PMDetails.get(1).get(1);
+
+        workflowDafabet.baseDafabet.PageCashierDeposit().selectPaymentMethod(paymentMethod);
+
+        if (baseCashierPlayerStatus.equalsIgnoreCase("new")) {
+            softAssert.assertTrue(workflowDafabet.validateMobilePage("Bank Enrollment", baseUsername, baseTransaction), "FAILED: Expected Page didn't load correctly.");
+        }
+    }
+
+    @When("^the mobile player enrolls withdraw bank account$")
+    public void thePlayerEnrollsWithdrawBannkAccount(DataTable details) throws Throwable {
+        //Data Table
+        List<List<String>> PMDetails = details.raw();
+        basePaymentMethod = "Local Bank Transfer";
+        baseEnrolledBankName = PMDetails.get(0).get(1);;
+        baseEnrolledBankBranchName = PMDetails.get(1).get(1);;
+        baseEnrolledBankAddress = PMDetails.get(2).get(1);;
+        baseEnrolledBankAccountNumber = PMDetails.get(3).get(1);;
+
+        workflowDafabet.baseDafabet.PageCashierDeposit().selectPaymentMethod(basePaymentMethod);
+
+        if (baseCashierPlayerStatus.equalsIgnoreCase("new")) {
+            softAssert.assertTrue(workflowDafabet.validateMobilePage("Bank Enrollment", baseUsername, baseTransaction), "FAILED: Expected Page didn't load correctly.");
+        }
+        workflowDafabet.enrollWithdrawBankAccount("Bank Enrollment", baseUsername, baseTransaction);
+
+
+    }
+
     @Then("^the mobile (Deposit|Withdraw|Fund Transfer) transaction is successful$")
     public void theMobileDepositTransactionIsSuccessful(String transaction) throws Throwable {
         String language = "EN";
         String trxFrom = "";
         String trxTo = "";
-        workflowDafabet.launchApplication(getSiteUrl("MDafabetRMB")+ "/" + language.toLowerCase() + "/");
-        workflowDafabet.baseDafabet.waitForPageToComplete();
-        workflowDafabet.baseDafabet.closeAnnouncementLightbox();
-        workflowDafabet.clickMobileButton("cashier");
-        workflowDafabet.clickMobileButton("history");
-        workflowDafabet.openLatestTransactionDetails();
+        String trxAmount = "";
 
         if (transaction.equalsIgnoreCase("deposit")) {
             trxFrom = basePaymentMethod;
             trxTo = baseDepositToProduct;
+            trxAmount = baseDepositAmount;
+            workflowDafabet.launchApplication(getSiteUrl("MDafabetRMB")+ "/" + language.toLowerCase() + "/");
+            workflowDafabet.baseDafabet.waitForPageToComplete();
+            workflowDafabet.baseDafabet.closeAnnouncementLightbox();
+            workflowDafabet.clickMobileButton("cashier");
         } else if (transaction.equalsIgnoreCase("withdraw")) {
             trxFrom = baseDepositToProduct;
             trxTo = "Adjustment";
         } else if (transaction.equalsIgnoreCase("fund transfer")) {
-            trxFrom = baseDepositToProduct;
-            trxTo = baseDepositToProduct;
+            workflowDafabet.validateSuccessfulTransactionMessage();
+            trxFrom = baseTransferFromProduct;
+            trxTo = baseTransferToProduct;
+            trxAmount = baseTransferAmount;
+            workflowDafabet.clickMobileButton("dafabet logo");
         }
 
-        workflowDafabet.validateTransactionDetailsInHistory(transaction, baseDepositAmount, trxFrom, trxTo);
+        workflowDafabet.clickMobileButton("history");
+        workflowDafabet.openLatestTransactionDetails();
+        workflowDafabet.validateTransactionDetailsInHistory(transaction, trxAmount, trxFrom, trxTo);
+    }
 
-//        softAssert.assertTrue(workflowDafabet.validatePage(page, baseUsername), "FAILED: The correct username is not reflected in the Cashier Page.");
+    @When("^the player goes back to the Mobile Cashier dashboard$")
+    public void thePlayerGoesBackToTheMobileCashierDashboard() throws Throwable {
+        workflowDafabet.clickMobileButton("dafabet logo");
     }
 
 }

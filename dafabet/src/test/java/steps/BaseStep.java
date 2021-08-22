@@ -29,6 +29,7 @@ public class BaseStep extends TestBase{
 
     // Cashier Variables
     public static String baseTransaction;
+    public static String baseCashierPlayerStatus;
 //    public static String baseTransactionType;
     public static List<String> baseAllProductsOldBalance;
     public static List<String> baseAllProductNewBalance;
@@ -65,7 +66,15 @@ public class BaseStep extends TestBase{
     public static String baseNewTransferToProductBalance;
     public static String baseTransferFromProduct;
     public static String baseTransferToProduct;
+    public static String baseTransferAmount;
     public static String baseTransferStatus;
+
+    // Cashier - Withdraw - Bank Enrollment
+    public static String baseEnrolledBankName;
+    public static String baseEnrolledBankBranchName;
+    public static String baseEnrolledBankAddress;
+    public static String baseEnrolledBankAccountNumber;
+
 
     //==================================================================================================================
     // Test Utility Methods

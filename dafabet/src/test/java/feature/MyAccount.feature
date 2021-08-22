@@ -65,7 +65,7 @@ Feature: Dafabet MyAccount
     Then the player changes the password successfully
 
     When the player logs out in Dafabet page
-    And the player logs in using new - RMB credentials
+    And the player logs in using new - RMB desktop credentials
     Then the player is logged in successfully
 
   Scenario: Cant Login - Forgot Username
@@ -137,5 +137,5 @@ Feature: Dafabet MyAccount
 
     # Login using NEW Credentials
     When the player is at Dafabet - Virtual-Sports site in EN language
-    And the player logs in using new - RMB credentials
+    And the player logs in using new - RMB desktop credentials
     Then the player is logged in successfully

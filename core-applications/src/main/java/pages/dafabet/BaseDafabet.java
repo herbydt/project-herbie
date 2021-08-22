@@ -60,10 +60,12 @@ public class BaseDafabet extends PageObjectBase {
 
     // DAFABET MOBILE
     By btnHeaderLogin = By.cssSelector("a.login-trigger.btn.btn-yellow.btn-small.btn-mobile-login");
+    By btnMobileLogin = By.cssSelector("input.btn.btn-gray.login-submit.input-block-level.mb-10");
+    By btnMobileRegister = By.cssSelector("a.btn-join.btn.btn-yellow.input-block-level");
     By lightboxLogin = By.cssSelector("div.modal.login.modal-active");
     By txtMobUsername = By.cssSelector("input.login-field-username.input-block-level");
     By txtMobPassword = By.cssSelector("input.login-field-password.input-block-level.password-mask-enabled");
-    By btnMobileLogin = By.cssSelector("input.btn.btn-gray.login-submit.input-block-level.mb-10");
+
     By icnMobileCashier = By.cssSelector("div.account-balance");
     By icnMobileCashierLink = By.cssSelector("div.account-balance > a");
 
@@ -109,6 +111,13 @@ public class BaseDafabet extends PageObjectBase {
     public PageCashierDeposit PageCashierDeposit() {
         return new PageCashierDeposit(driver);
     }
+    public PageCashierHistory PageCashierHistory() {
+        return new PageCashierHistory(driver);
+    }
+    public PageCashierFundTransfer PageCashierFundTransfer() {
+        return new PageCashierFundTransfer(driver);
+    }
+
 
     //==================================================================================================================
     // Class Methods
