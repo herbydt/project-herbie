@@ -7,7 +7,7 @@ Feature: Dafabet Cashier
 #    When the player clicks the Cashier button
 #    Then the desktop Cashier page is loaded successfully
 
-  Scenario: Access Mobile Cashier - Deposit / RMB
+  Scenario: Mobile Cashier - Deposit / RMB
     Given the player is at MDafabet - Entry site in EN language
     And the player logs in using valid - RMB mobile credentials
     And the mobile player is logged in successfully
@@ -27,7 +27,7 @@ Feature: Dafabet Cashier
       | Address       | Not Applicable          |
     Then the mobile Deposit transaction is successful
 
-  Scenario: Access Mobile Cashier - Deposit / INR
+  Scenario: Mobile Cashier - Deposit / INR
     Given the player is at MDafabet - Entry site in EN language
     And the player logs in using valid - INR mobile credentials
     And the mobile player is logged in successfully
@@ -47,7 +47,7 @@ Feature: Dafabet Cashier
       | Address       | Not Applicable        |
     Then the mobile Deposit transaction is successful
 
-  Scenario: Access Mobile Cashier - Fund Transfer / RMB
+  Scenario: Mobile Cashier - Fund Transfer / RMB
     Given the player is at MDafabet - Entry site in EN language
     And the player logs in using valid - RMB mobile credentials
     And the mobile player is logged in successfully
@@ -74,7 +74,7 @@ Feature: Dafabet Cashier
       | Amount        | 1000.00       |
     Then the mobile Fund Transfer transaction is successful
 
-  Scenario: Access Mobile Cashier - Fund Transfer / INR
+  Scenario: Mobile Cashier - Fund Transfer / INR
     Given the player is at MDafabet - Entry site in EN language
     And the player logs in using valid - INR mobile credentials
     And the mobile player is logged in successfully
@@ -101,7 +101,7 @@ Feature: Dafabet Cashier
       | Amount        | 1500.00       |
     Then the mobile Fund Transfer transaction is successful
 
-  Scenario: Mobile Cashier - Withdraw - Bank Enrolment - RMB
+  Scenario: Mobile Cashier - Withdraw - Bank Enrollment / RMB
     Given the player is at MDafabet - Entry site in EN language
     And the mobile player clicks the Registration button
     And the desktop Registration page is loaded successfully
@@ -132,7 +132,7 @@ Feature: Dafabet Cashier
       | IFSC                 | Not Applicable      |
     Then the mobile Withdraw page is loaded successfully
 
-  Scenario: Mobile Cashier - Withdraw - Bank Enrolment - INR
+  Scenario: Mobile Cashier - Withdraw - Bank Enrollment / INR
     Given the player is at MDafabet - Entry site in IN language
     And the mobile player clicks the Registration button
     And the desktop Registration page is loaded successfully
@@ -163,7 +163,39 @@ Feature: Dafabet Cashier
       | IFSC                 | TESTID12345         |
     Then the mobile Withdraw page is loaded successfully
 
-  Scenario: Access Mobile Cashier - Withdraw with Wagering - RMB
+  Scenario: Mobile Cashier - Successful Withdraw / RMB
+    Given the player is at MDafabet - Entry site in EN language
+    And the player logs in using valid - RMB mobile credentials
+    And the mobile player is logged in successfully
+    When the mobile player clicks the Cashier button
+    Then the mobile Cashier page is loaded successfully
+
+    When the player checks the Casino balances
+    And the mobile player clicks the Withdraw button
+    Then the mobile Payment Options page is loaded successfully
+
+    When the mobile player performs withdraw using Local Bank Transfer
+      | Withdraw From   | OW Sports |
+      | Withdraw Amount | 200       |
+    Then the mobile Withdraw transaction is successful
+
+  Scenario: Mobile Cashier - Successful Withdraw / INR
+    Given the player is at MDafabet - Entry site in IN language
+    And the player logs in using valid - INR mobile credentials
+    And the mobile player is logged in successfully
+    When the mobile player clicks the Cashier button
+    Then the mobile Cashier page is loaded successfully
+
+    When the player checks the Casino balances
+    And the mobile player clicks the Withdraw button
+    Then the mobile Payment Options page is loaded successfully
+
+    When the mobile player performs withdraw using Local Bank Transfer
+      | Withdraw From   | Common Wallet |
+      | Withdraw Amount | 500           |
+    Then the mobile Withdraw transaction is successful
+
+  Scenario: Mobile Cashier - Withdraw with Wagering / RMB
     Given the player is at MDafabet - Entry site in EN language
     And the player logs in using valid - RMB2 mobile credentials
     And the mobile player is logged in successfully
@@ -176,10 +208,10 @@ Feature: Dafabet Cashier
 
     When the mobile player performs withdraw using Local Bank Transfer
       | Withdraw From   | Casino |
-      | Withdraw Amount | 200.00 |
+      | Withdraw Amount | 200    |
     Then the mobile Withdraw transaction is not successful due to Wagering Requirement
 
-  Scenario: Access Mobile Cashier - Withdraw with Wagering - INR
+  Scenario: Mobile Cashier - Withdraw with Wagering / INR
     Given the player is at MDafabet - Entry site in IN language
     And the player logs in using valid - INR2 mobile credentials
     And the mobile player is logged in successfully

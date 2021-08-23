@@ -6,6 +6,7 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import org.testng.Assert;
 
 import java.util.List;
 
@@ -112,8 +113,8 @@ public class StepCashier extends BaseStep {
 
         softAssert.assertTrue(workflowDafabet.validateMobilePage("Withdraw", baseUsername, baseTransaction), "FAILED: Expected Page didn't load correctly.");
         softAssert.assertTrue(workflowDafabet.validateWithdrawPaymentOption(paymentMethod), "FAILED: Expected Payment Method is not displayed.");
-
-        workflowDafabet.withdraw(baseWithdrawFromProduct, baseWithdrawAmount, basePassword);
+//        workflowDafabet.withdraw(baseWithdrawFromProduct, baseWithdrawAmount, basePassword);
+        Assert.assertTrue(workflowDafabet.baseDafabet.PageCashierWithdraw().withdraw(baseWithdrawFromProduct, baseWithdrawAmount, basePassword), "FAILED: Withdraw transaction is not successfully submitted. \n");
     }
 
     @When("^the mobile player enrolls withdraw bank account$")
@@ -158,10 +159,13 @@ public class StepCashier extends BaseStep {
             workflowDafabet.baseDafabet.closeAnnouncementLightbox();
             workflowDafabet.clickMobileButton("cashier");
         } else if (transaction.equalsIgnoreCase("withdraw")) {
-            trxFrom = baseDepositToProduct;
-            trxTo = "Adjustment";
+            workflowDafabet.validateSuccessfulTransactionMessage(transaction);
+            trxFrom = baseWithdrawFromProduct;
+            trxTo = basePaymentMethod;
+            trxAmount = baseWithdrawAmount;
+            workflowDafabet.clickMobileButton("dafabet logo");
         } else if (transaction.equalsIgnoreCase("fund transfer")) {
-            workflowDafabet.validateSuccessfulTransactionMessage();
+            workflowDafabet.validateSuccessfulTransactionMessage(transaction);
             trxFrom = baseTransferFromProduct;
             trxTo = baseTransferToProduct;
             trxAmount = baseTransferAmount;

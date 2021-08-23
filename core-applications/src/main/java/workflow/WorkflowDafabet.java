@@ -203,15 +203,19 @@ public class WorkflowDafabet extends BaseWorkflow {
     public void withdraw (String product, String withdrawAmount, String password) throws Exception {
         System.out.println("\nWithdraw From: " + product + "\n");
         System.out.println("Withdraw Amount: " + withdrawAmount + "\n");
+        baseDafabet.PageCashierWithdraw().selectWithdrawFromProduct(product);
         baseDafabet.PageCashierWithdraw().typeWithdrawAmount(withdrawAmount);
         baseDafabet.PageCashierWithdraw().typeWithdrawPassword(password);
-        baseDafabet.PageCashierWithdraw().selectWithdrawFromProduct(product);
         baseDafabet.PageCashierWithdraw().clickSubmitWithdraw();
 
     }
 
-    public void validateSuccessfulTransactionMessage () throws Exception {
-        Assert.assertTrue(baseDafabet.PageCashierFundTransfer().validateSuccessfulFundTransferTransaction());
+    public void validateSuccessfulTransactionMessage (String transaction) throws Exception {
+        if (transaction.equalsIgnoreCase("fund transfer")) {
+            Assert.assertTrue(baseDafabet.PageCashierFundTransfer().validateSuccessfulFundTransferTransaction());
+        } else if (transaction.equalsIgnoreCase("withdraw")) {
+            Assert.assertTrue(baseDafabet.PageCashierWithdraw().validateSuccessfulWithdrawTransaction());
+        }
     }
 
     public void validateUnsuccessfulTransactionMessage (String transaction, String reason, String wageringReqAmt) throws Exception {
