@@ -27,7 +27,7 @@ public class PageCashierWithdraw extends BaseDafabet {
 
     public void setTextField(By locator, String value) throws Exception {
         if (value != null) {
-            control.type(locator, value);
+            control.type(locator, value,10);
             control.findElement(locator).sendKeys(Keys.TAB);
         }
     }

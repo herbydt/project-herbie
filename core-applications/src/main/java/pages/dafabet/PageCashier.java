@@ -17,6 +17,11 @@ public class PageCashier extends BaseDafabet {
     By txtCasinoBalance = By.cssSelector("div.product-balance-collapsible.casino > div.balance-breakdown > div.real-money > span.balance");
     By txtCasinoBonus = By.cssSelector("div.product-balance-collapsible.casino > div.balance-breakdown > div.bonus > span.balance");
     By txtCasinoWageringReq = By.cssSelector("div.product-balance-collapsible.casino > div.balance-breakdown > div.wagering-block > div.locked-amount-money > span.balance");
+    By sectionOWSportsBlock = By.cssSelector("a.dashboard-balance-item.product.sports");
+    By txtOWSportsBalance = By.cssSelector("div.product-balance-collapsible.sports > div.balance-breakdown > div.real-money > span.balance");
+    By txtOWSportsBonus = By.cssSelector("div.product-balance-collapsible.sports > div.balance-breakdown > div.locked-amount-money > span.balance");
+    By txtOWSportsWageringReq = By.cssSelector("div.product-balance-collapsible.sports > div.balance-breakdown > div.wagering-block > div.locked-amount-money > span.balance");
+
 
     // PAYMENT OPTIONS
     By txtPaymentOptionsHeader = By.cssSelector("h2.h2.title");
@@ -120,10 +125,14 @@ public class PageCashier extends BaseDafabet {
     }
 
     public String getProductBalance (String product) throws Exception {
-        control.click(sectionCasinoBlock);
         switch (product.toUpperCase()) {
             case "CASINO" : {
+                control.click(sectionCasinoBlock);
                 return control.getText(txtCasinoBalance);
+            }
+            case "OW SPORTS" : {
+                control.click(sectionOWSportsBlock);
+                return control.getText(txtOWSportsBalance);
             }
             default : return "";
         }
@@ -134,6 +143,9 @@ public class PageCashier extends BaseDafabet {
             case "CASINO" : {
                 return control.getText(txtCasinoBonus);
             }
+            case "OW SPORTS" : {
+                return control.getText(txtOWSportsBonus);
+            }
             default : return "";
         }
     }
@@ -142,6 +154,9 @@ public class PageCashier extends BaseDafabet {
         switch (product.toUpperCase()) {
             case "CASINO" : {
                 return control.getText(txtCasinoWageringReq);
+            }
+            case "OW SPORTS" : {
+                return control.getText(txtOWSportsWageringReq);
             }
             default : return "";
         }

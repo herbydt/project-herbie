@@ -15,6 +15,7 @@ public class PageCashierDeposit extends BaseDafabet {
     By imgEasyPayPaymentMethod = By.cssSelector("a[href$='easypay168'] > div.group-payment-option-logo > img");
     By imgTWUPIPaymentMethod = By.cssSelector("a[href$='twupi'] > div.group-payment-option-logo > img");
     By imgAkontoPayPaymentMethod = By.cssSelector("a[href$='akontopaynetbanking'] > div.group-payment-option-logo > img");
+    By imgGoCash88PayPaymentMethod = By.cssSelector("a[href$='gocash88'] > div.group-payment-option-logo > img");
     By imgCashierLoader = By.cssSelector("div.loading-block");
 
     // Deposit Form  Fields
@@ -56,6 +57,13 @@ public class PageCashierDeposit extends BaseDafabet {
                 control.waitWhileElementIsNotDisplayed(imgAkontoPayPaymentMethod, 30);
                 control.focusElement(imgAkontoPayPaymentMethod, 3);
                 control.click(imgAkontoPayPaymentMethod);
+                control.waitForPageComplete();
+                break;
+            }
+            case "GOCASH88" : {
+                control.waitWhileElementIsNotDisplayed(imgGoCash88PayPaymentMethod, 30);
+                control.focusElement(imgGoCash88PayPaymentMethod, 3);
+                control.click(imgGoCash88PayPaymentMethod);
                 control.waitForPageComplete();
                 break;
             }

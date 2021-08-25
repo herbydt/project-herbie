@@ -47,6 +47,26 @@ Feature: Dafabet Cashier
       | Address       | Not Applicable        |
     Then the mobile Deposit transaction is successful
 
+  Scenario: Mobile Cashier - Deposit / THB
+    Given the player is at MDafabet - Entry site in EN language
+    And the player logs in using valid - THB mobile credentials
+    And the mobile player is logged in successfully
+    When the mobile player clicks the Cashier button
+    Then the mobile Cashier page is loaded successfully
+
+    # Deposit - non-LBT Payment Method
+    When the mobile player clicks the Deposit button
+    Then the mobile Payment Options page is loaded successfully
+
+    When the mobile player performs deposit using GoCash88
+      | Deposit To    | Casino         |
+      | Bank          | Bangkok Bank   |
+      | Amount        | 600            |
+      | Transfer Type | Not Applicable |
+      | Depositor     | Not Applicable |
+      | Address       | Not Applicable |
+    Then the mobile Deposit transaction is successful
+
   Scenario: Mobile Cashier - Fund Transfer / RMB
     Given the player is at MDafabet - Entry site in EN language
     And the player logs in using valid - RMB mobile credentials
@@ -99,6 +119,33 @@ Feature: Dafabet Cashier
       | Transfer From | Common Wallet |
       | Transfer To   | OW Sports     |
       | Amount        | 1500.00       |
+    Then the mobile Fund Transfer transaction is successful
+
+  Scenario: Mobile Cashier - Fund Transfer / THB
+    Given the player is at MDafabet - Entry site in EN language
+    And the player logs in using valid - THB mobile credentials
+    And the mobile player is logged in successfully
+    When the mobile player clicks the Cashier button
+    Then the mobile Cashier page is loaded successfully
+
+# Fund Transfer
+    When the mobile player clicks the Fund Transfer button
+    Then the mobile Fund Transfer page is loaded successfully
+
+    When the mobile player performs fund transfer
+      | Transfer From | OW Sports     |
+      | Transfer To   | Common Wallet |
+      | Amount        | 200.00        |
+    Then the mobile Fund Transfer transaction is successful
+
+    When the player goes back to the Mobile Cashier dashboard
+    And the mobile player clicks the Fund Transfer button
+    Then the mobile Fund Transfer page is loaded successfully
+
+    When the mobile player performs fund transfer
+      | Transfer From | Common Wallet |
+      | Transfer To   | OW Sports     |
+      | Amount        | 200.00        |
     Then the mobile Fund Transfer transaction is successful
 
   Scenario: Mobile Cashier - Withdraw - Bank Enrollment / RMB
@@ -170,7 +217,7 @@ Feature: Dafabet Cashier
     When the mobile player clicks the Cashier button
     Then the mobile Cashier page is loaded successfully
 
-    When the player checks the Casino balances
+    When the player checks the OW Sports balances
     And the mobile player clicks the Withdraw button
     Then the mobile Payment Options page is loaded successfully
 
@@ -193,6 +240,22 @@ Feature: Dafabet Cashier
     When the mobile player performs withdraw using Local Bank Transfer
       | Withdraw From   | Common Wallet |
       | Withdraw Amount | 500           |
+    Then the mobile Withdraw transaction is successful
+
+  Scenario: Mobile Cashier - Successful Withdraw / THB
+    Given the player is at MDafabet - Entry site in EN language
+    And the player logs in using valid - THB mobile credentials
+    And the mobile player is logged in successfully
+    When the mobile player clicks the Cashier button
+    Then the mobile Cashier page is loaded successfully
+
+    When the player checks the OW Sports balances
+    And the mobile player clicks the Withdraw button
+    Then the mobile Payment Options page is loaded successfully
+
+    When the mobile player performs withdraw using Local Bank Transfer
+      | Withdraw From   | OW Sports |
+      | Withdraw Amount | 500       |
     Then the mobile Withdraw transaction is successful
 
   Scenario: Mobile Cashier - Withdraw with Wagering / RMB
@@ -225,4 +288,20 @@ Feature: Dafabet Cashier
     When the mobile player performs withdraw using Local Bank Transfer
       | Withdraw From   | Casino |
       | Withdraw Amount | 500    |
+    Then the mobile Withdraw transaction is not successful due to Wagering Requirement
+
+  Scenario: Mobile Cashier - Withdraw with Wagering / THB
+    Given the player is at MDafabet - Entry site in EN language
+    And the player logs in using valid - THB2 mobile credentials
+    And the mobile player is logged in successfully
+    When the mobile player clicks the Cashier button
+    Then the mobile Cashier page is loaded successfully
+
+    When the player checks the Casino balances
+    And the mobile player clicks the Withdraw button
+    Then the mobile Payment Options page is loaded successfully
+
+    When the mobile player performs withdraw using Local Bank Transfer
+      | Withdraw From   | Casino |
+      | Withdraw Amount | 700    |
     Then the mobile Withdraw transaction is not successful due to Wagering Requirement

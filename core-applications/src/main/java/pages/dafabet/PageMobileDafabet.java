@@ -97,7 +97,7 @@ public class PageMobileDafabet extends BaseDafabet {
                 waitForPageToComplete();
                 int attempts = 0;
                 while(attempts < 30) {
-                    if(control.getAttributeValue(icnTrxHistoryLoaderTop,"style",10).contains("block")) {
+                    if(!control.getAttributeValue(icnTrxHistoryLoaderTop,"style",10).contains("none")) {
                         System.out.println("Loading Transaction History Contents...\n");
                         attempts++;
                     } else {
