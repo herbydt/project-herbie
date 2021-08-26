@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba623d69-6c2d-4c06-a1da-07adf53e397f" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-applications/target/classes/pages/dafabet/PageCashierWithdraw.class" afterPath="$PROJECT_DIR$/core-applications/target/classes/pages/dafabet/PageCashierWithdraw.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-applications/src/main/java/pages/dafabet/PageCashier.java" afterPath="$PROJECT_DIR$/core-applications/src/main/java/pages/dafabet/PageCashier.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-applications/src/main/java/pages/dafabet/PageCashierDeposit.java" afterPath="$PROJECT_DIR$/core-applications/src/main/java/pages/dafabet/PageCashierDeposit.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-applications/src/main/java/pages/dafabet/PageCashierWithdraw.java" afterPath="$PROJECT_DIR$/core-applications/src/main/java/pages/dafabet/PageCashierWithdraw.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-applications/src/main/java/pages/dafabet/PageMobileDafabet.java" afterPath="$PROJECT_DIR$/core-applications/src/main/java/pages/dafabet/PageMobileDafabet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dafabet/src/test/java/feature/Cashier.feature" afterPath="$PROJECT_DIR$/dafabet/src/test/java/feature/Cashier.feature" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-framework/src/main/java/browser/extensions/ChromeExtensions.java" afterPath="$PROJECT_DIR$/core-framework/src/main/java/browser/extensions/ChromeExtensions.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core-framework/src/main/java/control/ControlBase.java" afterPath="$PROJECT_DIR$/core-framework/src/main/java/control/ControlBase.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dafabet/src/test/resources/app.properties" afterPath="$PROJECT_DIR$/dafabet/src/test/resources/app.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dafabet/target/test-classes/app.properties" afterPath="$PROJECT_DIR$/dafabet/target/test-classes/app.properties" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -33,8 +33,8 @@
       <file leaf-file-name="Cashier.feature" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dafabet/src/test/java/feature/Cashier.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="148" column="59" lean-forward="true" selection-start-line="148" selection-start-column="59" selection-end-line="148" selection-end-column="59" />
+            <state relative-caret-position="0">
+              <caret line="0" column="19" lean-forward="false" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
               <folding>
                 <element signature="e#346#1245#0" expanded="false" />
                 <element signature="e#1249#2136#0" expanded="false" />
@@ -55,41 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StepCashier.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dafabet/src/test/java/steps/StepCashier.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="116" column="82" lean-forward="false" selection-start-line="116" selection-start-column="82" selection-end-line="116" selection-end-column="82" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PageCashierWithdraw.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core-applications/src/main/java/pages/dafabet/PageCashierWithdraw.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="29" column="24" lean-forward="false" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ControlBase.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ControlBase.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core-framework/src/main/java/control/ControlBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="433" column="98" lean-forward="false" selection-start-line="433" selection-start-column="87" selection-end-line="433" selection-end-column="98" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.properties" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/dafabet/src/test/resources/app.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="32" column="36" lean-forward="false" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="36" />
+            <state relative-caret-position="340">
+              <caret line="1894" column="6" lean-forward="false" selection-start-line="1894" selection-start-column="6" selection-end-line="1894" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -152,7 +122,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/core-framework/src/main/java/helper/CucumberHelper.java" />
         <option value="$PROJECT_DIR$/core-framework/src/main/java/libraries/SeleniumBase.java" />
         <option value="$PROJECT_DIR$/core-framework/src/main/java/libraries/TestBase.java" />
@@ -162,7 +131,6 @@
         <option value="$PROJECT_DIR$/website1/src/test/java/steps/BaseStep.java" />
         <option value="$PROJECT_DIR$/core-applications/src/main/java/pages/website1/PageAccess.java" />
         <option value="$PROJECT_DIR$/core-applications/src/main/java/workflow/WorkflowWebsite1.java" />
-        <option value="$PROJECT_DIR$/core-framework/src/main/java/control/ControlBase.java" />
         <option value="$PROJECT_DIR$/core-applications/src/main/java/pages/website1/PageGoogleSearch.java" />
         <option value="$PROJECT_DIR$/website1/src/test/java/steps/StepAccess.java" />
         <option value="$PROJECT_DIR$/website1/src/test/java/feature/Access.feature" />
@@ -197,12 +165,14 @@
         <option value="$PROJECT_DIR$/core-applications/src/main/java/pages/dafabet/PageCashierHistory.java" />
         <option value="$PROJECT_DIR$/core-applications/src/main/java/workflow/WorkflowDafabet.java" />
         <option value="$PROJECT_DIR$/dafabet/src/test/java/steps/StepCashier.java" />
-        <option value="$PROJECT_DIR$/dafabet/src/test/resources/app.properties" />
         <option value="$PROJECT_DIR$/core-applications/src/main/java/pages/dafabet/PageCashier.java" />
         <option value="$PROJECT_DIR$/core-applications/src/main/java/pages/dafabet/PageCashierDeposit.java" />
         <option value="$PROJECT_DIR$/core-applications/src/main/java/pages/dafabet/PageMobileDafabet.java" />
         <option value="$PROJECT_DIR$/dafabet/src/test/java/feature/Cashier.feature" />
         <option value="$PROJECT_DIR$/core-applications/src/main/java/pages/dafabet/PageCashierWithdraw.java" />
+        <option value="$PROJECT_DIR$/dafabet/src/test/resources/app.properties" />
+        <option value="$PROJECT_DIR$/core-framework/src/main/java/browser/extensions/ChromeExtensions.java" />
+        <option value="$PROJECT_DIR$/core-framework/src/main/java/control/ControlBase.java" />
       </list>
     </option>
   </component>
@@ -219,10 +189,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-86" />
-    <option name="y" value="-919" />
-    <option name="width" value="1616" />
-    <option name="height" value="876" />
+    <option name="x" value="-105" />
+    <option name="y" value="58" />
+    <option name="width" value="1612" />
+    <option name="height" value="917" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -243,6 +213,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -253,56 +224,46 @@
             <path>
               <item name="projectherby" type="b2602c69:ProjectViewProjectNode" />
               <item name="projectherby" type="462c0819:PsiDirectoryNode" />
-              <item name="core-applications" type="462c0819:PsiDirectoryNode" />
+              <item name="core-framework" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="projectherby" type="b2602c69:ProjectViewProjectNode" />
               <item name="projectherby" type="462c0819:PsiDirectoryNode" />
-              <item name="core-applications" type="462c0819:PsiDirectoryNode" />
+              <item name="core-framework" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="projectherby" type="b2602c69:ProjectViewProjectNode" />
               <item name="projectherby" type="462c0819:PsiDirectoryNode" />
-              <item name="core-applications" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="projectherby" type="b2602c69:ProjectViewProjectNode" />
-              <item name="projectherby" type="462c0819:PsiDirectoryNode" />
-              <item name="core-applications" type="462c0819:PsiDirectoryNode" />
+              <item name="core-framework" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="projectherby" type="b2602c69:ProjectViewProjectNode" />
               <item name="projectherby" type="462c0819:PsiDirectoryNode" />
-              <item name="core-applications" type="462c0819:PsiDirectoryNode" />
+              <item name="core-framework" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="projectherby" type="b2602c69:ProjectViewProjectNode" />
               <item name="projectherby" type="462c0819:PsiDirectoryNode" />
-              <item name="core-applications" type="462c0819:PsiDirectoryNode" />
+              <item name="core-framework" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="dafabet" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="projectherby" type="b2602c69:ProjectViewProjectNode" />
               <item name="projectherby" type="462c0819:PsiDirectoryNode" />
-              <item name="core-applications" type="462c0819:PsiDirectoryNode" />
+              <item name="core-framework" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="workflow" type="462c0819:PsiDirectoryNode" />
+              <item name="control" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="projectherby" type="b2602c69:ProjectViewProjectNode" />
@@ -360,9 +321,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -419,7 +379,7 @@
       <module name="dafabet" />
       <envs />
     </configuration>
-    <configuration name="Scenario: Mobile Cashier - Deposit / THB" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Mobile Cashier - Withdraw - Bank Enrollment / INR" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -428,11 +388,11 @@
       </extension>
       <option name="myFilePath" value="$PROJECT_DIR$/dafabet/src/test/java/feature/Cashier.feature" />
       <option name="GLUE" value="steps" />
-      <option name="myNameFilter" value="^Mobile Cashier \- Deposit \/ THB$" />
-      <option name="myGeneratedName" value="Scenario: Mobile Cashier - Deposit / THB" />
+      <option name="myNameFilter" value="^Mobile Cashier \- Withdraw \- Bank Enrollment \/ INR$" />
+      <option name="myGeneratedName" value="Scenario: Mobile Cashier - Withdraw - Bank Enrollment / INR" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^Mobile Cashier \- Deposit \/ THB$&quot;" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^Mobile Cashier \- Withdraw \- Bank Enrollment \/ INR$&quot;" />
       <option name="WORKING_DIRECTORY" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -442,7 +402,7 @@
       <module name="dafabet" />
       <envs />
     </configuration>
-    <configuration name="Scenario: Mobile Cashier - Fund Transfer / THB" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Mobile Cashier - Withdraw with Wagering / INR" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -451,11 +411,11 @@
       </extension>
       <option name="myFilePath" value="$PROJECT_DIR$/dafabet/src/test/java/feature/Cashier.feature" />
       <option name="GLUE" value="steps" />
-      <option name="myNameFilter" value="^Mobile Cashier \- Fund Transfer \/ THB$" />
-      <option name="myGeneratedName" value="Scenario: Mobile Cashier - Fund Transfer / THB" />
+      <option name="myNameFilter" value="^Mobile Cashier \- Withdraw with Wagering \/ INR$" />
+      <option name="myGeneratedName" value="Scenario: Mobile Cashier - Withdraw with Wagering / INR" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^Mobile Cashier \- Fund Transfer \/ THB$&quot;" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^Mobile Cashier \- Withdraw with Wagering \/ INR$&quot;" />
       <option name="WORKING_DIRECTORY" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -465,7 +425,7 @@
       <module name="dafabet" />
       <envs />
     </configuration>
-    <configuration name="Scenario: Mobile Cashier - Successful Withdraw / THB" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Mobile Cashier - Withdraw with Wagering / RMB" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -474,11 +434,11 @@
       </extension>
       <option name="myFilePath" value="$PROJECT_DIR$/dafabet/src/test/java/feature/Cashier.feature" />
       <option name="GLUE" value="steps" />
-      <option name="myNameFilter" value="^Mobile Cashier \- Successful Withdraw \/ THB$" />
-      <option name="myGeneratedName" value="Scenario: Mobile Cashier - Successful Withdraw / THB" />
+      <option name="myNameFilter" value="^Mobile Cashier \- Withdraw with Wagering \/ RMB$" />
+      <option name="myGeneratedName" value="Scenario: Mobile Cashier - Withdraw with Wagering / RMB" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^Mobile Cashier \- Successful Withdraw \/ THB$&quot;" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^Mobile Cashier \- Withdraw with Wagering \/ RMB$&quot;" />
       <option name="WORKING_DIRECTORY" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -593,19 +553,19 @@
       <listeners />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Cucumber java.Scenario: Mobile Cashier - Deposit / THB" />
-      <item index="1" class="java.lang.String" itemvalue="Cucumber java.Scenario: Mobile Cashier - Fund Transfer / THB" />
-      <item index="2" class="java.lang.String" itemvalue="Cucumber java.Scenario: Mobile Cashier - Withdraw with Wagering / THB" />
-      <item index="3" class="java.lang.String" itemvalue="Cucumber java.Scenario: Mobile Cashier - Successful Withdraw / THB" />
-      <item index="4" class="java.lang.String" itemvalue="Cucumber java.Feature: Cashier" />
+      <item index="0" class="java.lang.String" itemvalue="Cucumber java.Scenario: Mobile Cashier - Withdraw - Bank Enrollment / INR" />
+      <item index="1" class="java.lang.String" itemvalue="Cucumber java.Scenario: Mobile Cashier - Withdraw with Wagering / THB" />
+      <item index="2" class="java.lang.String" itemvalue="Cucumber java.Feature: Cashier" />
+      <item index="3" class="java.lang.String" itemvalue="Cucumber java.Scenario: Mobile Cashier - Withdraw with Wagering / RMB" />
+      <item index="4" class="java.lang.String" itemvalue="Cucumber java.Scenario: Mobile Cashier - Withdraw with Wagering / INR" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Cucumber java.Feature: Cashier" />
-        <item index="1" class="java.lang.String" itemvalue="Cucumber java.Scenario: Mobile Cashier - Successful Withdraw / THB" />
-        <item index="2" class="java.lang.String" itemvalue="Cucumber java.Scenario: Mobile Cashier - Withdraw with Wagering / THB" />
-        <item index="3" class="java.lang.String" itemvalue="Cucumber java.Scenario: Mobile Cashier - Fund Transfer / THB" />
-        <item index="4" class="java.lang.String" itemvalue="Cucumber java.Scenario: Mobile Cashier - Deposit / THB" />
+        <item index="1" class="java.lang.String" itemvalue="Cucumber java.Scenario: Mobile Cashier - Withdraw with Wagering / THB" />
+        <item index="2" class="java.lang.String" itemvalue="Cucumber java.Scenario: Mobile Cashier - Withdraw with Wagering / INR" />
+        <item index="3" class="java.lang.String" itemvalue="Cucumber java.Scenario: Mobile Cashier - Withdraw with Wagering / RMB" />
+        <item index="4" class="java.lang.String" itemvalue="Cucumber java.Scenario: Mobile Cashier - Withdraw - Bank Enrollment / INR" />
       </list>
     </recent_temporary>
   </component>
@@ -623,34 +583,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Feature__Cashier - 2021.08.25 at 11h 29m 20s.xml">
+    <history-entry file="Feature__Cashier - 2021.08.26 at 10h 22m 20s.xml">
       <configuration name="Feature: Cashier" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Mobile_Cashier_-_Deposit___THB - 2021.08.25 at 10h 45m 59s.xml">
-      <configuration name="Scenario: Mobile Cashier - Deposit / THB" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__Cashier - 2021.08.26 at 13h 33m 24s.xml">
+      <configuration name="Feature: Cashier" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Mobile_Cashier_-_Deposit___THB - 2021.08.25 at 10h 49m 14s.xml">
-      <configuration name="Scenario: Mobile Cashier - Deposit / THB" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Mobile_Cashier_-_Successful_Withdraw___INR - 2021.08.26 at 09h 48m 51s.xml">
+      <configuration name="Scenario: Mobile Cashier - Successful Withdraw / INR" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Mobile_Cashier_-_Deposit___THB - 2021.08.25 at 10h 53m 32s.xml">
-      <configuration name="Scenario: Mobile Cashier - Deposit / THB" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Mobile_Cashier_-_Withdraw_-_Bank_Enrollment___INR - 2021.08.26 at 09h 48m 09s.xml">
+      <configuration name="Scenario: Mobile Cashier - Withdraw - Bank Enrollment / INR" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Mobile_Cashier_-_Fund_Transfer___THB - 2021.08.25 at 10h 55m 26s.xml">
-      <configuration name="Scenario: Mobile Cashier - Fund Transfer / THB" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Mobile_Cashier_-_Withdraw_-_Bank_Enrollment___INR - 2021.08.26 at 09h 51m 51s.xml">
+      <configuration name="Scenario: Mobile Cashier - Withdraw - Bank Enrollment / INR" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Mobile_Cashier_-_Successful_Withdraw___THB - 2021.08.25 at 10h 59m 51s.xml">
-      <configuration name="Scenario: Mobile Cashier - Successful Withdraw / THB" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Mobile_Cashier_-_Withdraw_with_Wagering___INR - 2021.08.26 at 10h 55m 49s.xml">
+      <configuration name="Scenario: Mobile Cashier - Withdraw with Wagering / INR" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Mobile_Cashier_-_Successful_Withdraw___THB - 2021.08.25 at 11h 06m 45s.xml">
-      <configuration name="Scenario: Mobile Cashier - Successful Withdraw / THB" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Scenario__Mobile_Cashier_-_Withdraw_with_Wagering___RMB - 2021.08.26 at 10h 27m 17s.xml">
+      <configuration name="Scenario: Mobile Cashier - Withdraw with Wagering / RMB" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Mobile_Cashier_-_Withdraw_with_Wagering___THB - 2021.08.25 at 10h 56m 55s.xml">
+    <history-entry file="Scenario__Mobile_Cashier_-_Withdraw_with_Wagering___RMB - 2021.08.26 at 10h 52m 02s.xml">
+      <configuration name="Scenario: Mobile Cashier - Withdraw with Wagering / RMB" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Scenario__Mobile_Cashier_-_Withdraw_with_Wagering___THB - 2021.08.26 at 09h 53m 36s.xml">
       <configuration name="Scenario: Mobile Cashier - Withdraw with Wagering / THB" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Scenario__Mobile_Cashier_-_Withdraw_with_Wagering___THB - 2021.08.25 at 10h 58m 26s.xml">
-      <configuration name="Scenario: Mobile Cashier - Withdraw with Wagering / THB" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Scenario__Mobile_Cashier_-_Withdraw_with_Wagering___THB - 2021.08.25 at 11h 05m 06s.xml">
+    <history-entry file="Scenario__Mobile_Cashier_-_Withdraw_with_Wagering___THB - 2021.08.26 at 10h 59m 36s.xml">
       <configuration name="Scenario: Mobile Cashier - Withdraw with Wagering / THB" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
   </component>
@@ -664,7 +624,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-908" width="1616" height="916" extended-state="6" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -673,20 +633,20 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290653" sideWeight="0.50771207" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.66453266" sideWeight="0.50642675" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34008098" sideWeight="0.49357328" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31241998" sideWeight="0.4974293" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.47631243" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5198464" sideWeight="0.4922879" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24071702" sideWeight="0.4922879" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23457584" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2377892" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.55441743" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -706,48 +666,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/core-framework/src/main/java/browser/Firefox.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="31" column="33" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core-framework/src/main/java/browser/Chrome.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="36" column="16" lean-forward="true" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-remote-driver/3.13.0/selenium-remote-driver-3.13.0.jar!/org/openqa/selenium/remote/RemoteWebDriver.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1779">
-          <caret line="296" column="54" lean-forward="true" selection-start-line="296" selection-start-column="54" selection-end-line="296" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar!/cucumber/runtime/Utils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core-framework/src/main/java/utilities/DateTimeUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.13.0/selenium-api-3.13.0.jar!/org/openqa/selenium/Keys.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="10" column="12" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.13.0/selenium-api-3.13.0.jar!/org/openqa/selenium/WebDriver.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="14">
@@ -902,13 +820,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dafabet/src/test/java/feature/Login.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="41" lean-forward="false" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/java-se-8u41-ri/src.zip!/java/io/FileInputStream.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
@@ -1035,10 +946,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/core-applications/src/main/java/pages/dafabet/PageMobileDafabet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="99" column="66" lean-forward="false" selection-start-line="99" selection-start-column="66" selection-end-line="99" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-applications/src/main/java/pages/dafabet/BaseDafabet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="78" column="7" lean-forward="false" selection-start-line="78" selection-start-column="7" selection-end-line="78" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/core-applications/src/main/java/workflow/WorkflowDafabet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="79" column="46" lean-forward="true" selection-start-line="79" selection-start-column="46" selection-end-line="79" selection-end-column="46" />
+        <state relative-caret-position="3162">
+          <caret line="208" column="52" lean-forward="false" selection-start-line="208" selection-start-column="52" selection-end-line="208" selection-end-column="52" />
           <folding>
             <element signature="method#logout#0;class#WorkflowDafabet#0" expanded="false" />
             <element signature="method#enrollWithdrawBankAccount#0;class#WorkflowDafabet#0" expanded="false" />
@@ -1065,50 +992,92 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core-applications/src/main/java/pages/dafabet/PageMobileDafabet.java">
+    <entry file="file://$PROJECT_DIR$/core-applications/src/main/java/pages/dafabet/PageCashierWithdraw.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="99" column="66" lean-forward="false" selection-start-line="99" selection-start-column="66" selection-end-line="99" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core-applications/src/main/java/pages/dafabet/BaseDafabet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="78" column="7" lean-forward="false" selection-start-line="78" selection-start-column="7" selection-end-line="78" selection-end-column="7" />
+        <state relative-caret-position="17">
+          <caret line="21" column="21" lean-forward="false" selection-start-line="18" selection-start-column="12" selection-end-line="21" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dafabet/src/test/java/steps/StepCashier.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="116" column="82" lean-forward="false" selection-start-line="116" selection-start-column="82" selection-end-line="116" selection-end-column="82" />
+        <state relative-caret-position="17">
+          <caret line="116" column="79" lean-forward="false" selection-start-line="116" selection-start-column="79" selection-end-line="116" selection-end-column="79" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core-applications/src/main/java/pages/dafabet/PageCashierWithdraw.java">
+    <entry file="file://$PROJECT_DIR$/dafabet/src/test/resources/app.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="29" column="24" lean-forward="false" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+        <state relative-caret-position="408">
+          <caret line="27" column="18" lean-forward="true" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core-framework/src/main/java/control/ControlBase.java">
+    <entry file="file://$PROJECT_DIR$/dafabet/src/test/java/feature/Login.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="433" column="98" lean-forward="false" selection-start-line="433" selection-start-column="87" selection-end-line="433" selection-end-column="98" />
+        <state relative-caret-position="85">
+          <caret line="5" column="41" lean-forward="false" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-framework/src/main/java/browser/IBrowser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-framework/src/main/java/browser/Firefox.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-framework/src/main/java/browser/Chrome.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-framework/src/main/java/browser/BrowserFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-framework/src/main/java/browser/extensions/ChromeExtensions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core-framework/src/main/java/config/Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dafabet/src/test/java/feature/Cashier.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="148" column="59" lean-forward="true" selection-start-line="148" selection-start-column="59" selection-end-line="148" selection-end-column="59" />
+        <state relative-caret-position="0">
+          <caret line="0" column="19" lean-forward="false" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
           <folding>
             <element signature="e#346#1245#0" expanded="false" />
             <element signature="e#1249#2136#0" expanded="false" />
@@ -1128,10 +1097,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dafabet/src/test/resources/app.properties">
+    <entry file="file://$PROJECT_DIR$/core-framework/src/main/java/control/ControlBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="32" column="36" lean-forward="false" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="36" />
+        <state relative-caret-position="340">
+          <caret line="1894" column="6" lean-forward="false" selection-start-line="1894" selection-start-column="6" selection-end-line="1894" selection-end-column="6" />
           <folding />
         </state>
       </provider>

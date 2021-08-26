@@ -4,10 +4,6 @@ import browser.Chrome;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 
-/**
- * Created by rnquizon on Mar/24/2020
- */
-
 public class ChromeExtensions extends Chrome {
 
     public void modHeader(String device, WebDriver driver) {

@@ -13,10 +13,15 @@ public class PageCashierWithdraw extends BaseDafabet {
 
     By ddlPaymentOption = By.cssSelector("div.form-item.form-type-select.form-item-payment-method > span.select > div.newListSelected > div.selectedTxt");
     By ddlWithdrawFromProduct = By.id("edit-product");
+//    By txtDispWithdrawFromProduct = By.cssSelector("div.form-item.form-type-select.form-item-product > span.select > div.newListSelected > div.selectedTxt");
+//    //Select product...
     By txtWithdrawAmount = By.id("edit-amount");
+//    By msgWithdrawAmountError = By.cssSelector("div.form-item.form-type-textfield.form-item-amount > span.error.error-message");
+//    //style = display: none;
+////    By txtDispWithdrawAmount = By.cssSelector("div.form-item.form-type-textfield.form-item-amount > input.txt-amount.form-text");
+//    // prev="value"
     By txtWithdrawPassword = By.id("edit-password");
     By btnWithdrawSubmit = By.id("edit-submit");
-//    By btnWithdrawSubmit = By.id("edit-action");
     By msgErrorMessage = By.cssSelector("div.form-item.form-type-select.form-item-product > span.select > span.error.error-message");
 
     By msgTransactionStatus = By.cssSelector("div[id='cashier-result-container'] > p.blurb.top-blurb");
@@ -70,6 +75,9 @@ public class PageCashierWithdraw extends BaseDafabet {
     }
 
     public void clickSubmitWithdraw() throws Exception {
+
+
+
         control.click(btnWithdrawSubmit,20);
         waitForPageToComplete();
         control.waitWhileElementIsNotDisplayed(msgTransactionStatus,10);
@@ -92,6 +100,7 @@ public class PageCashierWithdraw extends BaseDafabet {
             return false;
         }
     }
+
 
     //==================================================================================================================
     // Validations

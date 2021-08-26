@@ -24,8 +24,6 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * Created by mramos on 9/19/2017.
- * Updated by Automation Team.
  *
  * Methods in Control Base still uses the Selenium WebElement methods with customizations like addition of logs, wait
  * and other catch implementations.
@@ -55,8 +53,6 @@ public class ControlBase {
     //==================================================================================================================
     /**
      * This control simulates creation of new blank tab.
-     *
-     * @author By: rnquizon
      */
     public void createNewTab() {
         ((JavascriptExecutor) driver).executeScript("window.open('about:blank','_blank');");
@@ -64,8 +60,6 @@ public class ControlBase {
 
     /**
      * Highlighter control displays a yellow highlight around the active locator where action is performed.
-     *
-     * @author By: achung
      * @param locator The locating mechanism. The locating mechanism.
      */
     public void highLighter(By locator) {
@@ -116,8 +110,6 @@ public class ControlBase {
 
     /**
      * This control clears text in the field element.
-     *
-     * @author rnquizon
      * @param locator The locating mechanism.
      */
     public void clear(By locator) {
@@ -129,8 +121,6 @@ public class ControlBase {
 
     /**
      * This control clears text in the field element by click backspace key.
-     *
-     * @author gmagsombol
      * @param locator The locating mechanism.
      */
     public void clearByBackSpace(By locator) {
@@ -144,8 +134,6 @@ public class ControlBase {
 
     /**
      * This control simulates typing into a locator.
-     *
-     * @author mramos
      * @param locator The locating mechanism.
      * @param inputText The value to be entered.
      */
@@ -157,8 +145,6 @@ public class ControlBase {
 
     /**
      * This control simulates typing into a locator using Actions from Selenium interaction.
-     *
-     * @author rnquizon
      * @param locator The locating mechanism.
      * @param inputText The value to be entered.
      */
@@ -176,8 +162,6 @@ public class ControlBase {
 
     /**
      * This control simulates clicking a locator using Actions from Selenium interaction.
-     *
-     * @author achung
      * @param locator The locating mechanism.
      * @throws InterruptedException
      */
@@ -210,8 +194,6 @@ public class ControlBase {
 
     /**
      * This control simulates clicking a locator using Actions from Selenium interaction.
-     *
-     * @author gmagsombol
      * @param element The locating mechanism.
      * @throws InterruptedException
      */
@@ -242,8 +224,6 @@ public class ControlBase {
 
     /**
      * This control simulates click into a locator.
-     *
-     * @author mramos
      * @param locator The locating mechanism.
      */
     public void click(By locator) {
@@ -254,8 +234,6 @@ public class ControlBase {
 
     /**
      * This control gets the visible text of the locator.
-     *
-     * @author mramos
      * @param locator The locating mechanism.
      * @return The String text value retrieved from the locator.
      */
@@ -266,8 +244,6 @@ public class ControlBase {
 
     /**
      * This control gets the visible text of the element.
-     *
-     * @author rnquizon
      * @param element The locating mechanism.
      * @return The String text value retrieved from the element.
      */
@@ -278,8 +254,6 @@ public class ControlBase {
 
     /**
      * This control gets the value of the attribute "value" from the locator.
-     *
-     * @author mramos
      * @param locator The locating mechanism.
      * @return The String text value retrieved from the locator.
      */
@@ -290,8 +264,6 @@ public class ControlBase {
 
     /**
      * This control selects the dropdown value based on select - option locator.
-     *
-     * @author mramos
      * @param locator The locating mechanism.
      * @param text The text value on the locator to be selected.
      * @throws Exception
@@ -304,8 +276,6 @@ public class ControlBase {
 
     /**
      * This control returns true after it checks if the locator is displayed in the page.
-     *
-     * @author mramos
      * @param locator The locating mechanism.
      * @return Returns true if the element is displayed in the page.
      */
@@ -317,8 +287,6 @@ public class ControlBase {
 
     /**
      * This control returns true after it checks if the locator is displayed in the page.
-     *
-     * @author mramos
      * @param locator The locating mechanism.
      * @return Returns true if the element is displayed in the page.
      */
@@ -329,8 +297,6 @@ public class ControlBase {
 
     /**
      * This control returns true after it checks if the locator is displayed in the page.
-     *
-     * @author jlabuan
      * @param element The web element
      * @return Returns true if the element is displayed in the page.
      */
@@ -345,8 +311,6 @@ public class ControlBase {
 
     /**
      * This control returns true after it checks if the locator is not displayed in the page.
-     *
-     * @author mramos
      * @param locator The locating mechanism.
      * @return Returns true if the element is not displayed in the page.
      */
@@ -357,8 +321,6 @@ public class ControlBase {
 
     /**
      * This control returns true after it checks if the locator is present in the page.
-     *
-     * @author mramos
      * @param locator The locating mechanism.
      * @return Returns true if the element is present in the page.
      */
@@ -369,8 +331,6 @@ public class ControlBase {
 
     /**
      * This control returns true after it checks if the locator is enabled in the page.
-     *
-     * @author mramos
      * @param locator The locating mechanism.
      * @return Returns true if the element is enabled and clickable in the page.
      */
@@ -381,8 +341,6 @@ public class ControlBase {
 
     /**
      * This control clicks the locator of the text which contains the text parameter.
-     *
-     * @author mramos
      * @param locator The locating mechanism.
      * @param text The text on the locator that will be clicked.
      */
@@ -394,8 +352,6 @@ public class ControlBase {
 
     /**
      * This control clicks the locator of the text which contains the text parameter using java executor.
-     *
-     * @author rnquizon
      * @param locator The locating mechanism.
      * @param text The text on the locator that will be clicked.
      */
@@ -407,8 +363,6 @@ public class ControlBase {
 
     /**
      * This control clicks the locator of the link text which contains the text parameter.
-     *
-     * @author mramos
      * @param locator The locating mechanism.
      * @param text The text on the linktext locator that will be clicked.
      */
@@ -423,8 +377,6 @@ public class ControlBase {
     //==================================================================================================================
     /**
      * This control simulates typing on the locator.
-     *
-     * @author mramos
      * @param locator The locating mechanism.
      * @param inputText The text value that will be entered on the locator.
      * @param maxWaitTime The configurable max wait counter.
@@ -453,8 +405,6 @@ public class ControlBase {
     //==================================================================================================================
     /**
      * This control simulates click into a locator within the max wait time.
-     *
-     * @author mramos
      * @param locator The locating mechanism.
      * @param maxWaitTime The configurable max wait counter.
      */
@@ -486,8 +436,6 @@ public class ControlBase {
 
     /**
      * This control simulates click into an element.
-     *
-     * @author mramos
      * @param element The locating mechanism.
      */
     public void click(WebElement element) {
@@ -501,8 +449,6 @@ public class ControlBase {
 
     /**
      * This control simulates click into a locator using javascript executor.
-     *
-     * @author rnquizon
      * @param locator The locating mechanism.
      */
     public void jsClick(By locator) {
@@ -521,8 +467,6 @@ public class ControlBase {
 
     /**
      * This control simulates click into an element using javascript executor.
-     *
-     * @author rnquizon
      * @param element The locating mechanism.
      */
     public void jsClick(WebElement element) {
@@ -536,8 +480,6 @@ public class ControlBase {
     //==================================================================================================================
     /**
      * This control simulates dropdown selection of the value in a dropdown option locator.
-     *
-     * @author mramos
      * @param locator The locating mechanism.
      * @param text The text to be selected on a the option locator.
      * @param maxWaitTime The configurable max wait counter.
@@ -567,8 +509,6 @@ public class ControlBase {
 
     /**
      * This control simulates dropdown selection containing the text in a dropdown option locator.
-     *
-     * @author gmagsombol
      * @param locator The locating mechanism.
      * @param text The text to be selected on a the option locator.
      * @throws Exception
@@ -597,8 +537,6 @@ public class ControlBase {
 
     /**
      * This control selects from dropdown option based on the value attribute.
-     *
-     * @author achung
      * @param locator The locating mechanism.
      * @param value The value to be selected on a the option locator.
      * @throws Exception
@@ -614,8 +552,6 @@ public class ControlBase {
 
     /**
      * This control retrieves the value of the selected option locator.
-     *
-     * @author mramos
      * @param locator The locating mechanism.
      * @param maxWaitTime The configurable max wait counter.
      * @return The String value of the selected dropdown option.
@@ -636,8 +572,6 @@ public class ControlBase {
 
     /**
      * This control retrieves the value of the selected text of the locator.
-     *
-     * @author mramos
      * @param locator The locating mechanism.
      * @return The String value of the selected dropdown text.
      */
@@ -653,8 +587,6 @@ public class ControlBase {
 
     /**
      * This control selects the value in a dropdown selection locator based on the text.
-     *
-     * @author mramos
      * @param locator The locating mechanism.
      * @param text The value item value to be clicked.
      */
@@ -667,8 +599,6 @@ public class ControlBase {
 
     /**
      * This control selects the value in a dropdown selection locator based on the linkText.
-     *
-     * @author mramos
      * @param locator The locating mechanism.
      * @param linkText
      * @param maxWaitTime The configurable max wait counter.
@@ -688,8 +618,6 @@ public class ControlBase {
     //==================================================================================================================
     /**
      * This control clicks the checkbox based on the text value provided.
-     *
-     * @author mramos
      * @param text
      * @param maxWaitTime The configurable max wait counter.
      */
@@ -701,8 +629,6 @@ public class ControlBase {
 
     /**
      * This control checks if a checkbox locator is marked/ticked.
-     *
-     * @author mramos
      * @param locator The locating mechanism.
      * @param maxWaitTime The configurable max wait counter.
      * @return True or False based on attribute value "checked".
@@ -726,8 +652,6 @@ public class ControlBase {
 
     /**
      * This control ticks all checkboxes of the locator.
-     *
-     * @author mramos
      * @param locator The locating mechanism.
      * @param loader The loader locator.
      * @param maxWaitTime The configurable max wait counter.
@@ -754,8 +678,6 @@ public class ControlBase {
     //==================================================================================================================
     /**
      * This control sets focus on the locator.
-     *
-     * @author achung
      * @param locator The locating mechanism.
      * @param maxWaitTime The configurable max wait counter.
      */
@@ -777,8 +699,6 @@ public class ControlBase {
 
     /**
      * This control sets focus on the locator.
-     *
-     * @author rnquizon
      * @param element The locating mechanism.
      * @param maxWaitTime The configurable max wait counter.
      */
@@ -794,8 +714,6 @@ public class ControlBase {
 
     /**
      * This control checks if the element is present within DOM.
-     *
-     * @author mramos
      * @param locator The locating mechanism.
      * @param maxWaitTime The configurable max wait counter.
      * @return True if the element is present, otherwise False.
@@ -810,8 +728,6 @@ public class ControlBase {
 
     /**
      * This control checks if the element is displayed within DOM.
-     *
-     * @author mramos
      * @param locator The locating mechanism.
      * @param maxWaitTime The configurable max wait counter.
      * @return True if the element is present and displayed, otherwise False.
@@ -826,8 +742,6 @@ public class ControlBase {
 
     /**
      * This control checks if the element is displayed within DOM.
-     *
-     * @author rnquizon
      * @param locator The locating mechanism.
      * @param maxWaitTime The configurable max wait counter.
      * @param errorMessage The message to be displayed if element is not displayed.
@@ -844,8 +758,6 @@ public class ControlBase {
 
     /**
      * This control retrieves the text in locator.
-     *
-     * @author mramos
      * @param locator The locating mechanism.
      * @param maxWaitTime The configurable max wait counter.
      * @return The String text value retrieved from the locator.
@@ -868,8 +780,6 @@ public class ControlBase {
 
     /**
      * This control gets the value of the attribute "value" from the locator.
-     *
-     * @author mramos
      * @param locator The locating mechanism.
      * @param maxWaitTime The configurable max wait counter.
      * @return The String value retrieved from the attribute of locator.
@@ -880,8 +790,6 @@ public class ControlBase {
 
     /**
      * This control retrieves the element value of the locator based on the text.
-     *
-     * @author alyu
      * @param locator The locating mechanism.
      * @param text The text being compared to.
      * @return The WebElement retrieved from the locator equal to the String text parameter.
@@ -905,8 +813,6 @@ public class ControlBase {
     //==================================================================================================================
     /**
      * This control finds the first matching element on the page.
-     *
-     * @author mramos
      * @param locator The locating mechanism.
      * @return WebElement matching the locator.
      */
@@ -916,8 +822,6 @@ public class ControlBase {
 
     /**
      * This control finds and returns the first matching element on the page.
-     *
-     * @author mramos
      * @param locator The locating mechanism.
      * @param maxWaitTime The configurable max wait counter.
      * @return WebElement matching the locator.
@@ -943,8 +847,6 @@ public class ControlBase {
 
     /**
      * This control finds and returns the element present and visible in the DOM of a page.
-     *
-     * @author mramos
      * @param locator The locating mechanism.
      * @param maxWaitTime The configurable max wait counter.
      * @return WebElement displayed matching the locator.
@@ -965,8 +867,6 @@ public class ControlBase {
 
     /**
      * This control finds and returns the element present in the DOM of a page even if it is not visible.
-     *
-     * @author mramos
      * @param locator The locating mechanism.
      * @param maxWaitTime The configurable max wait counter.
      * @return WebElement present matching the locator.
@@ -987,8 +887,6 @@ public class ControlBase {
 
     /**
      * This control finds and returns the complete WebElement based on the locator.
-     *
-     * @author achung
      * @param locator The locating mechanism.
      * @return WebElement matching the locator.
      */
@@ -1007,8 +905,6 @@ public class ControlBase {
     //==================================================================================================================
     /**
      * This control finds and returns the element by CSS present in the DOM of a page.
-     *
-     * @author mramos
      * @param elementName The locator value.
      * @param maxWaitTime The configurable max wait counter.
      * @return WebElement matching the CSS locator.
@@ -1020,8 +916,6 @@ public class ControlBase {
 
     /**
      * This control finds and returns the element by ID present in the DOM of a page.
-     *
-     * @author mramos
      * @param elementName The locator value.
      * @param maxWaitTime The configurable max wait counter.
      * @return WebElement matching the ID locator.
@@ -1033,8 +927,6 @@ public class ControlBase {
 
     /**
      * This control finds and returns the element by link text present in the DOM of a page.
-     *
-     * @author mramos
      * @param elementName The locator value.
      * @param maxWaitTime The configurable max wait counter.
      * @return WebElement matching the Link Text locator.
@@ -1046,8 +938,6 @@ public class ControlBase {
 
     /**
      * This control finds and returns the element by containing the text present in the DOM of a page.
-     *
-     * @author mramos
      * @param container The locator container.
      * @param text The text to be searched.
      * @return WebElement matching the text within the element container.
@@ -1062,8 +952,6 @@ public class ControlBase {
     //==================================================================================================================
     /**
      * This control waits to satisfy the specified condition within the max wait counter set.
-     *
-     * @author mramos
      * @param condition The condition to satisfy before max wait counter lapses.
      * @param maxWaitTime The configurable max wait counter.
      */
@@ -1075,8 +963,6 @@ public class ControlBase {
 
     /**
      * This control waits to satisfy the specified boolean condition within the max wait counter set.
-     *
-     * @author mramos
      * @param condition The boolean condition to satisfy before max wait counter lapses.
      * @param maxWaitTime The configurable max wait counter.
      */
@@ -1088,8 +974,6 @@ public class ControlBase {
 
     /**
      * This control waits until the locator becomes clickable within the max wait counter set.
-     *
-     * @author mramos
      * @param locator The locating mechanism.
      * @param maxWaitTime The configurable max wait counter.
      * @return True if the locator is clickable otherwise, False.
@@ -1106,8 +990,6 @@ public class ControlBase {
 
     /**
      * This control waits until the element becomes clickable within the max wait counter set.
-     *
-     * @author mramos
      * @param element The locating mechanism.
      * @param maxWaitTime The configurable max wait counter.
      * @return True if the element is clickable otherwise, False.
@@ -1124,8 +1006,6 @@ public class ControlBase {
 
     /**
      * This control waits until the locator gets displayed within the max wait counter set.
-     *
-     * @author mramos
      * @param locator The locating mechanism.
      * @param maxWaitTime The configurable max wait counter.
      * @return True if the element is displayed otherwise, False.
@@ -1143,8 +1023,6 @@ public class ControlBase {
 
     /**
      * This control waits until the locator becomes present within the max wait counter set.
-     *
-     * @author mramos
      * @param locator The locating mechanism.
      * @param maxWaitTime The configurable max wait counter.
      * @return True if the element is present otherwise, False.
@@ -1162,8 +1040,6 @@ public class ControlBase {
 
     /**
      * This control waits until the return document.readyState is complete.
-     *
-     * @author achung
      */
     public void waitForPageComplete() {
         log.debug("waitForPageComplete");
@@ -1185,8 +1061,6 @@ public class ControlBase {
 
     /**
      * This control waits until the locator becomes present within the max wait counter set and displays the error message set once max counter ends.
-     *
-     * @author achung
      * @param locator The locating mechanism.
      * @param counter The configurable max counter.
      * @param errorMessage The message displayed once max wait counter lapses.
@@ -1206,8 +1080,6 @@ public class ControlBase {
 
     /**
      * This control waits until the locator gets displayed within the max wait counter set and displays the error message set once max counter ends.
-     *
-     * @author rnquizon
      * @param locator The locating mechanism.
      * @param counter The configurable max counter.
      * @param errorMessage The message displayed once max wait counter lapses.
@@ -1227,8 +1099,6 @@ public class ControlBase {
 
     /**
      * This control waits until the locator gets displayed within the max wait counter set.
-     *
-     * @author rnquizon
      * @param locator The locating mechanism.
      * @param counter The configurable max counter.
      * @throws Exception
@@ -1248,8 +1118,6 @@ public class ControlBase {
 
     /**
      * This control waits while the locator is displayed within the max wait counter set.
-     *
-     * @author gmagsombol
      * @param locator The locating mechanism.
      * @param counter The configurable max counter.
      * @param errorMessage The message displayed once max wait counter lapses.
@@ -1274,8 +1142,6 @@ public class ControlBase {
 
     /**
      * This control waits while the locator is displayed within the max wait counter set.
-     *
-     * @author gmagsombol
      * @param locator The locating mechanism.
      * @param counter The configurable max counter.
      * @throws Exception
@@ -1300,8 +1166,6 @@ public class ControlBase {
 
     /**
      * This control waits while the locator is not clickable within the max wait counter set.
-     *
-     * @author gmagsombol
      * @param locator The locating mechanism.
      * @param counter The configurable max counter.
      * @throws Exception
@@ -1321,8 +1185,6 @@ public class ControlBase {
 
     /**
      * This control waits while the window size is not equal to the size set within the max wait counter set.
-     *
-     * @author gmagsombol
      * @param size The expected size of the window.
      * @param counter The configurable max counter.
      * @throws Exception
@@ -1341,8 +1203,6 @@ public class ControlBase {
 
     /**
      * This control returns the window size
-     *
-     * @author gmagsombol
      * @throws Exception
      */
     public int getWindowSize() throws Exception {
@@ -1351,8 +1211,6 @@ public class ControlBase {
 
     /**
      * This control waits until the element becomes invisible within the max wait counter set.
-     *
-     * @author mramos
      * @param locator The locating mechanism.
      * @param maxWaitTime The configurable max counter.
      * @return True if the element is invisible otherwise, False.
@@ -1373,8 +1231,6 @@ public class ControlBase {
     //==================================================================================================================
     /**
      * This control waits until the element becomes present within the max wait counter set.
-     *
-     * @author mramos
      * @param element The locating mechanism.
      * @param text The text being evaluated.
      * @param maxWaitTime The configurable max counter.
@@ -1393,8 +1249,6 @@ public class ControlBase {
 
     /**
      * This control waits until the element becomes present within the max wait counter set.
-     *
-     * @author mramos
      * @param locator The locating mechanism.
      * @param text The text being evaluated.
      * @param maxWaitTime The configurable max counter.
@@ -1417,8 +1271,6 @@ public class ControlBase {
 
     /**
      * This control retrieves the attribute value.
-     *
-     * @author mramos
      * @param locator The locating mechanism.
      * @param attributeName The attribute name.
      * @param maxWaitTime The configurable max counter.
@@ -1448,8 +1300,6 @@ public class ControlBase {
 
     /**
      * This control checks if the attribute is present based on the locator.
-     *
-     * @author mramos
      * @param locator The locating mechanism.
      * @param attributeName The attribute name.
      * @param maxWaitTime The configurable max counter.
@@ -1472,8 +1322,6 @@ public class ControlBase {
 
     /**
      * This control retrieves the CSS value based on the attribute of the locator.
-     *
-     * @author achung
      * @param locator The locating mechanism.
      * @param attributeName The attribute name.
      * @param maxWaitTime The configurable max counter.
@@ -1491,8 +1339,6 @@ public class ControlBase {
 
     /**
      * This control retrieves the tag name value based on the locator.
-     *
-     * @author jlabuan
      * @param locator The locating mechanism.
      * @param maxWaitTime The configurable max counter.
      * @return The String tag name value.
@@ -1509,8 +1355,6 @@ public class ControlBase {
 
     /**
      * This control retrieves the InnerHTML value from the attribute value.
-     *
-     * @author tkafazis
      * @param locator The locating mechanism.
      * @param maxWaitTime The configurable max counter.
      * @return The String value of the attribute.
@@ -1552,8 +1396,6 @@ public class ControlBase {
     //==================================================================================================================
     /**
      * This control retrieves the Sub Element based on the class name of the locator.
-     *
-     * @author mramos
      * @param locator The locating mechanism.
      * @param className The class name to be search.
      * @param maxWaitTime The configurable max counter.
@@ -1567,8 +1409,6 @@ public class ControlBase {
 
     /**
      * This control retrieves the Sub Element based on the class name of the locator.
-     *
-     * @author mramos
      * @param element The locating mechanism.
      * @param className The class name to be search.
      * @param maxWaitTime The configurable max counter.
@@ -1581,8 +1421,6 @@ public class ControlBase {
 
     /**
      * This control clicks the Sub Element based on the class name of the locator.
-     *
-     * @author mramos
      * @param locator The locating mechanism.
      * @param className The class name to be search.
      * @param maxWaitTime The configurable max counter.
@@ -1598,8 +1436,6 @@ public class ControlBase {
     //==================================================================================================================
     /**
      * This control clicks the text inside the locator container.
-     *
-     * @author mramos
      * @param locator The locating mechanism.
      * @param text The text to be clicked.
      * @param maxWaitTime The configurable max counter.
@@ -1613,8 +1449,6 @@ public class ControlBase {
 
     /**
      * This control clicks the text inside the locator container using Javascript Executor.
-     *
-     * @author rnquizon
      * @param locator The locating mechanism.
      * @param text The text to be clicked.
      * @param maxWaitTime The configurable max counter.
@@ -1630,8 +1464,6 @@ public class ControlBase {
 
     /**
      * This control clicks the text inside the locator container.
-     *
-     * @author gmagsombol
      * @param locator The locating mechanism.
      * @param text The text to be clicked.
      * @param maxWaitTime The configurable max counter.
@@ -1646,8 +1478,6 @@ public class ControlBase {
 
     /**
      * This control clicks the exact text inside the locator.
-     *
-     * @author alyu
      * @param locator The locating mechanism.
      * @param text The text to be clicked.
      */
@@ -1659,8 +1489,6 @@ public class ControlBase {
 
     /**
      * This control clicks the exact text inside the locator within max wait counter.
-     *
-     * @author alyu
      * @param locator The locating mechanism.
      * @param text The text to be clicked.
      */
@@ -1673,8 +1501,6 @@ public class ControlBase {
 
     /**
      * This control clicks the text inside the locator container ignoring case sensitivity.
-     *
-     * @author mramos
      * @param locator The locating mechanism.
      * @param text The text to be clicked.
      * @param maxWaitTime The configurable max counter.
@@ -1689,8 +1515,6 @@ public class ControlBase {
 
     /**
      * This control clicks the link text inside the locator container.
-     *
-     * @author mramos
      * @param locator The locating mechanism.
      * @param text The text to be clicked.
      * @param maxWaitTime The configurable max counter.
@@ -1704,8 +1528,6 @@ public class ControlBase {
 
     /**
      * This control clicks the link text inside the locator container.
-     *
-     * @author mramos
      * @param element The locating mechanism.
      * @param text The text to be clicked.
      */
@@ -1716,8 +1538,6 @@ public class ControlBase {
 
     /**
      * This control retrieves the text inside the locator container.
-     *
-     * @author achung
      * @param locator The locating mechanism.
      * @param text The text to be clicked.
      * @param maxWaitTime The configurable max counter.
@@ -1733,8 +1553,6 @@ public class ControlBase {
     //==================================================================================================================
     /**
      * This control checks if the locator container has the text.
-     *
-     * @author mramos
      * @param locator The locating mechanism.
      * @param text The text to be checked.
      * @param maxWaitTime The configurable max counter.
@@ -1749,8 +1567,6 @@ public class ControlBase {
 
     /**
      * This control checks if the locator container has the text.
-     *
-     * @author jlabuan
      * @param locator The locating mechanism.
      * @param text The text to be checked.
      */
@@ -1766,8 +1582,6 @@ public class ControlBase {
     //==================================================================================================================
     /**
      * This control simulates mouse over the element.
-     *
-     * @author jaaguilar
      * @param locator The locating mechanism.
      */
     public void hoverToElement(By locator) {
@@ -1780,8 +1594,6 @@ public class ControlBase {
 
     /**
      * This control simulates mouse over the element.
-     *
-     * @author jaaguilar
      * @param locator The locating mechanism.
      */
     public void hoverToElement(WebElement locator) {
@@ -1792,8 +1604,6 @@ public class ControlBase {
 
     /**
      * This control simulates mouse over the specifc text in an element.
-     *
-     * @author mramos
      * @param locator The locating mechanism.
      * @param text The text to focus hover.
      */
@@ -1811,8 +1621,6 @@ public class ControlBase {
     //==================================================================================================================
     /**
      * This control switches from one iframe to another.
-     *
-     * @author gmagsombol
      * @param locator The locating mechanism.
      */
     public void switchToIframe(By locator) {
@@ -1823,8 +1631,6 @@ public class ControlBase {
 
     /**
      * This control switches back to default iframe.
-     *
-     * @author gmagsombol
      */
     public void switchToDefaultFrame() {
         log.debug("switchToDefaultFrame");
@@ -1833,8 +1639,6 @@ public class ControlBase {
 
     /**
      * This control retrieves the parent xpath including the current locator set
-     *
-     * @author gmagsombol
      * @param childElement The child locating mechanism.
      * @param current The current xpath locating mechanism.
      * @return String value based on the complete xpath excerpt including the parent, child and current xpath.
@@ -1862,8 +1666,6 @@ public class ControlBase {
 
     /**
      * This control checks if the current URL matches the expected URL parameter.
-     *
-     * @author gmagsombol
      * @param url The expected matching URL.
      * @return True if the url matches the retrieved URL otherwise, False.
      */
@@ -1886,8 +1688,6 @@ public class ControlBase {
 
     /**
      * This control retrieves the current date/time with the format provided.
-     *
-     * @author creyes
      * @param format The format of the captured date/time.
      * @return String value of the retrieved date/time
      */
@@ -1905,8 +1705,6 @@ public class ControlBase {
 
     /**
      * This control formats formats current Date Time and has option to add value on current date time.
-     *
-     * @author rnquizon
      * @param format The current format of the date/time value.
      * @param option The part of the date time to be added value from.
      * Options:
@@ -1958,8 +1756,6 @@ public class ControlBase {
 
     /**
      * This control formats date/time.
-     *
-     * @author rnquizon
      * @param dateTimeValue The date/time value to be formatted.
      * @param fromFormat The current format of the date/time value.
      * @param toFormat The expected format.
@@ -1977,40 +1773,11 @@ public class ControlBase {
         return displayFormat.format(date);
     }
 
-    //TODO: To be removed. Duplicate of current wait controls
-    /**
-     * This control waits while the element is Displayed.
-     *
-     * @author jcabangon
-     * @param loginLightbox The locating mechanism.
-     * @param i The max counter value.
-     */
-    public void waitWhileLoginLightboxIsDisplayed(By loginLightbox, int i) {
-        try {
-            int x = 0;
-            while (this.isDisplayed(loginLightbox)) {
-                Thread.sleep(1000);
-                System.out.println("Waiting - still displayed.. \n");
-                x++;
-                if (x > i) {
-                    throw new Exception("FAILED");
-                }
-            }
-        } catch (NoSuchElementException e) {
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-
     //==================================================================================================================
     // Format Decimal
     //==================================================================================================================
     /**
      * This control formats float values to decimal.
-     *
-     * @author rnquizon
      * @param value The value to be formatted.
      * @param decimalFormat The expected format.
      * @return String value of the formatted decimal value.
@@ -2030,8 +1797,6 @@ public class ControlBase {
     //==================================================================================================================
     /**
      * This control scrolls to specific element.
-     *
-     * @author achung
      * @param locator The locating mechanism.
      */
     public void scrollToElement(By locator) {
@@ -2054,8 +1819,6 @@ public class ControlBase {
     //==================================================================================================================
     /**
      * This control checks if the list is sorted as expected.
-     *
-     * @author creyes
      * @param arraylist The list to be checked.
      * @return True if the list is correctly sorted otherwise, False.
      */
@@ -2075,8 +1838,6 @@ public class ControlBase {
     //==================================================================================================================
     /**
      * This control expands the root elements.
-     *
-     * @author achung
      * @param element The locating mechanism.
      * @return The expanded root element.
      */
@@ -2090,8 +1851,6 @@ public class ControlBase {
     //==================================================================================================================
     /**
      * This control adds the specific value to the Applications Local Storage under Developer Tool in browser (F12).
-     *
-     * @author achung
      * @param key The key to value to be added.
      * @param value The value of the key to be added.
      */
@@ -2106,8 +1865,6 @@ public class ControlBase {
 
     /**
      * This control simulates click and drag captcha slider action.
-     *
-     * @author jaaguilar
      * @param locator The locating mechanism.
      * @param maxWaitTime The max wait counter value.
      */
@@ -2135,8 +1892,6 @@ public class ControlBase {
 
     /**
      * This control returns true if a String has a number.
-     *
-     * @author gmagsombol
      * @param s The String to be checked
      */
     public boolean isStringContainsNumber(String s){
