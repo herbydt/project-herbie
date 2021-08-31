@@ -110,8 +110,12 @@ public class WorkflowDafabet extends BaseWorkflow {
             return baseDafabet.PageCashier().isFundTransferPageDisplayed();
         } else if (page.equalsIgnoreCase("bank enrollment")) {
             return baseDafabet.PageCashier().isBankEnrollmentPageDisplayed();
+        } else if (page.equalsIgnoreCase("bank details enrollment")) {
+            return baseDafabet.PageCashier().isBankDetailsEnrollmentPageDisplayed();
         } else if (page.equalsIgnoreCase("withdraw")) {
             return baseDafabet.PageCashier().isWithdrawPageDisplayed();
+        } else if (page.equalsIgnoreCase("banking details")) {
+            return baseDafabet.PageCashier().isBankDetailsPageDisplayed();
         } else
             return false;
     }
@@ -232,6 +236,14 @@ public class WorkflowDafabet extends BaseWorkflow {
         baseDafabet.PageCashierBankEnrollment().typeEnrollmentBankAcctNumber(acctNumber);
         baseDafabet.PageCashierBankEnrollment().typeEnrollmentPassword(password);
         baseDafabet.PageCashierBankEnrollment().clickEnrollmentSubmit();
+    }
+
+    public void enrollWithdrawBankAccountTHB(String dispName, String bankName, String acctNumber, String password) throws Exception {
+        Assert.assertTrue(baseDafabet.PageCashierBankEnrollment().isDisplayedNameCorrect(dispName));
+        baseDafabet.PageCashierBankEnrollment().selectEnrollmentBankTHB(bankName);
+        baseDafabet.PageCashierBankEnrollment().typeEnrollmentBankAcctNumber(acctNumber);
+        baseDafabet.PageCashierBankEnrollment().typeEnrollmentPassword(password);
+        baseDafabet.PageCashierBankEnrollment().clickEnrollmentSubmitTHB();
     }
 
     public void openLatestTransactionDetails() throws Exception {

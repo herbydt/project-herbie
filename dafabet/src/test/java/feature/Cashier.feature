@@ -210,6 +210,37 @@ Feature: Dafabet Cashier
       | IFSC                 | TESTID12345         |
     Then the mobile Withdraw page is loaded successfully
 
+  Scenario: Mobile Cashier - Withdraw - Bank Enrollment / THB
+    Given the player is at MDafabet - Entry site in EN language
+    And the mobile player clicks the Registration button
+    And the desktop Registration page is loaded successfully
+    When the player enters valid values with Username in uppercase
+      | Password      | Qat456123     |
+      | Email Domain  | @yopmail.com  |
+      | Area Code     | Thailand      |
+      | Mobile Number | 112233445     |
+      | First Name    | Qatest        |
+      | Last Name     | Test          |
+      | Date of Birth | 01/01/1990    |
+      | Currency      | THB           |
+      | Country       | Thailand      |
+    Then a new account is successfully created
+
+    When the player is at MDafabet - Entry site in EN language
+    And the mobile player clicks the Cashier button
+    Then the mobile Cashier page is loaded successfully
+
+    When the mobile player clicks the Withdraw button
+    Then the mobile Payment Options page is loaded successfully
+
+    When the mobile player enrolls withdraw bank account
+      | Bank Name            | Bangkok Bank        |
+      | Branch Name          | Branch Test Name    |
+      | Branch Address       | Branch Test Address |
+      | Bank Accoount Number | 111222333444        |
+      | IFSC                 | TESTID12345         |
+    Then the mobile Banking Details page is loaded successfully
+
   Scenario: Mobile Cashier - Successful Withdraw / RMB
     Given the player is at MDafabet - Entry site in EN language
     And the player logs in using valid - RMB mobile credentials

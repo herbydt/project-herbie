@@ -134,13 +134,21 @@ public class StepCashier extends BaseStep {
         if ((baseCashierPlayerStatus.equalsIgnoreCase("new"))&&(workflowDafabet.baseDafabet.RegCurrency.equalsIgnoreCase("RMB/CNY"))) {
             dispName = workflowDafabet.baseDafabet.RegLastName+workflowDafabet.baseDafabet.RegFirstName;
             softAssert.assertTrue(workflowDafabet.validateMobilePage("Bank Enrollment", baseUsername, baseTransaction), "FAILED: Expected Page didn't load correctly.");
-        } else if ((baseCashierPlayerStatus.equalsIgnoreCase("new"))&&(!workflowDafabet.baseDafabet.RegCurrency.equalsIgnoreCase("RMB/CNY"))) {
+        } else if ((baseCashierPlayerStatus.equalsIgnoreCase("new"))&&(workflowDafabet.baseDafabet.RegCurrency.equalsIgnoreCase("THB"))) {
+            dispName = workflowDafabet.baseDafabet.RegFirstName + " " + workflowDafabet.baseDafabet.RegLastName;
+            softAssert.assertTrue(workflowDafabet.validateMobilePage("Bank Details Enrollment", baseUsername, baseTransaction), "FAILED: Expected Page didn't load correctly.");
+        } else if ((baseCashierPlayerStatus.equalsIgnoreCase("new"))&&((!workflowDafabet.baseDafabet.RegCurrency.equalsIgnoreCase("RMB/CNY")) || (!workflowDafabet.baseDafabet.RegCurrency.equalsIgnoreCase("THB"))))  {
             dispName = workflowDafabet.baseDafabet.RegFirstName + " " + workflowDafabet.baseDafabet.RegLastName;
             softAssert.assertTrue(workflowDafabet.validateMobilePage("Bank Enrollment", baseUsername, baseTransaction), "FAILED: Expected Page didn't load correctly.");
+
         }
 
-        workflowDafabet.enrollWithdrawBankAccount(basePaymentMethod, dispName, baseEnrolledBankName, baseEnrolledBankBranchName,
-                workflowDafabet.baseDafabet.RegCurrency, baseEnrolledBankIFSC, baseEnrolledBankAddress, baseEnrolledBankAccountNumber, basePassword);
+        if (workflowDafabet.baseDafabet.RegCurrency.equalsIgnoreCase("THB")) {
+            workflowDafabet.enrollWithdrawBankAccountTHB(dispName, baseEnrolledBankName, baseEnrolledBankAccountNumber, basePassword);
+        } else {
+            workflowDafabet.enrollWithdrawBankAccount(basePaymentMethod, dispName, baseEnrolledBankName, baseEnrolledBankBranchName,
+                    workflowDafabet.baseDafabet.RegCurrency, baseEnrolledBankIFSC, baseEnrolledBankAddress, baseEnrolledBankAccountNumber, basePassword);
+        }
     }
 
     @Then("^the mobile (Deposit|Withdraw|Fund Transfer) transaction is successful$")

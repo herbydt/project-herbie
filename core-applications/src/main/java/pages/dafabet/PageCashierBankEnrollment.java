@@ -13,6 +13,7 @@ public class PageCashierBankEnrollment extends PageCashier {
     By ddlEnrollmentPaymentMethod = By.cssSelector("div.form-item.form-type-select.form-item-payment-method > span.select > div.newListSelected > div.selectedTxt");
     By txtDispName = By.id("edit-name");
     By ddlEnrollmentBankName = By.id("edit-bank-name");
+    By ddlEnrollmentBankNameTHB = By.id("edit-withdraw-bank-name");
     By txtEnrollmentBankBranch = By.id("edit-branch");
     By txtEnrollmentBankIFSC = By.id("edit-ifsc-code");
     By txtEnrollmentBankAddress = By.id("edit-address");
@@ -27,6 +28,10 @@ public class PageCashierBankEnrollment extends PageCashier {
 
     public void selectEnrollmentBank(String bankName) throws Exception {
         control.selectDropdownOption(ddlEnrollmentBankName, bankName);
+    }
+
+    public void selectEnrollmentBankTHB(String bankName) throws Exception {
+        control.selectDropdownOption(ddlEnrollmentBankNameTHB, bankName);
     }
 
     public void typeEnrollmentBankBranch(String bankBranch, String currency, String bankIfsc) throws Exception {
@@ -66,6 +71,12 @@ public class PageCashierBankEnrollment extends PageCashier {
                 throw new Exception("ERROR: Withdraw page has not loaded fully. Please try again.");
             }
         }
+    }
+
+    public void clickEnrollmentSubmitTHB() throws Exception {
+        control.click(btnEnrollmentSubmit);
+        waitForPageToComplete();
+        control.waitWhileElementIsNotDisplayed(lblInnerPageTitleTHB,10);
     }
 
     //==================================================================================================================

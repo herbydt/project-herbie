@@ -11,6 +11,7 @@ public class PageCashier extends BaseDafabet {
     By txtMobileCashierUsername = By.cssSelector("nav.nav.menubile-nav > div.navigation > div.block.block-cashier > div.profile > span.username-container");
     By lblMobileHeaderTotalBalance = By.cssSelector("span.player-total-balance");
     By lblInnerPageTitle = By.cssSelector("h2.h2.title.mb-tablet-40.mb-desktop-40");
+    By lblInnerPageTitleTHB = By.cssSelector("h2.h2.title");
 
     //DASHBOARD
     By sectionCasinoBlock = By.cssSelector("a.dashboard-balance-item.product.casino");
@@ -22,7 +23,6 @@ public class PageCashier extends BaseDafabet {
     By txtOWSportsBonus = By.cssSelector("div.product-balance-collapsible.sports > div.balance-breakdown > div.locked-amount-money > span.balance");
     By txtOWSportsWageringReq = By.cssSelector("div.product-balance-collapsible.sports > div.balance-breakdown > div.wagering-block > div.locked-amount-money > span.balance");
 
-
     // PAYMENT OPTIONS
     By txtPaymentOptionsHeader = By.cssSelector("h2.h2.title");
     By tabPaymentOptionsDeposit = By.cssSelector("a.transaction-type-item.deposit");
@@ -30,6 +30,10 @@ public class PageCashier extends BaseDafabet {
 
     // WITHDRAW
     By lblWithdrawBankEnrollmentStatus = By.cssSelector("div.player-verification-form");
+
+    // BANKING DETAILS
+    By lblBankDetailsEnrollment = By.cssSelector("div.cashier-bank-detail-enrollment");
+    By sectionWithdrawBanks = By.cssSelector("div.withdraw-banks");
 
 
     public PageCashier(WebDriver driver) {
@@ -100,11 +104,27 @@ public class PageCashier extends BaseDafabet {
         } else return false;
     }
 
+    public boolean isBankDetailsEnrollmentPageDisplayed() {
+//        String enrollmentStatus = control.getAttributeValue(lblWithdrawBankEnrollmentStatus, "class",10);
+        if (control.isElementDisplayed(lblBankDetailsEnrollment, 10)) {
+            System.out.println("\nCURRENT PAGE: Player has not yet enrolled his/her bank account for withdrawal.");
+            return true;
+        } else return false;
+    }
+
     public boolean isWithdrawPageDisplayed() {
         String enrollmentStatus = control.getAttributeValue(lblWithdrawBankEnrollmentStatus, "class",10);
         String pageTitle = control.getText(lblInnerPageTitle);
         if ((pageTitle.contains("Withdraw")) && (enrollmentStatus.contains("player-verification-form-processed"))) {
             System.out.println("\nCURRENT PAGE: Withdraw Transaction page is displayed correctly.");
+            return true;
+        } else return false;
+    }
+
+    public boolean isBankDetailsPageDisplayed() {
+        String pageTitle = control.getText(lblInnerPageTitleTHB);
+        if ((pageTitle.contains("Banking Details"))&&(control.isElementDisplayed(sectionWithdrawBanks,10))) {
+            System.out.println("\nCURRENT PAGE: Banking Details page is displayed correctly.");
             return true;
         } else return false;
     }
