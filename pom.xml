@@ -12,6 +12,7 @@
         <module>core-applications</module>
         <module>core-framework</module>
         <module>dafabet</module>
+        <module>nextbet</module>
     </modules>
 
     <packaging>pom</packaging>

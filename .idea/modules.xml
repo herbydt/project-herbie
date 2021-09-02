@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/core-applications/core-applications.iml" filepath="$PROJECT_DIR$/core-applications/core-applications.iml" />
       <module fileurl="file://$PROJECT_DIR$/core-framework/core-framework.iml" filepath="$PROJECT_DIR$/core-framework/core-framework.iml" />
       <module fileurl="file://$PROJECT_DIR$/dafabet/dafabet.iml" filepath="$PROJECT_DIR$/dafabet/dafabet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nextbet/nextbet.iml" filepath="$PROJECT_DIR$/nextbet/nextbet.iml" />
       <module fileurl="file://$PROJECT_DIR$/projectherby.iml" filepath="$PROJECT_DIR$/projectherby.iml" />
       <module fileurl="file://$PROJECT_DIR$/website1/website1.iml" filepath="$PROJECT_DIR$/website1/website1.iml" />
     </modules>
