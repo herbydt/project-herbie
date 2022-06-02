@@ -32,6 +32,12 @@ public class StepAccess extends BaseStep {
         workflowWebsite1.baseWebsite1.waitForPageToComplete();
     }
 
+    @When("^the user goes to the second page$")
+    public void thePlayerGoesToSecondPage() throws Throwable {
+        workflowWebsite1.moveSecondPage();
+        workflowWebsite1.baseWebsite1.waitForPageToComplete();
+    }
+
     @Then("^the search results are displayed$")
     public void theSearchResultsAreDisplayed() throws Throwable {
 //        System.out.println("Search item: " + item + "\n");

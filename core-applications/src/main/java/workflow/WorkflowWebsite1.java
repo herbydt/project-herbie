@@ -34,4 +34,8 @@ public class WorkflowWebsite1 extends BaseWorkflow {
         baseWebsite1.PageGoogleSearch().clickGoogleSearchButton();
     }
 
+    public void moveSecondPage() throws Exception {
+        baseWebsite1.PageGoogleSearch().clickGoogleSearchNextPage();
+    }
+
 }

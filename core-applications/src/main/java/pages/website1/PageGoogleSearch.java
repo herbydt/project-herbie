@@ -20,6 +20,10 @@ public class PageGoogleSearch extends BaseWebsite1{
         control.click(btnGoogleSearch);
     }
 
+    public void clickGoogleSearchNextPage() throws Exception {
+        control.click(btnGoogleSearchNextPage);
+    }
+
     //==================================================================================================================
     // Validations
     //==================================================================================================================
