@@ -15,6 +15,8 @@ public class BaseWebsite1 extends PageObjectBase {
     By txtGoogleSearchResults = By.cssSelector("input.gLFyf.gsfi");
     By bdyGoogleSearchResults = By.cssSelector("div.GyAeWb");
 
+    By btnGoogleSearchNextPage = By.id("pnnext");
+
     //==================================================================================================================
     // Page Navigation
     //==================================================================================================================

@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="core-applications" />
         <module name="core-framework" />
         <module name="dafabet" />
-        <module name="nextbet" />
+        <module name="core-applications" />
         <module name="website1" />
+        <module name="nextbet" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
@@ -18,7 +18,7 @@
       <module name="core-framework" target="1.8" />
       <module name="dafabet" target="1.8" />
       <module name="nextbet" target="1.8" />
-      <module name="projectherby" target="1.8" />
+      <module name="projectHerby" target="1.8" />
       <module name="website1" target="1.8" />
     </bytecodeTargetLevel>
   </component>
