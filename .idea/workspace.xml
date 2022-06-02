@@ -5,18 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba623d69-6c2d-4c06-a1da-07adf53e397f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-applications/core-applications.iml" beforeDir="false" afterPath="$PROJECT_DIR$/core-applications/core-applications.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-applications/src/main/java/pages/website1/BaseWebsite1.java" beforeDir="false" afterPath="$PROJECT_DIR$/core-applications/src/main/java/pages/website1/BaseWebsite1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-applications/src/main/java/pages/website1/PageGoogleSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/core-applications/src/main/java/pages/website1/PageGoogleSearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-applications/src/main/java/workflow/WorkflowWebsite1.java" beforeDir="false" afterPath="$PROJECT_DIR$/core-applications/src/main/java/workflow/WorkflowWebsite1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-framework/core-framework.iml" beforeDir="false" afterPath="$PROJECT_DIR$/core-framework/core-framework.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dafabet/dafabet.iml" beforeDir="false" afterPath="$PROJECT_DIR$/dafabet/dafabet.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website1/src/test/java/feature/GoogleSearch.feature" beforeDir="false" afterPath="$PROJECT_DIR$/website1/src/test/java/feature/GoogleSearch.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website1/src/test/java/steps/StepAccess.java" beforeDir="false" afterPath="$PROJECT_DIR$/website1/src/test/java/steps/StepAccess.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website1/website1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/website1/website1.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
